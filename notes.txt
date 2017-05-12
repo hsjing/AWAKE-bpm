@@ -6,5 +6,4 @@ TODO:
 #necessary gain modifier
 
 Questions:
-	- VGA gain register in binary, can it be incremented with decimal?
-	- 
+	//- VGA gain register in binary, can it be incremented with decimal?
