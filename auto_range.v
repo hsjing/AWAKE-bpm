@@ -62,7 +62,10 @@ module auto_range(
     parameter threshold = 20000;
     parameter [2:0] step = 3'b11;
     
-    always @ (ready = 1) begin
+    always @ (auto_enable) begin
+    	if (ready) begin
+    		
+    		end
     	
     
     end    		
