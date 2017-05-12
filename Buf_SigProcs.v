@@ -106,10 +106,10 @@ module Buf_SigProcs(
 	wire trig;
 	assign trig_out = trig;
 
-	wire cal_trig; //one clk wide (100 ns), to start calibertaion event 
-	wire cal_flag; //mark the cal event
+	wire cal_trig; // one clk wide (100 ns), to start calibertaion event 
+	wire cal_flag; // mark the cal event
 
-wire rd_C_buffer;
+	wire rd_C_buffer;
 	wire event_rdy;
 
 	wire RUN = control_reg[0];
@@ -129,7 +129,7 @@ wire rd_C_buffer;
 
 
 	x4_Channel_buffer Circular_Buffer (
-//    .ila_control(ila_CONTROL0),
+		//.ila_control(ila_CONTROL0),
 		.DIN(data_in), // ADC raw data from deserializer
 		.EVENT_LEN(Evt_Len_Reg),
 		.TAIL_LEN(Evt_Tail_Len_Reg),
@@ -233,6 +233,7 @@ wire rd_C_buffer;
 		.over_flow_D(Overflow_ChD)
 
 	);
+	
 
 //Fast FIFO to transfer ADC rate data from FPGA to MB
 	wire fast_fifo_full,fast_fifo_empty;
@@ -342,7 +343,7 @@ wire rd_C_buffer;
 	wire [SF_WIDTH-1:0] ChB_Power_Adj;
 	wire [SF_WIDTH-1:0] ChC_Power_Adj;
 	wire [SF_WIDTH-1:0] ChD_Power_Adj;
-	wire Adj_rdy; //one clk wide
+	wire Adj_rdy; // one clk wide
 
 //VGA module adjusts both Digi_attenuator and VGA gain setting
 	VGA VGA_inst(
@@ -431,8 +432,8 @@ wire rd_C_buffer;
 	wire Corr_rdy;
 
 	Drift Drift_inst(
-		//	.ila_CONTROL0(ila_CONTROL0),
-		//	.ila_CONTROL1(ila_CONTROL1),
+		// .ila_CONTROL0(ila_CONTROL0),
+		// .ila_CONTROL1(ila_CONTROL1),
 		.K_cal(K_cal),
 
 		.A_Cal(ChA_Power_cal),
@@ -473,6 +474,20 @@ wire rd_C_buffer;
 		.S(S),
 		.rdy(position_rdy) // one clk wide
 	);
+	
+	///////////////////////////////////////////////////
+	auto_range auto_range_inst(
+		.auto_enable(BLG_data_valid),
+		.ready(position_rdy),
+		.vga_in(VGA_gain),
+		.signal_max_a(ChA_Max_Reg),
+		.signal_max_b(ChB_Max_Reg),
+		.signal_max_c(ChC_Max_Reg),
+		.signal_max_d(ChD_Max_Reg),
+
+		.vga_out(VGA_gain)
+	);
+	///////////////////////////////////////////////////
 
 	always @ (posedge clk)
 	begin
@@ -510,7 +525,7 @@ wire rd_C_buffer;
 	 
 
 //============Packing=================================
-	parameter PID = 32'h4142504d; //"ABPM"
+	parameter PID = 32'h4142504d; // "ABPM"
 	parameter PACKET_LEN = 16'd16;
 
 	reg [15:0] EVT_CNT;
@@ -590,27 +605,26 @@ wire rd_C_buffer;
 //////////////////////////////////////////////
 //				ChipScope					//
 //////////////////////////////////////////////
-	
-/*
- * wire [7:0] ila_trig = {6'b0,trig,event_rdy};
- * wire [63:0] ila_data;
+	/*
+	 * wire [7:0] ila_trig = {6'b0,trig,event_rdy};
+	 * wire [63:0] ila_data;
 
- * assign ila_data = dout_all;
- * ila_trig8 ila_trig8_inst (
- *     .CONTROL(ila_CONTROL0), // INOUT BUS [35:0]
- *     .CLK(clk), // IN
- *     .TRIG0(ila_trig), // IN BUS [7:0]
- * 	 .DATA(ila_data) // IN BUS [63:0]
- * );
-
+	 * assign ila_data = dout_all;
+	 * ila_trig8 ila_trig8_inst (
+	 *     .CONTROL(ila_CONTROL0), // INOUT BUS [35:0]
+	 *     .CLK(clk), // IN
+	 *     .TRIG0(ila_trig), // IN BUS [7:0]
+	 * 	 .DATA(ila_data) // IN BUS [63:0]
+	 * );
 
 
- * ila_trig8 ila_trig8_fast_inst (
- *     .CONTROL(ila_CONTROL1), // INOUT BUS [35:0]
- *     .CLK(gclk0), // IN
- * 	 //.CLK(clk),
- *     .TRIG0({7'b0,trig}), // IN BUS [7:0]
- * 	 .DATA(data_in) // IN BUS [63:0]
- * );
- */
+
+	 * ila_trig8 ila_trig8_fast_inst (
+	 *     .CONTROL(ila_CONTROL1), // INOUT BUS [35:0]
+	 *     .CLK(gclk0), // IN
+	 * 	 //.CLK(clk),
+	 *     .TRIG0({7'b0,trig}), // IN BUS [7:0]
+	 * 	 .DATA(data_in) // IN BUS [63:0]
+	 * );
+	 */
 endmodule
