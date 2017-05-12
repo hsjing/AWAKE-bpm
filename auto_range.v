@@ -38,15 +38,22 @@
   
   Parameters:
    
-   		threshold - upper amplitude threshold beyond which signals must be re-ranged
-   		[2:0]	step - shifted steps for range adjustment in binary, intreperted as decimal in dB 
+   		upper_threshold - upper amplitude threshold beyond which signals must be re-ranged
+   		lower_threshold - lower amplitude threshold that justifies increasing VGA gain
+   		data_width - bit size of incoming amplitude data
+   
+  Registers:
+
+   		[2:0]	step - shifted steps for range adjustment in binary, intreperted as decimal in dB
+   		[data_width-1:0]	signal_max_all - storage register for overall maximum amplitude after program iteration
+   		
   
   See Also:
   
   		<Max.v>
  */
 module auto_range(
-	
+
 	input auto_enable,
 	input ready,
 	input [4:0] vga_in,
@@ -57,15 +64,27 @@ module auto_range(
 
 	output reg [4:0] vga_out
 	
-    );
+    );    
     
-    parameter threshold = 20000;
-    parameter [2:0] step = 3'b11;
+    parameter upper_threshold = 20000;
+    parameter lower_threshold = 14000;     
+    parameter data_width = 16;
+    
+    reg [data_width-1:0] signal_max_all;
+    reg [4:0] step;
     
     always @ (auto_enable) begin
-    	if (ready) begin
-    		
-    		end
-    	
-    
+
+		/* Comparatively loads the maximum signal from all channels */
+		if (ready) begin
+			if (signal_max_a[15:0] > signal_max_all)	signal_max_all <= signal_max_a;
+			if (signal_max_b[15:0] > signal_max_all)	signal_max_all <= signal_max_b;
+			if (signal_max_c[15:0] > signal_max_all)	signal_max_all <= signal_max_c;
+			if (signal_max_d[15:0] > signal_max_all)	signal_max_all <= signal_max_d;
+		end
+
+		/* Lower or increase VGA gain depending on signal_max_all relative to the corresponding thresholds */ 
+		if (signal_max_all > upper_threshold)	vga_out <= vga_out - 3;
+		if (signal_max_all < lower_threshold)	vga_out <= vga_out + 3;	
+    	    
     end    		
