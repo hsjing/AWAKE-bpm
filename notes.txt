@@ -1,2 +1,10 @@
-Generate document using naturaldocs
-Clone at home
+TODO:
+#Generate document using naturaldocs
+#Clone at home
+
+#Load max values into array, compare to upper/lower thresholds to determine
+#necessary gain modifier
+
+Questions:
+	- VGA gain register in binary, can it be incremented with decimal?
+	- 
