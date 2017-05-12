@@ -90,6 +90,7 @@ module Buf_SigProcs(
 	parameter  	FIFO_DEPTH = 11;
 	parameter   SFIFO_WIDTH = 32;
 	parameter  	SF_WIDTH = 32;
+	parameter	AUTO_MODE = 1;	// Ranging mode select (1 = auto, 0 = manual)
  
 /////////////////////////////////////////////////////////////
 //====================== chipScope components================
@@ -477,9 +478,12 @@ module Buf_SigProcs(
 	//////////////////////////////////////////////////
 	// auto_range.v
 	//////////////////////////////////////////////////
+	
+	wire auto
+	
 	auto_range auto_range_inst(
 		.clk(clk),
-		.auto_enable(BLG_data_valid),
+		.auto_enable(AUTO_MODE),
 		.ready(position_rdy),
 		.vga_in(VGA_gain),
 		.signal_max_a(ChA_Max_Reg),
