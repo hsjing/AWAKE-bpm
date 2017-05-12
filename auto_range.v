@@ -42,8 +42,7 @@
    		upper_threshold - upper amplitude threshold beyond which signals must be re-ranged
    		lower_threshold - lower amplitude threshold that justifies increasing VGA gain
    		data_width - bit size of incoming amplitude data
-   		step - gain shift in dB
-   		vga_min - to prevent 
+   		step - gain shift in dB   		
    
   Registers:
 
@@ -73,7 +72,6 @@ module auto_range(
     parameter lower_threshold = 14000;	// Lower threshold roughly 3 dB less than upper threshold     
     parameter data_width = 16;
     parameter step = 3;
-    parameter vga_min = 1000;
     
     reg [data_width-1:0] signal_max_all;
     
