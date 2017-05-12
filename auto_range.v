@@ -25,16 +25,21 @@
   Automatically determines the VGA gain for the next measurement
   depending on the received and processed signals from the four channels
   
-  Parameters:
+  Inputs:
   		
   		auto_enable - mode select bit for module: 1 -> enabled
   		ready - ready status bit for channel data: 1 -> ready to be read
   		[4:0] 	vga_in - 5 bit vga gain initial  
   		[15:0] 	signal_max_(a~d) - 16 bit signal amplitude calculated from <Max.v>
   	
-  Returns:
+  Outputs:
   		
   		[4:0] vga_out - 5 bit vga gain final
+  
+  Parameters:
+   
+   		threshold - upper amplitude threshold beyond which signals must be re-ranged
+   		[2:0]	step - shifted steps for range adjustment in binary, intreperted as decimal in dB 
   
   See Also:
   
@@ -53,3 +58,11 @@ module auto_range(
 	output reg [4:0] vga_out
 	
     );
+    
+    parameter threshold = 20000;
+    parameter [2:0] step = 3'b11;
+    
+    always @ (ready = 1) begin
+    	
+    
+    end    		
