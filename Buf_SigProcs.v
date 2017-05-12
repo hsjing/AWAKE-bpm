@@ -474,8 +474,11 @@ module Buf_SigProcs(
 		.rdy(position_rdy) // one clk wide
 	);
 	
-	///////////////////////////////////////////////////
+	//////////////////////////////////////////////////
+	//					auto_range.v				//
+	//////////////////////////////////////////////////
 	auto_range auto_range_inst(
+		.clk(clk),
 		.auto_enable(BLG_data_valid),
 		.ready(position_rdy),
 		.vga_in(VGA_gain),
@@ -486,7 +489,7 @@ module Buf_SigProcs(
 
 		.vga_out(VGA_gain)
 	);
-	///////////////////////////////////////////////////
+	
 
 	always @ (posedge clk)
 	begin

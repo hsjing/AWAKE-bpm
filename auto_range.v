@@ -27,6 +27,7 @@
   
   Inputs:
   		
+  		clk - process to be clocked from PLL, as determined by PLL
   		auto_enable - mode select bit for module: 1 -> enabled
   		ready - ready status bit for channel data: 1 -> ready to be read
   		[4:0] 	vga_in - 5 bit vga gain initial  
@@ -42,6 +43,7 @@
    		lower_threshold - lower amplitude threshold that justifies increasing VGA gain
    		data_width - bit size of incoming amplitude data
    		step - gain shift in dB
+   		vga_min - to prevent 
    
   Registers:
 
@@ -54,6 +56,7 @@
  */
 module auto_range(
 
+	input clk,
 	input auto_enable,
 	input ready,
 	input [4:0] vga_in,
@@ -66,25 +69,30 @@ module auto_range(
 	
     );    
     
-    parameter upper_threshold = 20000;
-    parameter lower_threshold = 14000;     
+    parameter upper_threshold = 20000;	// Full range of amplitude is 32768
+    parameter lower_threshold = 14000;	// Lower threshold roughly 3 dB less than upper threshold     
     parameter data_width = 16;
     parameter step = 3;
+    parameter vga_min = 1000;
     
     reg [data_width-1:0] signal_max_all;
     
-    always @ (auto_enable) begin
-
+    always @ (posedge clk)
+    if(auto_enable && ready) begin
+        	
 		/* Comparatively loads the maximum signal from all channels */
-		if (ready) begin
-			if (signal_max_a[15:0] > signal_max_all)	signal_max_all <= signal_max_a;
-			if (signal_max_b[15:0] > signal_max_all)	signal_max_all <= signal_max_b;
-			if (signal_max_c[15:0] > signal_max_all)	signal_max_all <= signal_max_c;
-			if (signal_max_d[15:0] > signal_max_all)	signal_max_all <= signal_max_d;
+		if (signal_max_a[15:0] > signal_max_all)	signal_max_all <= signal_max_a;
+		if (signal_max_b[15:0] > signal_max_all)	signal_max_all <= signal_max_b;
+		if (signal_max_c[15:0] > signal_max_all)	signal_max_all <= signal_max_c;
+		if (signal_max_d[15:0] > signal_max_all)	signal_max_all <= signal_max_d;
 		end
 
-		/* Lower or increase VGA gain depending on signal_max_all relative to the corresponding thresholds */ 
-		if (signal_max_all > upper_threshold)	vga_out <= vga_out - step;
-		if (signal_max_all < lower_threshold)	vga_out <= vga_out + step;	
-    	    
-    end    		
+		/* Lower or increase VGA gain depending on signal_max_all relative to the corresponding thresholds */
+		if (vga_in > (step * 2)) begin 
+			if (signal_max_all > upper_threshold)	vga_out <= vga_out - step;
+			if (signal_max_all < lower_threshold)	vga_out <= vga_out + step;
+			end
+					    	    
+    	end
+    	
+endmodule    		

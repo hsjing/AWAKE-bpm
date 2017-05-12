@@ -7,3 +7,4 @@ TODO:
 
 Questions:
 	//- VGA gain register in binary, can it be incremented with decimal?
+	- How does the two "always @" blocks work in Max.v? Sequentially or simultaneously?
