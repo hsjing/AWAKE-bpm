@@ -22,7 +22,7 @@
 /*
   Module: auto_range
   
-  Automatically determines the VGA gain for the next measurement
+  Automatically determines the VGA attenuation for the next measurement
   depending on the received and processed signals from the four channels
   
   Inputs:
@@ -30,19 +30,19 @@
   		clk - process to be clocked from PLL, as determined by PLL
   		auto_enable - mode select bit for module: 1 -> enabled
   		ready - ready status bit for channel data: 1 -> ready to be read
-  		[4:0] 	vga_in - 5 bit vga gain initial  
+  		[4:0] 	vga_in - 5 bit vga attenuation initial  
   		[15:0] 	signal_max_(a~d) - 16 bit signal amplitude calculated from <Max.v>
   	
   Outputs:
   		
-  		[4:0] vga_out - 5 bit vga gain final
+  		[4:0] vga_out - 5 bit vga attenuation final
   
   Parameters:
    
    		upper_threshold - upper amplitude threshold beyond which signals must be re-ranged
-   		lower_threshold - lower amplitude threshold that justifies increasing VGA gain
+   		lower_threshold - lower amplitude threshold that justifies increasing VGA attenuation
    		data_width - bit size of incoming amplitude data
-   		step - gain shift in dB   		
+   		step - attenuation shift in dB   		
    
   Registers:
 
@@ -85,7 +85,7 @@ module auto_range(
 		if (signal_max_c[15:0] > signal_max_all)	signal_max_all <= signal_max_c;
 		if (signal_max_d[15:0] > signal_max_all)	signal_max_all <= signal_max_d;		
 
-		/* Lower or increase VGA gain depending on signal_max_all relative to the corresponding thresholds */
+		/* Lower or increase VGA attenuation depending on signal_max_all relative to the corresponding thresholds */
 		if (vga_in >= step) begin 
 			if (signal_max_all > upper_threshold)	vga_out <= vga_in + step;
 			if (signal_max_all < lower_threshold)	vga_out <= vga_in - step;
