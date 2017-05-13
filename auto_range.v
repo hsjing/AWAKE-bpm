@@ -55,7 +55,6 @@
  */
  
 module auto_range(
-
 	input clk,
 	input auto_enable,
 	input ready,
@@ -65,8 +64,7 @@ module auto_range(
 	input [15:0] signal_max_c,
 	input [15:0] signal_max_d,
 
-	output reg [4:0] vga_out
-	
+	output reg [4:0] vga_out	
     );    
     
     parameter upper_threshold = 20000;	// Full range of amplitude is 32768
@@ -76,21 +74,19 @@ module auto_range(
     
     reg [data_width-1:0] signal_max_all;
     
-    always @ (posedge clk)
-    if(auto_enable && ready) begin
-        	
-		/* Comparatively loads the maximum signal from all channels */
-		if (signal_max_a[15:0] > signal_max_all)	signal_max_all <= signal_max_a;
-		if (signal_max_b[15:0] > signal_max_all)	signal_max_all <= signal_max_b;
-		if (signal_max_c[15:0] > signal_max_all)	signal_max_all <= signal_max_c;
-		if (signal_max_d[15:0] > signal_max_all)	signal_max_all <= signal_max_d;		
-
-		/* Lower or increase VGA attenuation depending on signal_max_all relative to the corresponding thresholds */
-		if (vga_in >= step) begin 
-			if (signal_max_all > upper_threshold)	vga_out <= vga_in + step;
-			if (signal_max_all < lower_threshold)	vga_out <= vga_in - step;
-			end
-					    	    
-    	end
-    	
+    always @ (posedge clk) begin
+    	if(auto_enable && ready) begin        	
+			/* Comparatively loads the maximum signal from all channels */
+			if (signal_max_a[15:0] > signal_max_all)	signal_max_all <= signal_max_a;
+			if (signal_max_b[15:0] > signal_max_all)	signal_max_all <= signal_max_b;
+			if (signal_max_c[15:0] > signal_max_all)	signal_max_all <= signal_max_c;
+			if (signal_max_d[15:0] > signal_max_all)	signal_max_all <= signal_max_d;
+				
+			/* Lower or increase VGA attenuation depending on signal_max_all relative to the corresponding thresholds */
+			if (vga_in >= step) begin 
+				if (signal_max_all > upper_threshold)	vga_out <= vga_in + step;
+				if (signal_max_all < lower_threshold)	vga_out <= vga_in - step;
+				end					    	    
+    		end
+    	end    	
 endmodule    		
