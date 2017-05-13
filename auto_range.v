@@ -53,6 +53,7 @@
   
   		<Max.v>
  */
+ 
 module auto_range(
 
 	input clk,
@@ -82,13 +83,12 @@ module auto_range(
 		if (signal_max_a[15:0] > signal_max_all)	signal_max_all <= signal_max_a;
 		if (signal_max_b[15:0] > signal_max_all)	signal_max_all <= signal_max_b;
 		if (signal_max_c[15:0] > signal_max_all)	signal_max_all <= signal_max_c;
-		if (signal_max_d[15:0] > signal_max_all)	signal_max_all <= signal_max_d;
-		end
+		if (signal_max_d[15:0] > signal_max_all)	signal_max_all <= signal_max_d;		
 
 		/* Lower or increase VGA gain depending on signal_max_all relative to the corresponding thresholds */
-		if (vga_in > (step * 2)) begin 
-			if (signal_max_all > upper_threshold)	vga_out <= vga_out - step;
-			if (signal_max_all < lower_threshold)	vga_out <= vga_out + step;
+		if (vga_in >= step) begin 
+			if (signal_max_all > upper_threshold)	vga_out <= vga_in + step;
+			if (signal_max_all < lower_threshold)	vga_out <= vga_in - step;
 			end
 					    	    
     	end

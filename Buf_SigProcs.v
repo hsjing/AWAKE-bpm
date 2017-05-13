@@ -479,8 +479,6 @@ module Buf_SigProcs(
 	// auto_range.v
 	//////////////////////////////////////////////////
 	
-	wire auto
-	
 	auto_range auto_range_inst(
 		.clk(clk),
 		.auto_enable(AUTO_MODE),
