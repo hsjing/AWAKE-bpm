@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map O.76xd on Thu May 11 12:28:25 2017
+// Written by: Map O.76xd on Mon May 15 15:12:13 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -18563,38 +18563,6 @@ TIMEGRP clk = BEL "soft_rst" BEL "Buf_SigProcs_inst/EVT_CNT_15" BEL
         "Buf_SigProcs_inst/ChA_Power_reg_2" BEL
         "Buf_SigProcs_inst/ChA_Power_reg_1" BEL
         "Buf_SigProcs_inst/ChA_Power_reg_0" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_31" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_30" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_29" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_28" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_27" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_26" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_25" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_24" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_23" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_22" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_21" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_20" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_19" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_18" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_17" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_16" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_15" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_14" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_13" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_12" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_11" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_10" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_9" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_8" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_7" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_6" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_5" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_4" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_3" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_2" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_1" BEL
-        "Buf_SigProcs_inst/ChD_Power_reg_0" BEL
         "Buf_SigProcs_inst/ChC_Power_reg_31" BEL
         "Buf_SigProcs_inst/ChC_Power_reg_30" BEL
         "Buf_SigProcs_inst/ChC_Power_reg_29" BEL
@@ -18659,70 +18627,38 @@ TIMEGRP clk = BEL "soft_rst" BEL "Buf_SigProcs_inst/EVT_CNT_15" BEL
         "Buf_SigProcs_inst/ChB_Power_reg_2" BEL
         "Buf_SigProcs_inst/ChB_Power_reg_1" BEL
         "Buf_SigProcs_inst/ChB_Power_reg_0" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_31" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_30" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_29" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_28" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_27" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_26" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_25" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_24" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_23" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_22" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_21" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_20" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_19" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_18" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_17" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_16" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_15" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_14" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_13" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_12" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_11" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_10" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_9" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_8" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_7" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_6" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_5" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_4" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_3" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_2" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_1" BEL
-        "Buf_SigProcs_inst/ChC_Power_cal_0" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_31" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_30" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_29" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_28" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_27" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_26" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_25" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_24" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_23" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_22" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_21" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_20" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_19" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_18" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_17" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_16" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_15" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_14" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_13" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_12" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_11" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_10" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_9" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_8" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_7" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_6" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_5" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_4" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_3" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_2" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_1" BEL
-        "Buf_SigProcs_inst/ChB_Power_cal_0" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_31" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_30" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_29" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_28" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_27" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_26" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_25" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_24" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_23" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_22" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_21" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_20" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_19" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_18" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_17" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_16" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_15" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_14" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_13" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_12" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_11" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_10" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_9" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_8" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_7" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_6" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_5" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_4" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_3" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_2" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_1" BEL
+        "Buf_SigProcs_inst/ChD_Power_reg_0" BEL
         "Buf_SigProcs_inst/ChD_Power_cal_31" BEL
         "Buf_SigProcs_inst/ChD_Power_cal_30" BEL
         "Buf_SigProcs_inst/ChD_Power_cal_29" BEL
@@ -18755,6 +18691,38 @@ TIMEGRP clk = BEL "soft_rst" BEL "Buf_SigProcs_inst/EVT_CNT_15" BEL
         "Buf_SigProcs_inst/ChD_Power_cal_2" BEL
         "Buf_SigProcs_inst/ChD_Power_cal_1" BEL
         "Buf_SigProcs_inst/ChD_Power_cal_0" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_31" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_30" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_29" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_28" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_27" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_26" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_25" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_24" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_23" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_22" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_21" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_20" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_19" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_18" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_17" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_16" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_15" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_14" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_13" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_12" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_11" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_10" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_9" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_8" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_7" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_6" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_5" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_4" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_3" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_2" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_1" BEL
+        "Buf_SigProcs_inst/ChB_Power_cal_0" BEL
         "Buf_SigProcs_inst/ChA_Power_cal_31" BEL
         "Buf_SigProcs_inst/ChA_Power_cal_30" BEL
         "Buf_SigProcs_inst/ChA_Power_cal_29" BEL
@@ -18786,7 +18754,39 @@ TIMEGRP clk = BEL "soft_rst" BEL "Buf_SigProcs_inst/EVT_CNT_15" BEL
         "Buf_SigProcs_inst/ChA_Power_cal_3" BEL
         "Buf_SigProcs_inst/ChA_Power_cal_2" BEL
         "Buf_SigProcs_inst/ChA_Power_cal_1" BEL
-        "Buf_SigProcs_inst/ChA_Power_cal_0" BEL "Buf_SigProcs_inst/sFIFO_wr"
+        "Buf_SigProcs_inst/ChA_Power_cal_0" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_31" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_30" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_29" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_28" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_27" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_26" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_25" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_24" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_23" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_22" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_21" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_20" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_19" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_18" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_17" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_16" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_15" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_14" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_13" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_12" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_11" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_10" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_9" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_8" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_7" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_6" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_5" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_4" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_3" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_2" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_1" BEL
+        "Buf_SigProcs_inst/ChC_Power_cal_0" BEL "Buf_SigProcs_inst/sFIFO_wr"
         BEL "Buf_SigProcs_inst/Circular_Buffer/BUFGMUX_inst" BEL
         "Buf_SigProcs_inst/Circular_Buffer/state_FSM_FFd1" BEL
         "Buf_SigProcs_inst/Circular_Buffer/state_FSM_FFd2" BEL
@@ -20490,6 +20490,26 @@ TIMEGRP clk = BEL "soft_rst" BEL "Buf_SigProcs_inst/EVT_CNT_15" BEL
         "Buf_SigProcs_inst/VGA_inst/ChC_Power_Adj_2" BEL
         "Buf_SigProcs_inst/VGA_inst/ChC_Power_Adj_1" BEL
         "Buf_SigProcs_inst/VGA_inst/ChC_Power_Adj_0" BEL
+        "Buf_SigProcs_inst/auto_range_inst/auto_gain_reg_4" BEL
+        "Buf_SigProcs_inst/auto_range_inst/auto_gain_reg_3" BEL
+        "Buf_SigProcs_inst/auto_range_inst/auto_gain_reg_2" BEL
+        "Buf_SigProcs_inst/auto_range_inst/auto_gain_reg_1" BEL
+        "Buf_SigProcs_inst/auto_range_inst/auto_gain_reg_0" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_14" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_13" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_12" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_11" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_10" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_9" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_8" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_7" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_6" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_5" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_4" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_3" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_2" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_1" BEL
+        "Buf_SigProcs_inst/auto_range_inst/signal_max_all_0" BEL
         "Buf_SigProcs_inst/BL_cal/CNT_15" BEL
         "Buf_SigProcs_inst/BL_cal/CNT_14" BEL
         "Buf_SigProcs_inst/BL_cal/CNT_13" BEL

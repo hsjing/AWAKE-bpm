@@ -63,8 +63,8 @@ INFO:EDK:4087 - IPNAME: axi_ethernetlite, INSTANCE: Ethernet_Lite - This design
    The AXI clock frequency must be greater than or equal to 50 MHz for 100 Mbs
    Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
    operation. -
-   C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\mb_system\mb_syste
-   m.mhs line 358
+   C:\Users\student\Desktop\Jing\awake.bpm.firmware\mb_system\mb_system.mhs line
+   358
 INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
    PARAMETER C_LMB_NUM_SLAVES value to 1 -
    C:\Xilinx\13.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data

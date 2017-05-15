@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: mbx2_system_top.prj
 
@@ -413,11 +413,11 @@ Elaborating module <cal_schedule>.
 WARNING:HDLCompiler:413 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\cal_schedule.v" Line 68: Result of 19-bit expression is truncated to fit in 18-bit target.
 WARNING:HDLCompiler:189 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 285: Size mismatch in connection of port <AB_fifo_word>. Formal port size is 11-bit while actual signal size is 10-bit.
 WARNING:HDLCompiler:189 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 286: Size mismatch in connection of port <CD_fifo_word>. Formal port size is 11-bit while actual signal size is 10-bit.
-WARNING:HDLCompiler:1127 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 338: Assignment to SigProcs_busy ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 340: Assignment to SigProcs_busy ignored, since the identifier is never used
 
 Elaborating module <mb_system>.
 WARNING:HDLCompiler:1499 - "C:/Users/student/Desktop/Jing/awake.bpm.firmware/mb_system/hdl/mb_system.v" Line 5: Empty module <mb_system> remains a black box.
-WARNING:HDLCompiler:1127 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 805: Assignment to MB2FPGA_bus_Rst ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 807: Assignment to MB2FPGA_bus_Rst ignored, since the identifier is never used
 
 Elaborating module <DAT31>.
 
@@ -425,11 +425,11 @@ Elaborating module <SPI_Master>.
 WARNING:HDLCompiler:413 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\SPI.v" Line 106: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\SPI.v" Line 122: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\SPI.v" Line 138: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 874: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 877: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:634 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 859: Net <wr_SPI> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 860: Net <rd_SPI> does not have a driver.
-WARNING:HDLCompiler:552 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 826: Input port write is not connected on this instance
+WARNING:HDLCompiler:413 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 876: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 879: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:634 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 861: Net <wr_SPI> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 862: Net <rd_SPI> does not have a driver.
+WARNING:HDLCompiler:552 - "C:\Users\student\Desktop\Jing\awake.bpm.firmware\mbx2_system_top.v" Line 828: Input port write is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -497,9 +497,9 @@ Synthesizing Unit <mbx2_system_top>.
 WARNING:Xst:2898 - Port 'write', unconnected in block instance 'DAT31_inst', is tied to GND.
 INFO:Xst:3210 - "c:/users/student/desktop/jing/awake.bpm.firmware/mbx2_system_top.v" line 162: Output port <LOCKED> of the instance <clkcross> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "c:/users/student/desktop/jing/awake.bpm.firmware/mbx2_system_top.v" line 276: Output port <busy> of the instance <Buf_SigProcs_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "c:/users/student/desktop/jing/awake.bpm.firmware/mbx2_system_top.v" line 758: Output port <axi_bram_ctrl_0_BRAM_Rst_A_pin> of the instance <mb_system_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "c:/users/student/desktop/jing/awake.bpm.firmware/mbx2_system_top.v" line 853: Output port <SCLK> of the instance <SPI_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "c:/users/student/desktop/jing/awake.bpm.firmware/mbx2_system_top.v" line 853: Output port <CSB> of the instance <SPI_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/student/desktop/jing/awake.bpm.firmware/mbx2_system_top.v" line 760: Output port <axi_bram_ctrl_0_BRAM_Rst_A_pin> of the instance <mb_system_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/student/desktop/jing/awake.bpm.firmware/mbx2_system_top.v" line 855: Output port <SCLK> of the instance <SPI_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/student/desktop/jing/awake.bpm.firmware/mbx2_system_top.v" line 855: Output port <CSB> of the instance <SPI_inst> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <wr_SPI> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <rd_SPI> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 16-bit register for signal <control_reg>.
@@ -7508,7 +7508,7 @@ Delay:               24.142ns (Levels of Logic = 21)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_10MHz'
   Clock period: 77.236ns (frequency: 12.947MHz)
-  Total number of paths / destination ports: 10378462239416003000000000000000000000000000000000 / 25323
+  Total number of paths / destination ports: 10378462239415978000000000000000000000000000000000 / 25323
 -------------------------------------------------------------------------
 Delay:               77.236ns (Levels of Logic = 697)
   Source:            Buf_SigProcs_inst/ChD_Power_inst/N_15 (FF)
@@ -8743,11 +8743,11 @@ mb_system_i/debug_module/debug_module/drck_i|    2.408|    3.840|    3.249|     
 
 
 Total REAL time to Xst completion: 82.00 secs
-Total CPU time to Xst completion: 82.49 secs
+Total CPU time to Xst completion: 81.40 secs
  
 --> 
 
-Total memory usage is 530288 kilobytes
+Total memory usage is 530416 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings : 2720 (   0 filtered)

@@ -2,4 +2,36 @@
 **** Build of configuration Debug for project flash_test ****
 
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/flash_test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.a -mno-xl-soft-mul -MMD -MP -MF"src/flash_test.d" -MT"src/flash_test.d" -o"src/flash_test.o" "../src/flash_test.c"
+../src/flash_test.c: In function 'FlashReadWriteExample':
+../src/flash_test.c:105: warning: assignment from incompatible pointer type
+../src/flash_test.c:107: warning: assignment from incompatible pointer type
+../src/flash_test.c:71: warning: unused variable 'Index'
+Finished building: ../src/flash_test.c
+' '
+Building target: flash_test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.20.a -mno-xl-soft-mul -o"flash_test.elf"  ./src/flash_test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -llwip4 -lxilflash
+Finished building target: flash_test.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size flash_test.elf  |tee "flash_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16320	    332	   2784	  19436	   4bec	flash_test.elf
+Finished building: flash_test.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck flash_test.elf -hw ../../mb_system_hw_platform/system.xml -pe microblaze_0  |tee "flash_test.elf.elfcheck"
+elfcheck
+Xilinx EDK 13.3 Build EDK_O.76xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mb_system_hw_platform/system.xml -pe
+microblaze_0 flash_test.elf 
+
+ELF file	: flash_test.elf
+elfcheck passed.
+Finished building: flash_test.elf.elfcheck
+' '

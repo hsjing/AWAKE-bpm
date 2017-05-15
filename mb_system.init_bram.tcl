@@ -1,4 +1,4 @@
-cd C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev2_0/mb_system
+cd C:/Users/student/Desktop/Jing/awake.bpm.firmware/mb_system
 if { [ catch { xload xmp mb_system.xmp } result ] } {
   exit 10
 }

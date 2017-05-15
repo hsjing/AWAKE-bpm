@@ -31,7 +31,7 @@
 
 <msg type="info" file="EDK" num="4087" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_ethernetlite</arg>, INSTANCE: <arg fmt="%s" index="2">Ethernet_Lite</arg> - <arg fmt="%s" index="3">This design requires design constraints to guarantee performance.
 Please refer to the data sheet for details.  
-The AXI clock frequency must be greater than or equal to 50 MHz for 100 Mbs Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet operation.</arg> - <arg fmt="%s" index="4">C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\mb_system\mb_system.mhs line 358</arg>
+The AXI clock frequency must be greater than or equal to 50 MHz for 100 Mbs Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet operation.</arg> - <arg fmt="%s" index="4">C:\Users\student\Desktop\Jing\awake.bpm.firmware\mb_system\mb_system.mhs line 358</arg>
 </msg>
 
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">lmb_v10</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0_ilmb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_LMB_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\13.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data\lmb_v10_v2_1_0.mpd line 79</arg> 

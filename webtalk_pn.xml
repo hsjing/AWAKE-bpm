@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Mon May 15 13:47:52 2017">
+<application name="pn" timeStamp="Mon May 15 15:12:22 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="F2DF98D3D81D45CF941C5EF33738C4AA" type="project"/>
-<property name="ProjectIteration" value="127" type="project"/>
+<property name="ProjectIteration" value="129" type="project"/>
 <property name="ProjectFile" value="C:/Users/student/Desktop/Jing/awake.bpm.firmware/AWAKE_BPM_Rev2_0.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2016-03-01T14:20:50" type="project"/>
 </section>
@@ -33,7 +33,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2016-03-01T14:20:50" type="design"/>
 <property name="PROP_intWbtProjectID" value="F2DF98D3D81D45CF941C5EF33738C4AA" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="127" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="129" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_launchSDK" value="false" type="process"/>
