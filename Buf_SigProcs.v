@@ -75,6 +75,8 @@ module Buf_SigProcs(
 	input [SF_WIDTH-1:0] K_cal,
 	input [4:0] DIGI_att,
 	input [4:0] VGA_gain,
+	input [4:0] AFE_Control_Reg,
+	output [4:0] auto_gain_reg,
 
 	output [DATA_WIDTH-1:0]status_net,
 	input  [DATA_WIDTH-1:0]control_reg,
@@ -90,7 +92,6 @@ module Buf_SigProcs(
 	parameter  	FIFO_DEPTH = 11;
 	parameter   SFIFO_WIDTH = 32;
 	parameter  	SF_WIDTH = 32;
-	parameter	AUTO_MODE = 1;	// Ranging mode select (1 = auto, 0 = manual)
  
 /////////////////////////////////////////////////////////////
 //====================== chipScope components================
@@ -113,7 +114,8 @@ module Buf_SigProcs(
 	wire rd_C_buffer;
 	wire event_rdy;
 
-	wire RUN = control_reg[0];
+	wire RUN = control_reg[0];	
+	
 	wire [1:0] TRIG_MODE = control_reg[2:1];
 	wire en_temp = control_reg[5];
 
@@ -481,7 +483,6 @@ module Buf_SigProcs(
 	
 	auto_range auto_range_inst(
 		.clk(clk),
-		.auto_enable(AUTO_MODE),
 		.ready(position_rdy),
 		.vga_in(VGA_gain),
 		.signal_max_a(ChA_Max_Reg),
@@ -489,7 +490,7 @@ module Buf_SigProcs(
 		.signal_max_c(ChC_Max_Reg),
 		.signal_max_d(ChD_Max_Reg),
 
-		.vga_out(VGA_gain)
+		.auto_gain_reg(auto_gain_reg)
 	);
 	
 

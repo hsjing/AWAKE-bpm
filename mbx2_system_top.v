@@ -207,6 +207,9 @@ wire [SFIFO_WIDTH-1:0] slow_fifo_dout;
 
 wire [DATA_WIDTH-1:0]status_net;
 
+// auto_range
+wire [4:0]auto_gain_reg;
+
 reg [DATA_WIDTH-1:0]control_reg;
 reg [DATA_WIDTH-1:0]AFE_Control_Reg; 
 reg [DATA_WIDTH-1:0]SPI_Addr_Reg;
@@ -322,7 +325,9 @@ Buf_SigProcs Buf_SigProcs_inst (
 
 	.K_cal(K_CAL),
 	.DIGI_att(AFE_Control_Reg[13:9]),	
-	.VGA_gain(AFE_Control_Reg[4:0]),
+	.VGA_gain(AFE_VGA_GAIN),
+	.AFE_Control_Reg(AFE_Control_Reg[4:0]),
+	.auto_gain_reg(auto_gain_reg),
 	
 	.control_reg(control_reg),
 	.status_net(status_net),
@@ -872,7 +877,10 @@ assign AFE_PICKUP = control_reg[13]? 1 //the "AFE_PICKUP" default to be 0 to sel
                   :cal_on; 
 assign AFE_CAL = ~AFE_PICKUP; //the "AFE_CAL" default to be 1 to turn off cal signal
 
-assign AFE_VGA_GAIN = AFE_Control_Reg[4:0];
+// auto_run enable
+wire AUTO_MODE = control_reg[6]; // Ranging mode select (1 = auto, 0 = manual)
+
+assign AFE_VGA_GAIN = AUTO_MODE? auto_gain_reg : AFE_Control_Reg[4:0];
  
    
 endmodule

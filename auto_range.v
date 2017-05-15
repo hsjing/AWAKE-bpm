@@ -28,7 +28,6 @@
   Inputs:
   		
   		clk - process to be clocked from PLL, as determined by PLL
-  		auto_enable - mode select bit for module: 1 -> enabled
   		ready - ready status bit for channel data: 1 -> ready to be read
   		[4:0] 	vga_in - 5 bit vga attenuation initial  
   		[15:0] 	signal_max_(a~d) - 16 bit signal amplitude calculated from <Max.v>
@@ -56,7 +55,6 @@
  
 module auto_range(
 	input clk,
-	input auto_enable,
 	input ready,
 	input [4:0] vga_in,
 	input [15:0] signal_max_a,
@@ -64,7 +62,7 @@ module auto_range(
 	input [15:0] signal_max_c,
 	input [15:0] signal_max_d,
 
-	output reg [4:0] vga_out	
+	output reg [4:0] auto_gain_reg
     );    
     
     parameter upper_threshold = 20000;	// Full range of amplitude is 32768
@@ -75,7 +73,7 @@ module auto_range(
     reg [data_width-1:0] signal_max_all;
     
     always @ (posedge clk) begin
-    	if(auto_enable && ready) begin        	
+    	if(ready) begin        	
 			/* Comparatively loads the maximum signal from all channels */
 			if (signal_max_a[15:0] > signal_max_all)	signal_max_all <= signal_max_a;
 			if (signal_max_b[15:0] > signal_max_all)	signal_max_all <= signal_max_b;
@@ -84,8 +82,8 @@ module auto_range(
 				
 			/* Lower or increase VGA attenuation depending on signal_max_all relative to the corresponding thresholds */
 			if (vga_in >= step) begin 
-				if (signal_max_all > upper_threshold)	vga_out <= vga_in + step;
-				if (signal_max_all < lower_threshold)	vga_out <= vga_in - step;
+				if (signal_max_all > upper_threshold)	auto_gain_reg <= vga_in + step;
+				if (signal_max_all < lower_threshold)	auto_gain_reg <= vga_in - step;
 				end					    	    
     		end
     	end    	
