@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="impact" timeStamp="Tue Apr 18 16:15:36 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="b170030cc6414dd0ab34d0de1632878c"/>
+<property name="ProjectIteration" value="1"/>
+</section>
+<section name="iMPACT Project Info" visible="true">
+<property name="Use Project File" value="Yes"/>
+<property name="Project Entry" value="ise"/>
+<property name="OS Name" value="Microsoft Windows NT"/>
+<property name="User Lic. Info" value="178120301_208262087_210541450_463"/>
+</section>
+<section name="iMPACT One Step SVF File Mode" visible="true">
+<item name="Chain Summary">
+<property name="Number of device" value="3"/>
+<property name="Number of Xilinx device" value="3"/>
+<property name="Number of Non-Xilinx device" value="0"/>
+</item>
+<item name="Chain Description">
+<property name="Device1" value="xcfp"/>
+<property name="Part1" value="xcf08p"/>
+<property name="Use XCF00P as" value="Regular PROM"/>
+<property name="Device2" value="xcfp"/>
+<property name="Part2" value="xcf32p"/>
+<property name="Use XCF00P as" value="Regular PROM"/>
+<property name="Device3" value="spartan6"/>
+<property name="Part3" value="xc6slx150t"/>
+</item>
+<item name="Boundary Scan Operations Statistics">
+<property name="BSCAN Operation" value="Program -p 1 -e -parallel -defaultVersion 0
+"/>
+<property name="BSCAN Operation" value="Program -p 0 -e -parallel -defaultVersion 0
+"/>
+</item>
+<item name="Cable Summary">
+<property name="Cable Type" value="Platform Cable USB II"/>
+<property name="Cable Speed" value="6 MHz"/>
+<property name="Port" value="usb-hs"/>
+<property name="Local_Server_Mode" value="Server"/>
+</item>
+</section>
+<section name="iMPACT Serial PROM File Generation Mode" visible="true">
+<item name="Chain Description">
+<property name="Number of device" value="1"/>
+<property name="Device1" value="spartan6"/>
+<property name="Part1" value="xc6slx150t"/>
+</item>
+</section>
+</application>
+</document>

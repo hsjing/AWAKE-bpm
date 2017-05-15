@@ -1,0 +1,14 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc6slx150tfgg676-3
+-top mb_system
+-ifmt MIXED
+-ifn mb_system_xst.prj
+-ofn ../implementation/mb_system.ngc
+-hierarchy_separator /
+-iobuf NO
+-max_fanout 10000
+-sd {../implementation}
+-vlgincdir {"C:\Xilinx\MyXilinx\150LXT\avg_detector_mb_rev5.0.6\mb_system\pcores\" "C:\Xilinx\13.3\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\13.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

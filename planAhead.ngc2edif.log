@@ -1,0 +1,1831 @@
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design mbx2_system_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to mbx2_system_top.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file mbx2_system_top.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ila.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ila.edif ...
+ngc2edif: Total memory usage is 81124 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design icon.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file icon.edif ...
+ngc2edif: Total memory usage is 80164 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design mbx2_system_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to mbx2_system_top.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file mbx2_system_top.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ila.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ila.edif ...
+ngc2edif: Total memory usage is 81124 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design icon.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file icon.edif ...
+ngc2edif: Total memory usage is 80164 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design FIFO_position.ngc ...
+WARNING:NetListWriters:298 - No output is written to FIFO_position.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file FIFO_position.edif ...
+ngc2edif: Total memory usage is 79460 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design mbx2_system_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to mbx2_system_top.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file mbx2_system_top.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design mb_system.ngc ...
+WARNING:NetListWriters:298 - No output is written to mb_system.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_BID<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_RID<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_RLAST<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWID<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWLEN<87 : 48> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWSIZE<32 : 18> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWBURST<21 : 12> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWLOCK<20 : 12> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWCACHE<43 : 24> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWPROT<32 : 18> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_WLAST<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARID<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARLEN<87 : 48> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARSIZE<32 : 18> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARBURST<21 : 12> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARLOCK<20 : 12> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARCACHE<43 : 24> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARPROT<32 : 18> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_S_AWLOCK<2 : 0> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_S_ARLOCK<2 : 0> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4_0_S_AWLOCK<2 : 0> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4_0_S_ARLOCK<2 : 0> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file mb_system.edif ...
+ngc2edif: Total memory usage is 91236 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design push_buttons_3bits_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   push_buttons_3bits_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file push_buttons_3bits_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ethernet_lite_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to ethernet_lite_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/reg_data_out[31]_ping_soft_status_mux_17_OUT<31 : 0> on
+   block ethernet_lite_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Ethernet_Lite/XEMAC_I/status_reg<5 : 1>
+   on block ethernet_lite_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Ethernet_Lite/XEMAC_I/reg_data_out<31 :
+   0> on block ethernet_lite_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/EMAC_I/TX/bus_combo<5 : 0> on block
+   ethernet_lite_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_CRCGENTX/NSR/nibData[31]_Din[31]_mux_1_O
+   UT<31 : 2> on block ethernet_lite_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/MDIO_GEN.MDIO_IF_I/ld_cnt_data_cmb<4 : 0> on block
+   ethernet_lite_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/MDIO_GEN.MDIO_IF_I/ld_cnt_data_reg<4 : 0> on block
+   ethernet_lite_wrapper is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file ethernet_lite_wrapper.edif ...
+ngc2edif: Total memory usage is 83172 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design dip_switches_8bits_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   dip_switches_8bits_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file dip_switches_8bits_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design axi_bram_ctrl_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   axi_bram_ctrl_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file axi_bram_ctrl_0_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design rs232_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to rs232_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus RS232/bus2ip_rdce<3 : 1> on block
+   rs232_wrapper is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file rs232_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design rs232_usb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to rs232_usb_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus RS232_USB/bus2ip_rdce<3 : 1> on block
+   rs232_usb_wrapper is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file rs232_usb_wrapper.edif ...
+ngc2edif: Total memory usage is 80804 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design proc_sys_reset_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   proc_sys_reset_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus proc_sys_reset_0/SEQ/pr_dec<2 : 0> on
+   block proc_sys_reset_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus proc_sys_reset_0/SEQ/bsr_dec<2 : 0> on
+   block proc_sys_reset_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file proc_sys_reset_0_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design clock_generator_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   clock_generator_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file clock_generator_0_wrapper.edif ...
+ngc2edif: Total memory usage is 80228 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_ilmb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_ilmb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_ilmb_wrapper.edif ...
+ngc2edif: Total memory usage is 80164 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_dlmb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_dlmb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_dlmb_wrapper.edif ...
+ngc2edif: Total memory usage is 80164 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design mcb_ddr3_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to mcb_ddr3_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/P0_UI_AXI.p0_axi_mcb/axi_register_slice_d3/ar_pipe/stor
+   age_data1<62 : 18> on block mcb_ddr3_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/P0_UI_AXI.p0_axi_mcb/READ_BUNDLE.axi_mcb_r_channel_0/tr
+   ans_out<6 : 0> on block mcb_ddr3_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/STATE[5]_GND_9_o_wide_mux_245_OUT<6 : 0>
+   on block mcb_ddr3_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/_n2088<8 : 1> on block mcb_ddr3_wrapper
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/IODRPCTRLR_MEMCELL_ADDR<7 : 0> on block
+   mcb_ddr3_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/iodrp_controller/memcell_addr_reg<7 : 0>
+   on block mcb_ddr3_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller/memcell_addr_reg<7
+   : 0> on block mcb_ddr3_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file mcb_ddr3_wrapper.edif ...
+ngc2edif: Total memory usage is 83172 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design axi4lite_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to axi4lite_0_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i<
+   48 : 0> on block axi4lite_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/gen_sasd.crossbar_sasd_0/GND_19_o_PWR_19_o_mux_22_OUT<10 : 0> on
+   block axi4lite_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/amesg_mux<
+   48 : 0> on block axi4lite_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file axi4lite_0_wrapper.edif ...
+ngc2edif: Total memory usage is 83236 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design axi4_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to axi4_0_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/mi_register_slice_bank/gen_reg_slot[0].register_slice_inst/aw_pipe/sto
+   rage_data1[61 : 0] on block axi4_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/mi_register_slice_bank/gen_reg_slot[0].register_slice_inst/ar_pipe/sto
+   rage_data1[62 : 0] on block axi4_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_ar/m_mesg_i[62 : 0]
+   on block axi4_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_aw/m_mesg_i[62 : 1]
+   on block axi4_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/st_tmp_rready[2 : 0] on block axi4_0_wrapper is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.w
+   data_mux_w/gen_wmux.wmux_aw_fifo/n0053[10 : 0] on block axi4_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_ar/m_mesg_mux[62 : 1]
+   on block axi4_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file axi4_0_wrapper.edif ...
+ngc2edif: Total memory usage is 82084 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to microblaze_0_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/control_reg<8 : 0> on block microblaze_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus microblaze_0/LOCKSTEP_Out<3765 : 0> on
+   block microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/wb_MSR_i<30
+   : 24> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.mem_MSR<30 : 0> on block
+   microblaze_0_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.ex_MSR<30 : 0> on block
+   microblaze_0_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/Detect_Commands.sample<6 : 0> on block microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/status_reg<25 : 0> on block microblaze_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry<8 : 1>
+   on block microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_
+   FPGA_Buffers_Mux.srl16<42 : 0> on block microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/n0085<30 : 0> on block
+   microblaze_0_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/mem_fwd<30 : 0> on
+   block microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/wb_MSR_cmb<3
+   0 : 28> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/of_MSR_i<31
+   : 17> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/ex_MSR_i<31
+   : 17> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/mem_MSR_i<31
+   : 17> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_0_wrapper.edif ...
+ngc2edif: Total memory usage is 95460 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_intc_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_intc_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i<31 : 0> on
+   block microblaze_0_intc_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_0_intc_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_i_bram_ctrl_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_i_bram_ctrl_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_i_bram_ctrl_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_d_bram_ctrl_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_d_bram_ctrl_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_d_bram_ctrl_wrapper.edif ...
+ngc2edif: Total memory usage is 80228 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design debug_module_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to debug_module_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus debug_module/MDM_Core_I1/Config_Reg<31 :
+   1> on block debug_module_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file debug_module_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design axi_timer_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to axi_timer_0_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi_timer_0/bus2ip_rdce<6 : 0> on block
+   axi_timer_0_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus axi_timer_0/TC_CORE_I/tCSR0_Reg<31 : 20>
+   on block axi_timer_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file axi_timer_0_wrapper.edif ...
+ngc2edif: Total memory usage is 81124 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design linear_flash_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to linear_flash_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   Linear_Flash/AXI_EMC_NATIVE_INTERFACE_I/AXI_EMC_ADDR_GEN_INSTANCE_I/BUS2IP_AD
+   DR_GEN_DATA_WDTH_32.addr_11_6_cmb[4 : 0] on block linear_flash_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Linear_Flash/EMC_CTRL_I/MEM_STEER_I/n0122[6 : 4] on block
+   linear_flash_wrapper is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file linear_flash_wrapper.edif ...
+ngc2edif: Total memory usage is 81124 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design leds_8bits_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to leds_8bits_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file leds_8bits_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_bram_block_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_bram_block_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_bram_block_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ila.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ila.edif ...
+ngc2edif: Total memory usage is 81188 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design icon.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file icon.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design FIFO_position.ngc ...
+WARNING:NetListWriters:298 - No output is written to FIFO_position.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file FIFO_position.edif ...
+ngc2edif: Total memory usage is 80164 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ccd_fifo.ngc ...
+WARNING:NetListWriters:298 - No output is written to ccd_fifo.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ccd_fifo.edif ...
+ngc2edif: Total memory usage is 79460 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design mbx2_system_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to mbx2_system_top.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file mbx2_system_top.edif ...
+ngc2edif: Total memory usage is 79524 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design mb_system.ngc ...
+WARNING:NetListWriters:298 - No output is written to mb_system.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_BID<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_RID<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_RLAST<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWID<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWLEN<87 : 48> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWSIZE<32 : 18> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWBURST<21 : 12> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWLOCK<20 : 12> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWCACHE<43 : 24> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWPROT<32 : 18> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_WLAST<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARID<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARLEN<87 : 48> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARSIZE<32 : 18> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARBURST<21 : 12> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARLOCK<20 : 12> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARCACHE<43 : 24> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARPROT<32 : 18> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_S_AWLOCK<2 : 0> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_S_ARLOCK<2 : 0> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4_0_S_AWLOCK<2 : 0> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4_0_S_ARLOCK<2 : 0> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file mb_system.edif ...
+ngc2edif: Total memory usage is 91364 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design push_buttons_3bits_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   push_buttons_3bits_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file push_buttons_3bits_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ethernet_lite_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to ethernet_lite_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/reg_data_out[31]_ping_soft_status_mux_17_OUT<31 : 0> on
+   block ethernet_lite_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Ethernet_Lite/XEMAC_I/status_reg<5 : 1>
+   on block ethernet_lite_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Ethernet_Lite/XEMAC_I/reg_data_out<31 :
+   0> on block ethernet_lite_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/EMAC_I/TX/bus_combo<5 : 0> on block
+   ethernet_lite_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_CRCGENTX/NSR/nibData[31]_Din[31]_mux_1_O
+   UT<31 : 2> on block ethernet_lite_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/MDIO_GEN.MDIO_IF_I/ld_cnt_data_cmb<4 : 0> on block
+   ethernet_lite_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/MDIO_GEN.MDIO_IF_I/ld_cnt_data_reg<4 : 0> on block
+   ethernet_lite_wrapper is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file ethernet_lite_wrapper.edif ...
+ngc2edif: Total memory usage is 82596 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design dip_switches_8bits_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   dip_switches_8bits_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file dip_switches_8bits_wrapper.edif ...
+ngc2edif: Total memory usage is 80612 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design axi_bram_ctrl_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   axi_bram_ctrl_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file axi_bram_ctrl_0_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design rs232_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to rs232_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus RS232/bus2ip_rdce<3 : 1> on block
+   rs232_wrapper is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file rs232_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design rs232_usb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to rs232_usb_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus RS232_USB/bus2ip_rdce<3 : 1> on block
+   rs232_usb_wrapper is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file rs232_usb_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design proc_sys_reset_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   proc_sys_reset_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus proc_sys_reset_0/SEQ/pr_dec<2 : 0> on
+   block proc_sys_reset_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus proc_sys_reset_0/SEQ/bsr_dec<2 : 0> on
+   block proc_sys_reset_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file proc_sys_reset_0_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design clock_generator_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   clock_generator_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file clock_generator_0_wrapper.edif ...
+ngc2edif: Total memory usage is 79908 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_ilmb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_ilmb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_ilmb_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_dlmb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_dlmb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_dlmb_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design mcb_ddr3_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to mcb_ddr3_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/P0_UI_AXI.p0_axi_mcb/axi_register_slice_d3/ar_pipe/stor
+   age_data1<62 : 18> on block mcb_ddr3_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/P0_UI_AXI.p0_axi_mcb/READ_BUNDLE.axi_mcb_r_channel_0/tr
+   ans_out<6 : 0> on block mcb_ddr3_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/STATE[5]_GND_9_o_wide_mux_245_OUT<6 : 0>
+   on block mcb_ddr3_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/_n2088<8 : 1> on block mcb_ddr3_wrapper
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/IODRPCTRLR_MEMCELL_ADDR<7 : 0> on block
+   mcb_ddr3_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/iodrp_controller/memcell_addr_reg<7 : 0>
+   on block mcb_ddr3_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller/memcell_addr_reg<7
+   : 0> on block mcb_ddr3_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file mcb_ddr3_wrapper.edif ...
+ngc2edif: Total memory usage is 82852 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design axi4lite_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to axi4lite_0_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i<
+   48 : 0> on block axi4lite_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/gen_sasd.crossbar_sasd_0/GND_19_o_PWR_19_o_mux_22_OUT<10 : 0> on
+   block axi4lite_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/amesg_mux<
+   48 : 0> on block axi4lite_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file axi4lite_0_wrapper.edif ...
+ngc2edif: Total memory usage is 82852 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design axi4_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to axi4_0_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/mi_register_slice_bank/gen_reg_slot[0].register_slice_inst/aw_pipe/sto
+   rage_data1[61 : 0] on block axi4_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/mi_register_slice_bank/gen_reg_slot[0].register_slice_inst/ar_pipe/sto
+   rage_data1[62 : 0] on block axi4_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_ar/m_mesg_i[62 : 0]
+   on block axi4_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_aw/m_mesg_i[62 : 1]
+   on block axi4_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/st_tmp_rready[2 : 0] on block axi4_0_wrapper is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.w
+   data_mux_w/gen_wmux.wmux_aw_fifo/n0053[10 : 0] on block axi4_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_ar/m_mesg_mux[62 : 1]
+   on block axi4_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file axi4_0_wrapper.edif ...
+ngc2edif: Total memory usage is 82148 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to microblaze_0_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/control_reg<8 : 0> on block microblaze_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus microblaze_0/LOCKSTEP_Out<3765 : 0> on
+   block microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/wb_MSR_i<30
+   : 24> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.mem_MSR<30 : 0> on block
+   microblaze_0_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.ex_MSR<30 : 0> on block
+   microblaze_0_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/Detect_Commands.sample<6 : 0> on block microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/status_reg<25 : 0> on block microblaze_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry<8 : 1>
+   on block microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_
+   FPGA_Buffers_Mux.srl16<42 : 0> on block microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/n0085<30 : 0> on block
+   microblaze_0_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/mem_fwd<30 : 0> on
+   block microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/wb_MSR_cmb<3
+   0 : 28> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/of_MSR_i<31
+   : 17> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/ex_MSR_i<31
+   : 17> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/mem_MSR_i<31
+   : 17> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_0_wrapper.edif ...
+ngc2edif: Total memory usage is 95524 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_intc_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_intc_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i<31 : 0> on
+   block microblaze_0_intc_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_0_intc_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_i_bram_ctrl_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_i_bram_ctrl_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_i_bram_ctrl_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_d_bram_ctrl_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_d_bram_ctrl_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_d_bram_ctrl_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design debug_module_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to debug_module_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus debug_module/MDM_Core_I1/Config_Reg<31 :
+   1> on block debug_module_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file debug_module_wrapper.edif ...
+ngc2edif: Total memory usage is 79588 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design axi_timer_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to axi_timer_0_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi_timer_0/bus2ip_rdce<6 : 0> on block
+   axi_timer_0_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus axi_timer_0/TC_CORE_I/tCSR0_Reg<31 : 20>
+   on block axi_timer_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file axi_timer_0_wrapper.edif ...
+ngc2edif: Total memory usage is 81124 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design linear_flash_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to linear_flash_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   Linear_Flash/AXI_EMC_NATIVE_INTERFACE_I/AXI_EMC_ADDR_GEN_INSTANCE_I/BUS2IP_AD
+   DR_GEN_DATA_WDTH_32.addr_11_6_cmb[4 : 0] on block linear_flash_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Linear_Flash/EMC_CTRL_I/MEM_STEER_I/n0122[6 : 4] on block
+   linear_flash_wrapper is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file linear_flash_wrapper.edif ...
+ngc2edif: Total memory usage is 81188 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design leds_8bits_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to leds_8bits_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file leds_8bits_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_bram_block_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_bram_block_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_bram_block_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ila.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ila.edif ...
+ngc2edif: Total memory usage is 81124 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design icon.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file icon.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design FIFO_position.ngc ...
+WARNING:NetListWriters:298 - No output is written to FIFO_position.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file FIFO_position.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ccd_fifo.ngc ...
+WARNING:NetListWriters:298 - No output is written to ccd_fifo.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ccd_fifo.edif ...
+ngc2edif: Total memory usage is 79844 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design mbx2_system_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to mbx2_system_top.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus dout[31]_control_reg[15]_mux_13_OUT<18 :
+   0> on block mbx2_system_top is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file mbx2_system_top.edif ...
+ngc2edif: Total memory usage is 79780 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design mb_system.ngc ...
+WARNING:NetListWriters:298 - No output is written to mb_system.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_BID<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_RID<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_RLAST<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWID<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWLEN<87 : 48> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWSIZE<32 : 18> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWBURST<21 : 12> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWLOCK<20 : 12> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWCACHE<43 : 24> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWPROT<32 : 18> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_WLAST<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARID<10 : 6> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARLEN<87 : 48> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARSIZE<32 : 18> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARBURST<21 : 12> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARLOCK<20 : 12> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARCACHE<43 : 24> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARPROT<32 : 18> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_S_AWLOCK<2 : 0> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_S_ARLOCK<2 : 0> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4_0_S_AWLOCK<2 : 0> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4_0_S_ARLOCK<2 : 0> on block
+   mb_system is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file mb_system.edif ...
+ngc2edif: Total memory usage is 91108 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design push_buttons_3bits_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   push_buttons_3bits_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file push_buttons_3bits_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ethernet_lite_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to ethernet_lite_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/reg_data_out[31]_ping_soft_status_mux_17_OUT<31 : 0> on
+   block ethernet_lite_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Ethernet_Lite/XEMAC_I/status_reg<5 : 1>
+   on block ethernet_lite_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Ethernet_Lite/XEMAC_I/reg_data_out<31 :
+   0> on block ethernet_lite_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/EMAC_I/TX/bus_combo<5 : 0> on block
+   ethernet_lite_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_CRCGENTX/NSR/nibData[31]_Din[31]_mux_1_O
+   UT<31 : 2> on block ethernet_lite_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/MDIO_GEN.MDIO_IF_I/ld_cnt_data_cmb<4 : 0> on block
+   ethernet_lite_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Ethernet_Lite/XEMAC_I/MDIO_GEN.MDIO_IF_I/ld_cnt_data_reg<4 : 0> on block
+   ethernet_lite_wrapper is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file ethernet_lite_wrapper.edif ...
+ngc2edif: Total memory usage is 83108 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design dip_switches_8bits_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   dip_switches_8bits_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file dip_switches_8bits_wrapper.edif ...
+ngc2edif: Total memory usage is 79908 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design axi_bram_ctrl_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   axi_bram_ctrl_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file axi_bram_ctrl_0_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design rs232_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to rs232_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus RS232/bus2ip_rdce<3 : 1> on block
+   rs232_wrapper is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file rs232_wrapper.edif ...
+ngc2edif: Total memory usage is 80164 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design rs232_usb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to rs232_usb_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus RS232_USB/bus2ip_rdce<3 : 1> on block
+   rs232_usb_wrapper is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file rs232_usb_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design proc_sys_reset_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   proc_sys_reset_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus proc_sys_reset_0/SEQ/pr_dec<2 : 0> on
+   block proc_sys_reset_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus proc_sys_reset_0/SEQ/bsr_dec<2 : 0> on
+   block proc_sys_reset_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file proc_sys_reset_0_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design clock_generator_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   clock_generator_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file clock_generator_0_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_ilmb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_ilmb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_ilmb_wrapper.edif ...
+ngc2edif: Total memory usage is 80164 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_dlmb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_dlmb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_dlmb_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design mcb_ddr3_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to mcb_ddr3_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/P0_UI_AXI.p0_axi_mcb/axi_register_slice_d3/ar_pipe/stor
+   age_data1<62 : 18> on block mcb_ddr3_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/P0_UI_AXI.p0_axi_mcb/READ_BUNDLE.axi_mcb_r_channel_0/tr
+   ans_out<6 : 0> on block mcb_ddr3_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/STATE[5]_GND_9_o_wide_mux_245_OUT<6 : 0>
+   on block mcb_ddr3_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/_n2088<8 : 1> on block mcb_ddr3_wrapper
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/IODRPCTRLR_MEMCELL_ADDR<7 : 0> on block
+   mcb_ddr3_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/iodrp_controller/memcell_addr_reg<7 : 0>
+   on block mcb_ddr3_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   MCB_DDR3/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibratio
+   n_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller/memcell_addr_reg<7
+   : 0> on block mcb_ddr3_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file mcb_ddr3_wrapper.edif ...
+ngc2edif: Total memory usage is 83172 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design axi4lite_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to axi4lite_0_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i<
+   48 : 0> on block axi4lite_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/gen_sasd.crossbar_sasd_0/GND_19_o_PWR_19_o_mux_22_OUT<10 : 0> on
+   block axi4lite_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/amesg_mux<
+   48 : 0> on block axi4lite_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file axi4lite_0_wrapper.edif ...
+ngc2edif: Total memory usage is 83172 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design axi4_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to axi4_0_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/mi_register_slice_bank/gen_reg_slot[0].register_slice_inst/aw_pipe/sto
+   rage_data1[61 : 0] on block axi4_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/mi_register_slice_bank/gen_reg_slot[0].register_slice_inst/ar_pipe/sto
+   rage_data1[62 : 0] on block axi4_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_ar/m_mesg_i[62 : 0]
+   on block axi4_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_aw/m_mesg_i[62 : 1]
+   on block axi4_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/st_tmp_rready[2 : 0] on block axi4_0_wrapper is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].gen_mi_write.w
+   data_mux_w/gen_wmux.wmux_aw_fifo/n0053[10 : 0] on block axi4_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4_0/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_ar/m_mesg_mux[62 : 1]
+   on block axi4_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file axi4_0_wrapper.edif ...
+ngc2edif: Total memory usage is 82148 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to microblaze_0_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/control_reg<8 : 0> on block microblaze_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus microblaze_0/LOCKSTEP_Out<3765 : 0> on
+   block microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/wb_MSR_i<30
+   : 24> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.mem_MSR<30 : 0> on block
+   microblaze_0_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.ex_MSR<30 : 0> on block
+   microblaze_0_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/Detect_Commands.sample<6 : 0> on block microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/status_reg<25 : 0> on block microblaze_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry<8 : 1>
+   on block microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_
+   FPGA_Buffers_Mux.srl16<42 : 0> on block microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/n0085<30 : 0> on block
+   microblaze_0_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/mem_fwd<30 : 0> on
+   block microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/wb_MSR_cmb<3
+   0 : 28> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/of_MSR_i<31
+   : 17> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/ex_MSR_i<31
+   : 17> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/mem_MSR_i<31
+   : 17> on block microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_0_wrapper.edif ...
+ngc2edif: Total memory usage is 95460 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_intc_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_intc_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0_intc/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i<31 : 0> on
+   block microblaze_0_intc_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file microblaze_0_intc_wrapper.edif ...
+ngc2edif: Total memory usage is 80676 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_i_bram_ctrl_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_i_bram_ctrl_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_i_bram_ctrl_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_d_bram_ctrl_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_d_bram_ctrl_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_d_bram_ctrl_wrapper.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design debug_module_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to debug_module_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus debug_module/MDM_Core_I1/Config_Reg<31 :
+   1> on block debug_module_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file debug_module_wrapper.edif ...
+ngc2edif: Total memory usage is 79844 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design axi_timer_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to axi_timer_0_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi_timer_0/bus2ip_rdce<6 : 0> on block
+   axi_timer_0_wrapper is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus axi_timer_0/TC_CORE_I/tCSR0_Reg<31 : 20>
+   on block axi_timer_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file axi_timer_0_wrapper.edif ...
+ngc2edif: Total memory usage is 81124 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design linear_flash_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to linear_flash_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   Linear_Flash/AXI_EMC_NATIVE_INTERFACE_I/AXI_EMC_ADDR_GEN_INSTANCE_I/BUS2IP_AD
+   DR_GEN_DATA_WDTH_32.addr_11_6_cmb[4 : 0] on block linear_flash_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   Linear_Flash/EMC_CTRL_I/MEM_STEER_I/n0122[6 : 4] on block
+   linear_flash_wrapper is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file linear_flash_wrapper.edif ...
+ngc2edif: Total memory usage is 81124 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design leds_8bits_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to leds_8bits_wrapper.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file leds_8bits_wrapper.edif ...
+ngc2edif: Total memory usage is 80164 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design microblaze_0_bram_block_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   microblaze_0_bram_block_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file microblaze_0_bram_block_wrapper.edif ...
+ngc2edif: Total memory usage is 80036 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design FIFO_position.ngc ...
+WARNING:NetListWriters:298 - No output is written to FIFO_position.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file FIFO_position.edif ...
+ngc2edif: Total memory usage is 80292 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ila.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_YES_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ila.edif ...
+ngc2edif: Total memory usage is 81124 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design icon.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file icon.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design mbx2_system_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to mbx2_system_top.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file mbx2_system_top.edif ...
+ngc2edif: Total memory usage is 85988 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design fixN2float.ngc ...
+WARNING:NetListWriters:298 - No output is written to fixN2float.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fixN2float.edif ...
+ngc2edif: Total memory usage is 80100 kilobytes
+
+Release 13.3 - ngc2edif O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design float_square.ngc ...
+WARNING:NetListWriters:298 - No output is written to float_square.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file float_square.edif ...
+ngc2edif: Total memory usage is 82148 kilobytes
+

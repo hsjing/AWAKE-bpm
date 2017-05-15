@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<Simulation_deps>
+
+  <Version XPSPNVER="1.0" EDKVER="13.3" />
+  <FPGA family="spartan6" device="xc6slx150t" package="fgg676" speedgrade="-3" />
+  <File Type="MHS" URL="../../mb_system.mhs" />
+
+
+</Simulation_deps>

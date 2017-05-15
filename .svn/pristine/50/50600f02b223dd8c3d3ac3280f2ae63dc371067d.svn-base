@@ -1,0 +1,285 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    21:57:32 03/14/2016 
+// Design Name: 
+// Module Name:    position 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module position(
+	input clk,
+	input rst,
+	input data_valid,
+	input [31:0] A_IN,
+	input [31:0] B_IN,
+	input [31:0] C_IN,
+	input [31:0] D_IN,
+	input [15:0] Diameter,
+	output reg [31:0] X,
+	output reg [31:0] Y,
+	output reg [31:0] S,
+	output reg rdy
+    );
+parameter float_4 = 32'h40800000;
+parameter float_1000 = 32'h447a0000;
+
+reg [4:0] CNT;
+reg [3:0] state;
+
+reg [31:0] ABsub;
+reg [31:0] ABadd;
+reg [31:0] D_4;
+reg [31:0] CDadd;
+reg [31:0] ABdiv;
+reg [31:0] X_temp;
+reg [31:0] CDsub;
+reg [31:0] X_float;
+reg [31:0] CDdiv;
+reg [31:0] S_float;
+reg [31:0] Y_temp;
+reg [31:0] Y_float;
+
+
+
+parameter state_idle = 0,
+			 state_abAdd = 1,
+			 state_cdAdd = 2,
+			 state_cdSub = 3,
+			 state_cdDiv = 4,
+			 state_cdMul = 5,
+			 state_cdMul2 = 6,
+			 state_cdConvrt = 7,
+			 state_sConvert = 8;
+			 
+always @(posedge clk)
+begin
+	if(rst)
+		begin
+			X <= 0;
+			Y <= 0;
+			S <= 0;
+			state <= state_idle;
+			rdy <= 0;
+		end
+	
+	else
+		begin
+			case(state)
+				state_idle:
+					if(data_valid)
+					begin
+						input1 <= A_IN;
+						input2 <= B_IN;
+						op <= sub;
+						dia_fix <= Diameter;
+						if(rdy_SubAdd && rdy_Fix2Float)
+							begin
+								state <= state_abAdd;
+								ABsub <= result1; 
+							end
+					end
+						
+
+				state_abAdd:
+					begin
+						op <= add;
+						input3 <= dia_float;
+						input4 <= float_4;
+						if(rdy_SubAdd && rdy_div)
+							begin
+								state <= state_cdSub;
+								ABadd <= result1;
+								D_4 <= result2;
+							end
+					end
+				
+				state_cdAdd:
+					begin
+						input1 <= C_IN;
+						input2 <= D_IN;
+						input3 <= ABsub;
+						input4 <= ABadd;
+						if(rdy_SubAdd && rdy_div)
+							begin
+								state <= state_cdAdd;
+								CDadd <= result1;
+								ABdiv <= result2;
+							end
+					end
+					
+				state_cdSub:
+					begin
+						op <= sub;
+						input5 <= ABdiv;
+						input6 <= D_4;
+						if(rdy_SubAdd && rdy_mul)
+							begin
+								state <= state_cdDiv;
+								X_temp <= result3;
+								CDsub <= result1;
+							end
+					end
+					
+				state_cdDiv:
+					begin
+						input3 <= CDsub;
+						input4 <= CDadd;
+						input5 <= X_temp;
+						input6 <= float_1000;
+						input1 <= ABadd;
+						input2 <= CDadd;
+						if(rdy_div && rdy_mul && rdy_SubAdd)
+							begin
+								state <= state_cdMul;
+								X_float <= result3;
+								CDdiv <= result2;
+								S_float <= result1;
+						end
+					end
+					
+					
+				state_cdMul:
+					begin
+						input5 <= CDdiv;
+						input6 <= D_4;
+						input7 <= X_float;
+						if(rdy_mul && rdy_Float2Fix)
+							begin
+								state <= state_cdMul2;
+								X <= result4;
+								Y_temp <= result3;
+							end
+					end
+					
+				state_cdMul2:
+					begin
+						input5 <= Y_temp;
+						input6 <= float_1000;
+						input7 <= S_float;
+						if(rdy_mul && rdy_Float2Fix)
+							begin
+								state <= state_cdConvrt;
+								S <= result4;
+								Y_float <= result3;
+							end
+					end
+					
+			state_cdConvrt:
+				begin
+					input7 <= Y_float;
+					if(rdy_Float2Fix)
+						begin
+							state <= state_idle;
+							Y <= result4;
+							rdy <= 1;	
+						end
+				end
+			
+			default: 
+				begin
+					state <= state_idle;
+				end
+		endcase
+	end
+end
+					
+wire [5:0] sub = 6'b1;
+wire [5:0] add = 6'b0;		
+wire nd = 1;	
+wire [31:0] result1;	
+wire rdy_SubAdd;	
+
+reg [31:0] input1;
+reg [31:0] input2;
+reg [5:0] op;
+						
+SUB_ADD sub_add_inst (
+  .a(input1), // input [31 : 0] a
+  .b(input2), // input [31 : 0] b
+  .operation(op), // input [5 : 0] operation
+  .operation_nd(nd), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(result1), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(rdy_SubAdd) // output rdy
+);
+
+reg [15:0] dia_fix;
+wire [31:0] dia_float;
+wire rdy_Fix2Float;
+
+fix_float Dia_float_inst (
+  .a(dia_fix), // input [15 : 0] a
+  .operation_nd(nd), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(dia_float), // output [31 : 0] result
+  .rdy(rdy_Fix2Float) // output rdy
+);
+
+reg [31:0] input3;
+reg [31:0] input4;
+
+wire [31:0] result2;
+wire rdy_div;
+
+DIVD div_inst (
+  .a(input3), // input [31 : 0] a
+  .b(input4), // input [31 : 0] b
+  .operation_nd(nd), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(result2), // output [31 : 0] result
+  .underflow(underflow), // output underflow
+  .overflow(overflow), // output overflow
+  .invalid_op(invalid_op), // output invalid_op
+  .divide_by_zero(divide_by_zero), // output divide_by_zero
+  .rdy(rdy_div) // output rdy
+);
+reg [31:0] input5;
+reg [31:0] input6;
+
+wire [31:0] result3;
+wire rdy_mul;
+
+MUL Mul_inst (
+  .a(input5), // input [31 : 0] a
+  .b(input6), // input [31 : 0] b
+  .operation_nd(nd), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(result3), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(rdy_mul) // output rdy
+);
+
+reg [31:0] input7;
+
+wire [31:0] result4;
+wire rdy_Float2Fix;
+
+float_fix float_fix_inst (
+  .a(input7), // input [31 : 0] a
+  .operation_nd(nd), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(result4), // output [31 : 0] result
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(rdy_Float2Fix) // output rdy
+);
+
+
+endmodule

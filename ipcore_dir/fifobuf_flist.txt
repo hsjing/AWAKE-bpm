@@ -1,0 +1,24 @@
+# Output products list for <fifobuf>
+_xmsgs\pn_parser.xmsgs
+dist_mem_gen_ds322.pdf
+dist_mem_gen_v6_2_readme.txt
+fifobuf.asy
+fifobuf.gise
+fifobuf.ngc
+fifobuf.sym
+fifobuf.v
+fifobuf.veo
+fifobuf.xco
+fifobuf.xise
+fifobuf_flist.txt
+fifobuf_ste\example_design\fifobuf_top.ucf
+fifobuf_ste\example_design\fifobuf_top.vhd
+fifobuf_ste\example_design\fifobuf_top.xdc
+fifobuf_ste\implement\implement.bat
+fifobuf_ste\implement\implement.sh
+fifobuf_ste\implement\planAhead_rdn.bat
+fifobuf_ste\implement\planAhead_rdn.sh
+fifobuf_ste\implement\planAhead_rdn.tcl
+fifobuf_ste\implement\xst.prj
+fifobuf_ste\implement\xst.scr
+fifobuf_xmdf.tcl

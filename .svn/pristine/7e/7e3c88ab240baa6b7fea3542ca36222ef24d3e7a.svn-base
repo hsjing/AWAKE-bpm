@@ -1,0 +1,383 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    21:57:32 03/14/2016 
+// Design Name: 
+// Module Name:    position 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module position(
+	input clk,
+	input rst,
+	input data_valid,
+	input [SF_WIDTH-1:0] A_IN,
+	input [SF_WIDTH-1:0] B_IN,
+	input [SF_WIDTH-1:0] C_IN,
+	input [SF_WIDTH-1:0] D_IN,
+	input [DATA_WIDTH-1:0] Diameter,
+	output reg [SF_WIDTH-1:0] X,
+	output reg [SF_WIDTH-1:0] Y,
+	output reg [SF_WIDTH-1:0] S,
+	output reg rdy
+    );
+
+
+parameter float_4 = 32'h40800000;
+parameter float_1000 = 32'h447a0000;
+
+reg [2:0] state;
+parameter SF_WIDTH = 32;
+parameter DATA_WIDTH = 16;
+
+parameter state_idle = 0,
+			 state_div = 1,
+			 state_mul = 2,
+			 state_mul2 = 3,
+			 state_convert = 4,
+			 state_done = 5;
+always @(posedge clk)
+begin
+	if(rst)
+		begin
+			X <= 0;
+			Y <= 0;
+			S <= 0;
+			state <= state_idle;
+			rdy <= 0;
+		end
+	
+	else
+		begin
+			case(state)
+				state_idle:
+					if(data_valid)
+					begin
+						A <= A_IN;
+						B <= B_IN;
+						C <= C_IN;
+						D <= D_IN;
+						Dia <= Diameter;
+						
+						if(AB_subRDY && AB_addRDY && CD_subRDY && CD_addRDY && floatdim_RDY)
+							state <= state_div;
+					end
+				
+				state_div:
+					begin
+						Div_subAB <= subAB;
+						Div_addAB <= addAB;
+						Div_subCD <= subCD;
+						Div_addCD <= addCD;
+						Div_floatDim <= float_dim;
+						Div_float4 <= float_4;
+						SumAB <= addAB;
+						SumCD <= addCD;
+						if(AB_divRDY && CD_divRDY && D4_divRDY && SumRDY)
+							state <= state_mul;
+					end
+					
+				state_mul:
+					begin
+						AB_mul <= quotAB;
+						CD_mul <= quotCD;
+						mul_float1000 <= float_1000;
+						if(AB_mulRDY && CD_mulRDY)
+							state <= state_mul2;
+					end
+				
+				state_mul2:
+					begin
+						floatAB <= mulAB;
+						floatCD <= mulCD;
+						D4_mul <= quotD4;
+						if(D4AB_mulRDY && D4CD_mulRDY)
+							state <= state_convert;
+					end
+					
+					
+				state_convert:
+					begin
+						Xfloat <= floatX;
+						Yfloat <= floatY;
+						if(X_fixRDY && Y_fixRDY)
+							state <= state_done;
+					end
+				
+				state_done:
+					begin
+						X <= fixX;
+						Y <= fixY;
+						S <= Sout;
+						rdy <= 1;
+						state <= state_idle;
+					end
+			endcase
+		end
+end
+
+
+
+
+reg [31:0] A;
+reg [31:0] B;
+wire [5:0] sub = 6'b000001;
+wire [5:0] add = 6'b0;
+wire ndAB = 1;
+wire [31:0] subAB;
+wire AB_subRDY;
+
+SUB_ADD AB_SUB (
+  .a(A), // input [31 : 0] a
+  .b(B), // input [31 : 0] b
+  .operation(sub),
+  .operation_nd(ndAB), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(subAB), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(AB_subRDY) // output rdy
+);
+
+reg [31:0] C;
+reg [31:0] D;
+wire ndCD = 1;
+wire [31:0] subCD;
+wire CD_subRDY;
+
+SUB_ADD CD_SUB (
+  .a(C), // input [31 : 0] a
+  .b(D), // input [31 : 0] b
+  .operation(sub), // input [5 : 0] operation
+  .operation_nd(ndCD), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(subCD), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(CD_subRDY) // output rdy
+);
+
+wire [31:0] addAB;
+wire AB_addRDY;
+
+SUB_ADD AB_ADD (
+  .a(A), // input [31 : 0] a
+  .b(B), // input [31 : 0] b
+  .operation(add), // input [5 : 0] operation
+  .operation_nd(ndAB), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(addAB), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(AB_addRDY) // output rdy
+);
+
+wire [31:0] addCD;
+wire CD_addRDY;
+
+SUB_ADD CD_ADD (
+  .a(C), // input [31 : 0] a
+  .b(D), // input [31 : 0] b
+  .operation(add), // input [5 : 0] operation
+  .operation_nd(ndCD), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(addCD), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(CD_addRDY) // output rdy
+);
+
+
+
+reg [15:0] Dia;
+wire [31:0] float_dim;
+wire floatdim_RDY;
+
+fix_float convert_diameter(
+  .a(Dia), // input [15 : 0] a
+  .operation_nd(ndAB), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(float_dim), // output [31 : 0] result
+  .rdy(floatdim_RDY) // output rdy
+);
+
+reg [31:0] SumAB;
+reg [31:0] SumCD;
+wire [31:0] Sout;
+wire SumRDY;
+
+SUB_ADD Sum_total (
+  .a(SumAB), // input [31 : 0] a
+  .b(SumCD), // input [31 : 0] b
+  .operation(add), // input [5 : 0] operation
+  .operation_nd(ndCD), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(Sout), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(SumRDY) // output rdy
+);
+
+reg [31:0] Div_subAB;
+reg [31:0] Div_addAB;
+wire [31:0] quotAB;
+wire AB_divRDY;
+
+DIVD AB_DIV(
+  .a(Div_subAB), // input [31 : 0] a
+  .b(Div_addAB), // input [31 : 0] b
+  .operation_nd(ndAB), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(quotAB), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .divide_by_zero(), // output divide_by_zero
+  .rdy(AB_divRDY) // output rdy
+);
+
+reg [31:0] Div_subCD;
+reg [31:0] Div_addCD;
+wire [31:0] quotCD;
+wire CD_divRDY;
+
+DIVD CD_DIV (
+  .a(Div_subCD), // input [31 : 0] a
+  .b(Div_addCD), // input [31 : 0] b
+  .operation_nd(ndCD), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(quotCD), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .divide_by_zero(), // output divide_by_zero
+  .rdy(CD_divRDY) // output rdy
+);
+
+reg [31:0] Div_floatDim;
+reg [31:0] Div_float4;
+wire [31:0] quotD4;
+wire D4_divRDY;
+
+DIVD DIM_DIV (
+  .a(Div_floatDim), // input [31 : 0] a
+  .b(Div_float4), // input [31 : 0] b
+  .operation_nd(ndCD), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(quotD4), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .divide_by_zero(), // output divide_by_zero
+  .rdy(D4_divRDY) // output rdy
+);
+
+reg [31:0] AB_mul;
+reg [31:0] mul_float1000;
+wire [31:0] mulAB;
+wire AB_mulRDY;
+
+MUL AB_MUL (
+  .a(AB_mul), // input [31 : 0] a
+  .b(mul_float1000), // input [31 : 0] b
+  .operation_nd(ndAB), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(mulAB), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(AB_mulRDY) // output rdy
+);
+
+reg [31:0] CD_mul;
+wire [31:0] mulCD;
+wire CD_mulRDY;
+
+MUL CD_MUL (
+  .a(CD_mul), // input [31 : 0] a
+  .b(mul_float1000), // input [31 : 0] b
+  .operation_nd(ndCD), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(mulCD), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(CD_mulRDY) // output rdy
+);
+
+reg [31:0] floatAB;
+reg [31:0] D4_mul;
+wire [31:0] floatX;
+wire D4AB_mulRDY;
+
+MUL X_MUL (
+  .a(floatAB), // input [31 : 0] a
+  .b(D4_mul), // input [31 : 0] b
+  .operation_nd(ndAB), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(floatX), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(D4AB_mulRDY) // output rdy
+);
+
+reg [31:0] floatCD;
+wire [31:0] floatY;
+wire D4CD_mulRDY;
+
+MUL Y_MUL (
+  .a(floatCD), // input [31 : 0] a
+  .b(D4_mul), // input [31 : 0] b
+  .operation_nd(ndCD), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(floatY), // output [31 : 0] result
+  .underflow(), // output underflow
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(D4CD_mulRDY) // output rdy
+);
+
+reg [31:0] Xfloat;
+wire [31:0] fixX;
+
+float_fix convertX (
+  .a(Xfloat), // input [31 : 0] a
+  .operation_nd(ndAB), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(fixX), // output [31 : 0] result
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(X_fixRDY) // output rdy
+);
+
+reg [31:0] Yfloat;
+wire [31:0] fixY;
+
+float_fix convertY (
+  .a(Yfloat), // input [31 : 0] a
+  .operation_nd(ndCD), // input operation_nd
+  .operation_rfd(), // output operation_rfd
+  .result(fixY), // output [31 : 0] result
+  .overflow(), // output overflow
+  .invalid_op(), // output invalid_op
+  .rdy(Y_fixRDY) // output rdy
+);
+
+endmodule

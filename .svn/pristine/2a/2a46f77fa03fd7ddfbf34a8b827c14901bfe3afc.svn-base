@@ -1,0 +1,205 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Shengli Liu, modified from X4_24bitfifo_buffer.v, VV.
+// Description: circular buffer to loop keep all 4 channel ADC data. 
+// 1.) In idle state continuously writting DIN into buffer until "TRIG"ed, 
+//     keep writting for "TAIL_LEN", and "EVET_RDY" asserted;
+// 2.) Waitting for the entire event data to be read out, after that
+//     "EVENT_RDY" deasserted. 
+// 3.) Waitting until "RST", go back to idle state.
+
+// Additional Comments: 
+// 1. don't fool by the name fifo, the storage is actually a single port RAM. SL.
+// 2. writting is WRCLK, fast clock, reading is RDCLK, slow clk 
+
+//////////////////////////////////////////////////////////////////////////////////
+module x4_Channel_buffer(
+ //  ila_control,
+   DIN,
+   TAIL_LEN,
+	EVENT_LEN,
+	RST,
+	TRIG,
+	 
+	WRCLK,
+	RDCLK,
+
+	RD,
+	EVENT_RDY,
+
+	DOUT
+    );
+	 
+parameter  	ADC_BIT_WIDTH = 16;
+parameter  	DATA_WIDTH = 16;
+
+// inout [35:0] ila_control;	 
+ input [4*ADC_BIT_WIDTH-1:0] DIN;
+ input [DATA_WIDTH-1:0] TAIL_LEN;
+ input [DATA_WIDTH-1:0] EVENT_LEN;
+ input RST;
+ input TRIG;
+	 
+ input WRCLK;
+ input RDCLK;
+
+ input RD;
+	 
+ output EVENT_RDY;
+
+ output [4*ADC_BIT_WIDTH-1:0] DOUT;
+	 
+reg EVENT_RDY;
+reg WR;
+
+`ifdef SIMULATION //This macro needs to be defined in testbench
+  reg [4:0] sp_adr; //only 32 location used when simulated 
+  wire [9:0] addr = {4'b0,sp_adr};
+`else 
+  reg [9:0] sp_adr; //
+  wire [9:0] addr = sp_adr;
+`endif
+
+wire clk;
+
+wire [15:0] DINA = DIN[15:0];
+wire [15:0] DINB = DIN[31:16];
+wire [15:0] DINC = DIN[47:32];
+wire [15:0] DIND = DIN[63:48]; 
+
+wire [ADC_BIT_WIDTH-1:0] DOUTA,DOUTB,DOUTC,DOUTD;
+assign DOUT = {DOUTD,DOUTC,DOUTB,DOUTA};
+
+  BUFGMUX #(
+      .CLK_SEL_TYPE("SYNC")  // Glitchles ("SYNC") or fast ("ASYNC") clock switch-over
+   )
+   BUFGMUX_inst (
+      .O(clk),  		 // 1-bit output: Clock buffer output
+      .I0(RDCLK), 			 // 1-bit input: Clock buffer input (S=0)
+      .I1(WRCLK), 		    // 1-bit input: Clock buffer input (S=1)
+      .S(WR)    		    // 1-bit input: Clock buffer select
+   );
+
+fifobuf Buffer_ChA (
+  .a(addr), 						// input [11 : 0] a
+  .d(DINA), 							
+  .clk(clk), 					// input clk
+  .we(WR), 							// input we
+  .spo(DOUTA) 						   
+);
+
+fifobuf Buffer_ChB (
+  .a(addr), 						// input [11 : 0] a
+  .d(DINB), 							
+  .clk(clk), 					// input clk
+  .we(WR), 							// input we
+  .spo(DOUTB) 						   
+);
+
+fifobuf Buffer_ChC (
+  .a(addr), 						// input [11 : 0] a
+  .d(DINC), 							
+  .clk(clk), 					// input clk
+  .we(WR), 							// input we
+  .spo(DOUTC) 						  
+);
+
+fifobuf Buffer_ChD (
+  .a(addr), 						// input [11 : 0] a
+  .d(DIND), 							
+  .clk(clk), 					// input clk
+  .we(WR), 							// input we
+  .spo(DOUTD) 						   
+);
+
+parameter  state_init = 3'b000; //loading 100 leading length
+parameter  state_read = 3'b001; //writing in and reading out garbage
+parameter  state_load = 3'b010; //storing event
+parameter  state_wait = 3'b011; //reading event
+parameter  state_out = 3'b100;
+
+reg [2:0] state;
+reg [DATA_WIDTH-1:0] cnt;
+
+
+always @ (posedge clk) 
+begin
+	if (RST) 
+	begin
+		state <= state_init;
+		WR <= 1;
+		EVENT_RDY <= 0;
+		cnt <= 0;
+		sp_adr <= 0;
+	end
+	
+	else 
+	begin
+		case (state)
+		state_init:									
+		begin  
+		      WR <= 1;
+				sp_adr <= sp_adr + 1;
+				cnt <= 0;
+				if(TRIG)	state <= state_load;				
+		end
+		state_load:
+		begin 
+		  cnt <= cnt +1;
+		  sp_adr <= sp_adr + 1;
+		  if(cnt > TAIL_LEN )
+		    begin
+			   WR <= 0;
+			   EVENT_RDY <= 1;
+				cnt <= 0;
+				state <= state_read;
+		    end		
+      end
+		
+		state_read:			
+		if(( RD == 1) && ( cnt < EVENT_LEN-1))
+		  begin
+			sp_adr <= sp_adr + 1;
+			cnt <= cnt +1;
+		  end 
+      else if (cnt >= EVENT_LEN-1) begin EVENT_RDY <= 0; state <= state_wait; end
+		
+		state_wait: 
+		if (RD == 0) begin sp_adr <= 0; state <= state_init; end
+		
+		default:
+		state <= state_init;
+		
+	 endcase
+	end
+end
+/////////////// ChipScope /////////////////////
+/*
+wire [7:0] ila_trig = {7'b0,TRIG};
+
+wire [63:0] ila_data;
+
+//assign ila_data[15:0] = ;
+assign ila_data[15] = WR;
+assign ila_data[14] = RD;
+assign ila_data[13] = EVENT_RDY;
+assign ila_data[12] = 1'b0;
+assign ila_data[11] = 1'b0;
+assign ila_data[10] = 1'b0;
+assign ila_data[9] = 1'b0;
+
+assign ila_data[8:0] = addr;
+
+assign ila_data[31:16] = DINB;
+assign ila_data[47:32] = DINC;
+assign ila_data[63:48] = DIND;
+
+ila_trig8 ila_trig_fast_inst (
+    .CONTROL(ila_control), // INOUT BUS [35:0]
+    .CLK(clk), // IN
+    .TRIG0(ila_trig), // IN BUS [7:0]
+	 .DATA(ila_data) // IN BUS [63:0]
+);
+
+*/
+endmodule

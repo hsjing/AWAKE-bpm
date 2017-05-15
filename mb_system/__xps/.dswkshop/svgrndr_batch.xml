@@ -1,0 +1,50 @@
+
+<RENDERBATCH>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\proc_sys_reset_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0_intc.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0_intc.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\microblaze_0_intc.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\microblaze_0_ilmb.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\microblaze_0_i_bram_ctrl.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\microblaze_0_dlmb.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\microblaze_0_d_bram_ctrl.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\microblaze_0_bram_block.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\microblaze_0.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\microblaze_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\debug_module.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\debug_module.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\debug_module.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\clock_generator_0.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\clock_generator_0.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\clock_generator_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\axi_timer_0.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\axi_timer_0.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\axi_timer_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\axi4lite_0.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\axi4lite_0.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\axi4lite_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\axi4_0.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\axi4_0.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\axi4_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\RS232_USB.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\RS232_USB.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\RS232_USB.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\RS232.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\RS232.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\RS232.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\Push_Buttons_3Bits.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\Push_Buttons_3Bits.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\Push_Buttons_3Bits.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\MCB_DDR3.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\MCB_DDR3.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\MCB_DDR3.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\Linear_Flash.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\Linear_Flash.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\Linear_Flash.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\LEDs_8Bits.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\LEDs_8Bits.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\LEDs_8Bits.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\Ethernet_Lite.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\Ethernet_Lite.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\Ethernet_Lite.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\DIP_Switches_8Bits.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\DIP_Switches_8Bits.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\DIP_Switches_8Bits.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\axi_bram_ctrl_0.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\axi_bram_ctrl_0.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\axi_bram_ctrl_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\mb_system_blkd.jpg" SVGNAME="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\SDK\SDK_Export\hw\imgs\mb_system_blkd.svg" TMPSVGFN="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\__xps\.dswkshop\mb_system_blkd.svg"/>
+
+</RENDERBATCH>

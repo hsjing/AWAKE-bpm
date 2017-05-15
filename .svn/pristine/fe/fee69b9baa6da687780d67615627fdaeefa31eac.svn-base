@@ -1,0 +1,198 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company:  TRIUMF
+// Engineer: Shengli Liu
+// 
+// Create Date:    10:58:46 03/04/2016 
+// Design Name: 
+// Module Name:    BLR_GAIN 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module BLR_GAIN(
+   RUN,
+   rst,
+	clk,
+	BL,        //input: calculated based line
+	BL_update, //input: 
+	
+	cal_flag,
+	skip_BLR,
+	din, //input from Circular buffer
+	BL_Len_Reg,
+		
+	event_rdy,
+	rd,    		//read Circular channel buffer 
+	wr,
+	
+	data_BL_valid, // mark the data for Base line calculation
+	data_valid,      //mark the data after BLR and Gain adj. is present on bus
+	busy,          //to prevent the Fast fifo to be readout by MB
+	clr_fast_fifo, //clr the fast fifo so it keeps fresh if not been read out
+	dout
+    );
+
+parameter  	ADC_BIT_WIDTH = 16;
+parameter  	DATA_WIDTH = 16;
+
+
+	 
+ input [4*ADC_BIT_WIDTH-1:0] din;
+ input rst;
+ input clk;
+ input RUN;
+ 
+ input [4*ADC_BIT_WIDTH-1:0] BL;
+ input BL_update;
+ 
+ input cal_flag;
+ input skip_BLR;
+ input [DATA_WIDTH-1:0] BL_Len_Reg;
+ 
+ input event_rdy;
+ 
+ 
+ output reg rd,wr;
+ output reg data_BL_valid;
+ output reg data_valid;
+ output reg busy;
+ output reg clr_fast_fifo;
+ 
+ output reg [4*ADC_BIT_WIDTH-1:0] dout;
+
+parameter  state_idle = 0; //
+parameter  state_clr = 1; //
+parameter  state_BL = 2; //
+parameter  state_BL_wait = 3; //
+parameter  state_load = 4; //
+parameter  state_load_loop = 5; //
+
+
+
+reg [9:0] BL_cnt; //baseline could not be greater than 1024!
+reg [4*ADC_BIT_WIDTH-1:0] BL_now; 
+reg [2:0] state;
+
+wire [4*ADC_BIT_WIDTH-1:0] dout_BLR; 
+
+//reg [DATA_WIDTH-1:0] cnt;
+
+always @ (posedge clk) 
+begin
+	if (rst) 
+		begin
+			state <= state_idle;
+			rd <= 0;
+			wr <= 0;
+			busy <= 0;
+			clr_fast_fifo <= 0;
+			data_valid <= 0;
+			data_BL_valid <= 0;
+			BL_cnt <= 0;
+		end
+	else 
+		case (state)
+				state_idle:									
+					begin  
+						if((event_rdy == 1) && RUN)	
+						  begin 
+						    busy <= 1;							 
+							 state <= state_clr; 
+						  end				
+					end
+				state_clr:
+					begin 
+					  clr_fast_fifo <= 1;
+					  rd <= 1;
+                 state <= state_BL; 					  				  
+		         end		
+					
+		      state_BL:
+					begin 
+                    clr_fast_fifo <= 0;					
+						  dout <= din;
+						  data_BL_valid <= 1; 
+						  if (BL_cnt > BL_Len_Reg) begin 
+						      data_BL_valid <= 0;
+							   BL_cnt <= 0;
+								rd <= 0;
+						      state <= state_BL_wait; 
+							 end
+						  else  BL_cnt <= BL_cnt + 1;	 
+							 
+		         end
+				state_BL_wait:
+					begin          					  
+						  if (BL_update == 1) begin 
+						      if (skip_BLR == 1) BL_now <= 0; 
+								else BL_now <= BL;
+								rd <= 1;
+						      state <= state_load; 
+							 end						 
+		         end
+					
+				state_load:  //now apply BL restoration
+					begin          					  
+						  dout <= dout_BLR;
+						  data_valid <= 1;
+						  wr <= ~cal_flag;  //On-fly cal signal waveform not saved to fast fifo
+						  state <= state_load_loop; 		
+		         end
+					
+				state_load_loop:
+					begin          					  			  
+                 if (event_rdy == 0)  begin
+					     rd <= 0;
+						  wr <= 0;
+            		  data_valid <= 0;
+						  busy <= 0;
+					     state <= state_idle;
+					  end	  
+					  else dout <= dout_BLR;					  
+		         end	
+	
+				default:
+				  state <= state_idle;
+		
+		endcase
+		
+end //end always
+
+ 
+//the following IP operats with 2s comple signed number
+Sub Sub_BL_A (
+  .a(din[15:0]), // input [15 : 0] a
+  .b(BL_now[15:0]), // input [15 : 0] b
+  .bypass(1'b0), // input bypass
+  .s(dout_BLR[15:0]) // output [15 : 0] s
+);
+
+Sub Sub_BL_B (
+  .a(din[31:16]), // input [15 : 0] a
+  .b(BL_now[31:16]), // input [15 : 0] b
+  .bypass(1'b0), // input bypass
+  .s(dout_BLR[31:16]) // output [15 : 0] s
+);
+Sub Sub_BL_C (
+  .a(din[47:32]), // input [15 : 0] a
+  .b(BL_now[47:32]), // input [15 : 0] b
+  .bypass(1'b0), // input bypass
+  .s(dout_BLR[47:32]) // output [15 : 0] s
+);
+Sub Sub_BL_D (
+  .a(din[63:48]), // input [15 : 0] a
+  .b(BL_now[63:48]), // input [15 : 0] b
+  .bypass(1'b0), // input bypass
+  .s(dout_BLR[63:48]) // output [15 : 0] s
+);
+ 
+endmodule

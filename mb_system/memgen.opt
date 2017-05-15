@@ -1,0 +1,8 @@
+-p
+xc6slx150tfgg676-3
+-pe
+microblaze_0
+C:/Xilinx/13.3/ISE_DS/EDK/sw/lib/microblaze/mb_bootloop_le.elf
+-od
+C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0
+C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mb_system/mb_system.mhs

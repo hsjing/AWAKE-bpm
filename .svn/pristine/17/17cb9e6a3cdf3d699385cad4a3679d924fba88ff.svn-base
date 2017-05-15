@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="AWAKE_BPM_Rev1_0" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ADC_des C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|ADC_des.v</ClosedNode>
+         <ClosedNode>/ADC_des C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|bpm_dsp_rev_1.v</ClosedNode>
+         <ClosedNode>/Buf_SigProcs C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|Buf_SigProcs.v</ClosedNode>
+         <ClosedNode>/Buf_SigProcs C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|Buf_SigProcs.v/BLR_ADJ - BLR_GAIN</ClosedNode>
+         <ClosedNode>/Buf_SigProcs C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|Buf_SigProcs.v/BL_cal - base_line</ClosedNode>
+         <ClosedNode>/Buf_SigProcs C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|Buf_SigProcs.v/ChA_Power_inst - Power_rms</ClosedNode>
+         <ClosedNode>/Buf_SigProcs C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|Buf_SigProcs.v/ChB_Power_inst - Power_rms</ClosedNode>
+         <ClosedNode>/Buf_SigProcs C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|Buf_SigProcs.v/ChC_Power_inst - Power_rms</ClosedNode>
+         <ClosedNode>/Buf_SigProcs C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|Buf_SigProcs.v/ChD_Power_inst - Power_rms</ClosedNode>
+         <ClosedNode>/Buf_SigProcs C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|Buf_SigProcs.v/Circular_Buffer - x4_Channel_buffer</ClosedNode>
+         <ClosedNode>/Buf_SigProcs C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|Buf_SigProcs.v/Gain_Adjust - Gain_Adjust</ClosedNode>
+         <ClosedNode>/Buf_SigProcs C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|Buf_SigProcs.v/position_inst - position</ClosedNode>
+         <ClosedNode>/Buf_SigProcs C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|Buf_SigProcs.v/temperature - ADS1015</ClosedNode>
+         <ClosedNode>/FIFO_Buf C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|FIFO_Buf.v</ClosedNode>
+         <ClosedNode>/base_line C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|base_line.v</ClosedNode>
+         <ClosedNode>/ccd_dsp2mb C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|ccd_dsp2mb.v</ClosedNode>
+         <ClosedNode>/energy_rms C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|energy_rms.v</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/ADC_des_inst - ADC_des</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/ADC_des_inst - ADC_des/sync_and_deser_x4CH - deser_data_x4CH_ddr</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/BLR_ADJ - BLR_GAIN</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/BL_cal - base_line</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/BLR_ADJ - BLR_GAIN</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/BL_cal - base_line</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChA_Power_inst - Power_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChA_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChB_Power_inst - Power_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChB_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChC_Power_inst - Power_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChC_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChD_Power_inst - Power_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChD_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/Circular_Buffer - x4_Channel_buffer</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/Gain_Adjust - Gain_Adjust</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/position_inst - position</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/temperature - ADS1015</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/ChA_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/ChB_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/ChC_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/ChD_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Circular_Buffer - x4_Channel_buffer</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/FIFO - FIFO_Buf</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/FIFO_data_testB - FIFO_data</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/FIFO_data_testC - FIFO_data</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/FIFO_data_testD - FIFO_data</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/bpm_dsp_module - bpm_dsp_rev_1/sync_and_deser_x4CH - deser_data_x4CH_ddr</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/cal_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/cal_rmsA - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/cal_rmsB - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/cal_rmsC - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/cal_rmsD - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/ccd_dbd - ccd_dsp2mb</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/trigger_testC - trigger</ClosedNode>
+         <ClosedNode>/position C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|position.v</ClosedNode>
+         <ClosedNode>/power_rms C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|energy_rms.v</ClosedNode>
+         <ClosedNode>/top_testbench C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|top_testbench.v</ClosedNode>
+         <ClosedNode>/top_testbench C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|top_testbench.v/Buf_SigProcs_TB - Buf_SigProcs</ClosedNode>
+         <ClosedNode>/top_testbench C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|top_testbench.v/Buf_SigProcs_inst - Buf_SigProcs</ClosedNode>
+         <ClosedNode>/x4_Channel_buffer C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|x4_Channel_buffer.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>LX150T_AWAKE_SL_Rev1.ucf (C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/LX150T_AWAKE_SL_Rev1.ucf)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >13</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000019a0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>LX150T_AWAKE_SL_Rev1.ucf (C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/LX150T_AWAKE_SL_Rev1.ucf)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002c60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ADC_des.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f8000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Analyze Design Using ChipScope</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000019e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000019e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Analyze Design Using ChipScope</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000019e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000019e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000142000000010000000100000000000000000000000064ffffffff000000810000000000000001000001420000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000000de000000f301000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XPS" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Export Hardware Design To SDK with Bitstream</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000142000000010000000100000000000000000000000064ffffffff000000810000000000000001000001420000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Export Hardware Design To SDK with Bitstream</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/hello_world_tb C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|hello_world_tb.v/tb - mbx2_system_top</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/ADC_des_inst - ADC_des</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/BLR_ADJ - BLR_GAIN</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/BL_cal - base_line</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChA_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChB_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChC_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChD_energy - energy_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/Circular_Buffer - x4_Channel_buffer</ClosedNode>
+         <ClosedNode>/top_testbench C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|top_testbench.v</ClosedNode>
+         <ClosedNode>/top_testbench C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|top_testbench.v/Buf_SigProcs_inst - Buf_SigProcs/BLR_ADJ - BLR_GAIN</ClosedNode>
+         <ClosedNode>/top_testbench C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|top_testbench.v/Buf_SigProcs_inst - Buf_SigProcs/BL_cal - base_line</ClosedNode>
+         <ClosedNode>/top_testbench C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|top_testbench.v/Buf_SigProcs_inst - Buf_SigProcs/ChA_energy - energy_rms</ClosedNode>
+         <ClosedNode>/top_testbench C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|top_testbench.v/Buf_SigProcs_inst - Buf_SigProcs/ChB_energy - energy_rms</ClosedNode>
+         <ClosedNode>/top_testbench C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|top_testbench.v/Buf_SigProcs_inst - Buf_SigProcs/ChC_energy - energy_rms</ClosedNode>
+         <ClosedNode>/top_testbench C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev1_0|top_testbench.v/Buf_SigProcs_inst - Buf_SigProcs/ChD_energy - energy_rms</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>mbx2_system_top (C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000114000000020000000000000000000000000200000064ffffffff000000810000000300000002000001140000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>mbx2_system_top (C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>ISim Simulator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000163000000010000000100000000000000000000000064ffffffff000000810000000000000001000001630000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000163000000010000000100000000000000000000000064ffffffff000000810000000000000001000001630000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000163000000010000000100000000000000000000000064ffffffff000000810000000000000001000001630000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <CopyAdditionalFiles/>
+</Project>

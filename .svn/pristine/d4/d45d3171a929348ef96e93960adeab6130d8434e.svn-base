@@ -1,0 +1,178 @@
+Release 13.3 Drc O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Thu Mar 31 11:09:12 2016
+
+drc -z mbx2_system_top.ncd mbx2_system_top.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   Buf_SigProcs_inst/ila_CONTROL0<13> is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   Buf_SigProcs_inst/ila_CONTROL1<13> is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/Ethernet_Lite/Ethernet_Lite/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_
+   RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/U0/xst_fifo_ge
+   nerator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/Ethernet_Lite/Ethernet_Lite/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_
+   TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/U0/xst_fifo_ge
+   nerator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM_RAMD_D1_O>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DC
+   ache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DC
+   ache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DC
+   ache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy5_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DC
+   ache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[2].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[3].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[5].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DC
+   ache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy4_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[1].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<31>
+   > is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[8].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[6].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[15].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[10].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<30>
+   > is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <mb_system_i/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flo
+   w_I/Register_File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:2191 - Issue with pin connections and/or configuration
+   on
+   block:<ADC_des_inst/sync_and_deser_x4CH/frame_sync/IODELAY2_da0>:<IODELAY2_IO
+   DELAY2>.  With IDELAY_TYPE programming FIXED or DEFAULT any active input pins
+   INC, RST, CE and C are not used and will be ignored.
+WARNING:PhysDesignRules:2191 - Issue with pin connections and/or configuration
+   on
+   block:<ADC_des_inst/sync_and_deser_x4CH/data_chC/deser_data1/IODELAY2_da0>:<I
+   ODELAY2_IODELAY2>.  With IDELAY_TYPE programming FIXED or DEFAULT any active
+   input pins INC, RST, CE and C are not used and will be ignored.
+WARNING:PhysDesignRules:2191 - Issue with pin connections and/or configuration
+   on
+   block:<ADC_des_inst/sync_and_deser_x4CH/data_chB/deser_data0/IODELAY2_da0>:<I
+   ODELAY2_IODELAY2>.  With IDELAY_TYPE programming FIXED or DEFAULT any active
+   input pins INC, RST, CE and C are not used and will be ignored.
+WARNING:PhysDesignRules:2191 - Issue with pin connections and/or configuration
+   on
+   block:<ADC_des_inst/sync_and_deser_x4CH/data_chD/deser_data0/IODELAY2_da0>:<I
+   ODELAY2_IODELAY2>.  With IDELAY_TYPE programming FIXED or DEFAULT any active
+   input pins INC, RST, CE and C are not used and will be ignored.
+WARNING:PhysDesignRules:2191 - Issue with pin connections and/or configuration
+   on
+   block:<ADC_des_inst/sync_and_deser_x4CH/data_chB/deser_data1/IODELAY2_da0>:<I
+   ODELAY2_IODELAY2>.  With IDELAY_TYPE programming FIXED or DEFAULT any active
+   input pins INC, RST, CE and C are not used and will be ignored.
+WARNING:PhysDesignRules:2191 - Issue with pin connections and/or configuration
+   on
+   block:<ADC_des_inst/sync_and_deser_x4CH/data_chD/deser_data1/IODELAY2_da0>:<I
+   ODELAY2_IODELAY2>.  With IDELAY_TYPE programming FIXED or DEFAULT any active
+   input pins INC, RST, CE and C are not used and will be ignored.
+WARNING:PhysDesignRules:2191 - Issue with pin connections and/or configuration
+   on block:<ADC_des_inst/iob_clk/IODELAY2_dclk_dly_n>:<IODELAY2_IODELAY2>. 
+   With IDELAY_TYPE programming FIXED or DEFAULT any active input pins INC, RST,
+   CE and C are not used and will be ignored.
+WARNING:PhysDesignRules:2191 - Issue with pin connections and/or configuration
+   on block:<ADC_des_inst/iob_clk/IODELAY2_dclk_dly_p>:<IODELAY2_IODELAY2>. 
+   With IDELAY_TYPE programming FIXED or DEFAULT any active input pins INC, RST,
+   CE and C are not used and will be ignored.
+WARNING:PhysDesignRules:2191 - Issue with pin connections and/or configuration
+   on
+   block:<ADC_des_inst/sync_and_deser_x4CH/data_chA/deser_data0/IODELAY2_da0>:<I
+   ODELAY2_IODELAY2>.  With IDELAY_TYPE programming FIXED or DEFAULT any active
+   input pins INC, RST, CE and C are not used and will be ignored.
+WARNING:PhysDesignRules:774 - Unexpected DCM configuration. CLKOUT_PHASE_SHIFT
+   is not configured VARIABLE for comp clkcross/dcm_sp_inst. The PSEN pin is
+   connected to an active signal. The PSEN pin should be connected to GND to
+   guarantee the expected operation.
+WARNING:PhysDesignRules:2191 - Issue with pin connections and/or configuration
+   on
+   block:<ADC_des_inst/sync_and_deser_x4CH/data_chC/deser_data0/IODELAY2_da0>:<I
+   ODELAY2_IODELAY2>.  With IDELAY_TYPE programming FIXED or DEFAULT any active
+   input pins INC, RST, CE and C are not used and will be ignored.
+WARNING:PhysDesignRules:2191 - Issue with pin connections and/or configuration
+   on
+   block:<ADC_des_inst/sync_and_deser_x4CH/data_chA/deser_data1/IODELAY2_da0>:<I
+   ODELAY2_IODELAY2>.  With IDELAY_TYPE programming FIXED or DEFAULT any active
+   input pins INC, RST, CE and C are not used and will be ignored.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+DRC detected 0 errors and 40 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

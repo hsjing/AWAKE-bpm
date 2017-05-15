@@ -1,0 +1,2 @@
+verilog work ../../clk_switch.v
+verilog work ../example_design/clk_switch_exdes.v

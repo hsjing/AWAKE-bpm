@@ -1,0 +1,37 @@
+
+# PlanAhead Launch Script for Post-Synthesis floorplanning, created by Project Navigator
+
+create_project -name AWAKE_BPM_Rev1_0 -dir "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/planAhead_run_1" -part xc6slx150tfgg676-3
+set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+set_property edif_top_file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.ngc" [ get_property srcset [ current_run ] ]
+add_files -norecurse { {C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0} {ipcore_dir} }
+add_files [list {C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/axi4lite_0_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/axi4_0_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/ethernet_lite_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mb_system.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mcb_ddr3_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/microblaze_0_dlmb_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/microblaze_0_ilmb_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/microblaze_0_wrapper.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/ADD.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/ccd_fifo.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/clk_cross.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/DIV.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/fifobuf.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/FIFO_data.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/FIFO_position.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/fix2float.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/fixN2float.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/float_div.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/float_sqrt.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/float_square.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/float_sum.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/icon.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/ila.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/ila2.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/ila3.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/ila_trig8.ncf}] -fileset [get_property constrset [current_run]]
+add_files [list {ipcore_dir/Sub.ncf}] -fileset [get_property constrset [current_run]]
+set_property target_constrs_file "LX150T_AWAKE_SL_Rev1.ucf" [current_fileset -constrset]
+add_files [list {LX150T_AWAKE_SL_Rev1.ucf}] -fileset [get_property constrset [current_run]]
+open_netlist_design

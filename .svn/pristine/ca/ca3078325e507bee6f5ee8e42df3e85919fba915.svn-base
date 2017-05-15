@@ -1,0 +1,14 @@
+Initializing CoreGen with the user repository list from
+'C:\Users\student\AppData\Roaming\Xilinx\CoreGen\13.3\indexes\xil_index_map.xml'
+.
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - 'C:\Xilinx\13.3\ISE_DS\ISE\coregen\' [reloaded]
+INFO:sim - Generating component instance 'FIFO_data' of
+   'xilinx.com:ip:fifo_generator:8.3' from
+   'C:\Xilinx\13.3\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\fifo_gener
+   ator_v8_3\component.xml'.
+Applying current project options...
+Finished applying current project options.
+Cancelled executing Tcl generator.
+Wrote CGP file for project 'FIFO_data'.

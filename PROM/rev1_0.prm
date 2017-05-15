@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator O.76xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\PROM\//rev1.2_14bit -x xcf08p xcf32p -u 00000000 C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\PROM\download.bit 
+
+PROM C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\PROM\rev1_0.prm map: Mon Jul 25 14:59:47 2016
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          1024K
+PROM start    0000:0000
+PROM end      000f:ffff
+PROM checksum 0092c39c
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    000f:ffff     May 24 15:37:13 2016 C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/PROM/download.bit

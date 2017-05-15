@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="AWAKE_BPM_Rev2_0" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ADS1015 C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|ADS1015.v</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|mbx2_system_top.v/ADC_des_inst - ADC_des</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/BLR_ADJ - BLR_GAIN</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/BL_cal - base_line</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChA_Power_inst - Power_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChB_Power_inst - Power_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChC_Power_inst - Power_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/ChD_Power_inst - Power_rms</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/Circular_Buffer - x4_Channel_buffer</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/Drift_inst - Drift</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/Gain_Adjust_inst - Gain_Adjust</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/VGA_inst - VGA</ClosedNode>
+         <ClosedNode>/mbx2_system_top C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|mbx2_system_top.v/Buf_SigProcs_inst - Buf_SigProcs/position_inst - position</ClosedNode>
+         <ClosedNode>/top_testbench C:|Myprojects|CERN_AWAKE_BPM|FPGA_SPARTAN|AWAKE_BPM_Rev2_0|top_testbench.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Buffer_ChA - fifobuf (C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev2_0/ipcore_dir/fifobuf.xco)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000019a0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Buffer_ChA - fifobuf (C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev2_0/ipcore_dir/fifobuf.xco)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000ac0000000100000000000000d70000000100000000000000660000000100000000000001a90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ADC_des.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff000000000000000200000113000000af01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XPS" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Export Hardware Design To SDK with Bitstream</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Export Hardware Design To SDK with Bitstream</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>CORE Generator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+</Project>

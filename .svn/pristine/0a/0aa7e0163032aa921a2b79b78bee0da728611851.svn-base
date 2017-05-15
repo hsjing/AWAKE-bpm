@@ -1,0 +1,36 @@
+// BMM LOC annotation file.
+//
+// Release 13.3 - Data2MEM O.76xd, build 2.5 Aug 4, 2011
+// Copyright (c) 1995-2016 Xilinx, Inc.  All rights reserved.
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Processor 'microblaze_0', ID 100, memory map.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+ADDRESS_MAP microblaze_0 MICROBLAZE-LE 100
+
+
+    ///////////////////////////////////////////////////////////////////////////////
+    //
+    // Processor 'microblaze_0' address space 'microblaze_0_bram_block_combined' 0x00000000:0x00003FFF (16 KBytes).
+    //
+    ///////////////////////////////////////////////////////////////////////////////
+
+    ADDRESS_SPACE microblaze_0_bram_block_combined RAMB16 [0x00000000:0x00003FFF]
+        BUS_BLOCK
+            mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0 [31:28] INPUT = microblaze_0_bram_block_combined_0.mem PLACED = X3Y72;
+            mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_1 [27:24] INPUT = microblaze_0_bram_block_combined_1.mem PLACED = X3Y70;
+            mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_2 [23:20] INPUT = microblaze_0_bram_block_combined_2.mem PLACED = X4Y62;
+            mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_3 [19:16] INPUT = microblaze_0_bram_block_combined_3.mem PLACED = X4Y66;
+            mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_4 [15:12] INPUT = microblaze_0_bram_block_combined_4.mem PLACED = X3Y76;
+            mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_5 [11:8] INPUT = microblaze_0_bram_block_combined_5.mem PLACED = X3Y74;
+            mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_6 [7:4] INPUT = microblaze_0_bram_block_combined_6.mem PLACED = X4Y72;
+            mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_7 [3:0] INPUT = microblaze_0_bram_block_combined_7.mem PLACED = X4Y68;
+        END_BUS_BLOCK;
+    END_ADDRESS_SPACE;
+
+END_ADDRESS_MAP;
+

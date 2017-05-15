@@ -1,0 +1,11 @@
+Storage Target: Xilinx Flash/PROM
+Storage Family: Platform Flash
+xcf08p          [8 M]
+xcf32p          [32 M]
+FF
+MB_FMv16815
+C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/PROM/Aug16_2016
+
+MCS
+No
+No

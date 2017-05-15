@@ -1,0 +1,533 @@
+Running: C:\Xilinx\13.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/top_testbench_isim_beh.exe -prj C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/top_testbench_beh.prj work.top_testbench work.glbl 
+ISim O.76xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/hdl/vhdl/upcnt_n.vhd" into library proc_sys_reset_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/hdl/vhdl/lpf.vhd" into library proc_sys_reset_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/hdl/vhdl/sequence.vhd" into library proc_sys_reset_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/hdl/vhdl/proc_sys_reset.vhd" into library proc_sys_reset_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd" into library axi_lite_ipif_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" into library axi_lite_ipif_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_intc_v1_01_a/hdl/vhdl/intc_core.vhd" into library axi_intc_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_intc_v1_01_a/hdl/vhdl/axi_intc.vhd" into library axi_intc_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd" into library lmb_v10_v2_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_b/hdl/vhdl/lmb_bram_if_funcs.vhd" into library lmb_bram_if_cntlr_v3_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_b/hdl/vhdl/xor18.vhd" into library lmb_bram_if_cntlr_v3_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_b/hdl/vhdl/parity.vhd" into library lmb_bram_if_cntlr_v3_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_b/hdl/vhdl/parityenable.vhd" into library lmb_bram_if_cntlr_v3_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_b/hdl/vhdl/checkbit_handler.vhd" into library lmb_bram_if_cntlr_v3_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_b/hdl/vhdl/correct_one_bit.vhd" into library lmb_bram_if_cntlr_v3_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_b/hdl/vhdl/pselect.vhd" into library lmb_bram_if_cntlr_v3_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_b/hdl/vhdl/pselect_mask.vhd" into library lmb_bram_if_cntlr_v3_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_b/hdl/vhdl/plb_interface.vhd" into library lmb_bram_if_cntlr_v3_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_b/hdl/vhdl/axi_interface.vhd" into library lmb_bram_if_cntlr_v3_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_b/hdl/vhdl/lmb_bram_if_cntlr.vhd" into library lmb_bram_if_cntlr_v3_00_b
+Analyzing Verilog file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/verilog/microblaze_0_bram_block_elaborate.v" into library microblaze_0_bram_block_elaborate_v1_00_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/microblaze_types_pkg.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/microblaze_types_pkg_body.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/microblaze_isa_be_pkg.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/microblaze_primitives.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/mux_bus.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/parity.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/comparator.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/carry_and.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/carry_or.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/carry_equal.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/carry_compare.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/carry_compare_mask.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/carry_compare_const.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/find_first_bit.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/mux4_8.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/mux4.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/vec_mux.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/gen_srlfifo.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/alu_bit.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/alu.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/msr_reg_bit.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/msr_reg.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/msr_reg_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/dsp_module.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/mul_unit.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/div_unit.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/div_unit_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/operand_select_bit.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/operand_select.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/operand_select_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/pc_bit.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/pc_module.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/pc_module_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/prefetch_buffer.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/prefetch_buffer_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/register_file_bit.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/register_file.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/register_file_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/count_leading_zero.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/shift_logic_bit.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/shift_logic.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/shift_logic_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/zero_detect.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/zero_detect_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/barrel_shifter.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/barrel_shifter_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/wb_mux_bit_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/wb_mux_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/data_read_steering.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/byte_doublet_handle.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/byte_doublet_handle_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/data_flow_logic_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/fsl_module.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/streaming_axi.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/exception_registers.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/exception_registers_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/fpu_addsub.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/fpu_div.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/fpu_mul.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/fpu_conv.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/fpu_sqrt.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/fpu.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/pvr.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/result_mux_bit.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/result_mux.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/stack_protection.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/data_flow.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/data_flow_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/jump_logic_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/decode.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/decode_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/address_hit.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/address_data_hit.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/debug.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/iplb_interface.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/dplb_interface.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/daxi_interface.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/iaxi_interface.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/ram_module.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/victim_cache.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/stream_cache.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/cache_interface.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/icache.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/dcache.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/dcache_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/cache_valid_bit_detect.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/cachehit_detect.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/dcache_wb.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/instr_mux.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/read_data_mux_gti.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/interrupt_mode_converter.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/mmu_types_pkg.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/mmu_tlb.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/mmu_utlb_ram.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/mmu_utlb.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/mmu.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/microblaze_core.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_20_a/hdl/vhdl/microblaze.vhd" into library microblaze_v8_20_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/hdl/vhdl/srl_fifo.vhd" into library mdm_v2_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/hdl/vhdl/jtag_control.vhd" into library mdm_v2_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/hdl/vhdl/mdm_core.vhd" into library mdm_v2_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/hdl/vhdl/mdm.vhd" into library mdm_v2_00_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/dcm_module.vhd" into library clock_generator_v4_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/pll_module.vhd" into library clock_generator_v4_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/mmcm_module.vhd" into library clock_generator_v4_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd" into library clock_generator_v4_03_a
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" into library clock_generator_0_v4_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_timer_v1_03_a/hdl/vhdl/tc_types.vhd" into library axi_timer_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_timer_v1_03_a/hdl/vhdl/count_module.vhd" into library axi_timer_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_timer_v1_03_a/hdl/vhdl/timer_control.vhd" into library axi_timer_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_timer_v1_03_a/hdl/vhdl/tc_core.vhd" into library axi_timer_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_timer_v1_03_a/hdl/vhdl/axi_timer.vhd" into library axi_timer_v1_03_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_a_axi3_conv.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_addr_arbiter_sasd.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_addr_arbiter.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_addr_decoder.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_a_downsizer.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_arbiter_resp.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_a_upsizer.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_axi3_conv.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_axic_fifo.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_axic_register_slice.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_axic_reg_srl_fifo.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_axic_srl_fifo.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_axi_data_fifo.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_axi_downsizer.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_axilite_conv.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_axi_register_slice.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_axi_upsizer.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_b_downsizer.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_carry_and.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_carry_latch_and.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_carry_latch_or.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_carry_or.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_carry.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_clock_conv.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_clock_sync_accel.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_clock_sync_decel.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_command_fifo.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_comparator_mask_static.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_comparator_mask.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_comparator_sel_mask_static.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_comparator_sel_mask.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_comparator_sel_static.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_comparator_sel.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_comparator_static.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_comparator.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_converter_bank.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_crossbar_sasd.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_crossbar.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_data_fifo_bank.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_decerr_slave.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_fifo_gen.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_mux_enc.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_mux.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_ndeep_srl.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_nto1_mux.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_protocol_conv_bank.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_r_axi3_conv.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_r_downsizer.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_register_slice_bank.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_r_upsizer.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_si_transactor.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_splitter.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_w_axi3_conv.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_wdata_mux.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_wdata_router.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_w_downsizer.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/ict104_w_upsizer.v" into library axi_interconnect_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_04_a/hdl/verilog/axi_interconnect.v" into library axi_interconnect_v1_04_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_uartlite_v1_02_a/hdl/vhdl/baudrate.vhd" into library axi_uartlite_v1_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_uartlite_v1_02_a/hdl/vhdl/uartlite_rx.vhd" into library axi_uartlite_v1_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_uartlite_v1_02_a/hdl/vhdl/uartlite_tx.vhd" into library axi_uartlite_v1_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_uartlite_v1_02_a/hdl/vhdl/uartlite_core.vhd" into library axi_uartlite_v1_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_uartlite_v1_02_a/hdl/vhdl/axi_uartlite.vhd" into library axi_uartlite_v1_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/interrupt_control_v2_01_a/hdl/vhdl/interrupt_control.vhd" into library interrupt_control_v2_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_gpio_v1_01_b/hdl/vhdl/gpio_core.vhd" into library axi_gpio_v1_01_b
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_gpio_v1_01_b/hdl/vhdl/axi_gpio.vhd" into library axi_gpio_v1_01_b
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_ar_channel.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_a_upsizer.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_aw_channel.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_axic_register_slice.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_axi_register_slice.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_axi_upsizer.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_b_channel.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_carry_and.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_carry_latch_and.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_carry_latch_or.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_carry_or.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_cmd_arbiter.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_cmd_fsm.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_cmd_translator.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_command_fifo.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_comparator_sel_static.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_comparator_sel.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_comparator.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_incr_cmd.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_r_channel.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_r_upsizer.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_simple_fifo.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_w_channel.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_wrap_cmd.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_mcb_w_upsizer.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/axi_s6_ddrx.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/iodrp_controller.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/iodrp_mcb_controller.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/mcb_raw_wrapper.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/mcb_soft_calibration_top.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/mcb_soft_calibration.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/mcb_ui_top_synch.v" into library axi_s6_ddrx_v1_04_a
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_s6_ddrx_v1_04_a/hdl/verilog/mcb_ui_top.v" into library axi_s6_ddrx_v1_04_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_02_a/hdl/vhdl/ipic_if.vhd" into library emc_common_v5_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_02_a/hdl/vhdl/io_registers.vhd" into library emc_common_v5_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_02_a/hdl/vhdl/counters.vhd" into library emc_common_v5_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_02_a/hdl/vhdl/mem_state_machine.vhd" into library emc_common_v5_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_02_a/hdl/vhdl/select_param.vhd" into library emc_common_v5_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_02_a/hdl/vhdl/addr_counter_mux.vhd" into library emc_common_v5_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_02_a/hdl/vhdl/mem_steer.vhd" into library emc_common_v5_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/emc_common_v5_02_a/hdl/vhdl/emc.vhd" into library emc_common_v5_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_02_a/hdl/vhdl/axi_emc_addr_gen.vhd" into library axi_emc_v1_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_02_a/hdl/vhdl/axi_emc_address_decode.vhd" into library axi_emc_v1_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_02_a/hdl/vhdl/axi_emc_native_interface.vhd" into library axi_emc_v1_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_emc_v1_02_a/hdl/vhdl/axi_emc.vhd" into library axi_emc_v1_02_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/mac_pkg.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/cntr5bit.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/rx_statemachine.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/rx_intrfce.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/crcgenrx.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/crcnibshiftreg.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/receive.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/crcgentx.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/tx_intrfce.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/tx_statemachine.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/defer_state.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/lfsr16.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/bocntr.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/deferral.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/ram16x4.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/macaddrram.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/msh_cnt.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/transmit.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/emac.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/emac_dpram.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/mdio_if.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/axi_interface.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/xemac.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_ethernetlite_v1_01_a/hdl/vhdl/axi_ethernetlite.vhd" into library axi_ethernetlite_v1_01_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/srl_fifo.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl_funcs.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_lite_if.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/checkbit_handler_64.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/checkbit_handler.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/correct_one_bit_64.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/correct_one_bit.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/xor18.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/parity.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/ecc_gen.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/lite_ecc_reg.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_lite.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/sng_port_arb.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/ua_narrow.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wrap_brst.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/rd_chnl.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wr_chnl.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/proc_sys_reset_0_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/microblaze_0_intc_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/microblaze_0_ilmb_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/microblaze_0_i_bram_ctrl_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/microblaze_0_dlmb_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/microblaze_0_d_bram_ctrl_wrapper.vhd" into library work
+Analyzing Verilog file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/microblaze_0_bram_block_wrapper.v" into library work
+      Resolving module microblaze_0_bram_block_elaborate
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/microblaze_0_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/debug_module_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/clock_generator_0_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/axi_timer_0_wrapper.vhd" into library work
+Analyzing Verilog file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/axi4lite_0_wrapper.v" into library work
+      Resolving module axi_interconnect
+      Resolving module ict104_register_slice_bank
+      Resolving module ict104_protocol_conv_bank
+      Resolving module ict104_converter_bank
+      Resolving module ict104_data_fifo_bank
+      Resolving module ict104_crossbar
+      Resolving module ict104_crossbar_sasd
+      Resolving module ict104_axi_register_slice
+      Resolving module ict104_axilite_conv
+      Resolving module ict104_axi3_conv
+      Resolving module ict104_axi_upsizer
+      Resolving module ict104_clock_conv
+      Resolving module ict104_axi_downsizer
+      Resolving module ict104_axi_data_fifo
+      Resolving module ict104_si_transactor
+      Resolving module ict104_splitter
+      Resolving module ict104_wdata_router
+      Resolving module ict104_addr_decoder
+      Resolving module ict104_wdata_mux
+      Resolving module ict104_axic_srl_fifo
+      Resolving module ict104_addr_arbiter
+      Resolving module ict104_decerr_slave
+      Resolving module ict104_addr_arbiter_sasd
+      Resolving module ict104_mux_enc
+      Resolving module ict104_axic_register_slice
+      Resolving module ict104_a_axi3_conv
+      Resolving module ict104_w_axi3_conv
+      Resolving module ict104_b_downsizer
+      Resolving module ict104_r_axi3_conv
+      Resolving module ict104_a_upsizer
+      Resolving module ict104_w_upsizer
+      Resolving module ict104_r_upsizer
+      Resolving module ict104_fifo_gen
+      Resolving module ict104_clock_sync_accel
+      Resolving module ict104_clock_sync_decel
+      Resolving module ict104_a_downsizer
+      Resolving module ict104_w_downsizer
+      Resolving module ict104_r_downsizer
+      Resolving module fifo_generator_v8_3
+      Resolving module ict104_arbiter_resp
+      Resolving module ict104_axic_reg_srl_fifo
+      Resolving module ict104_comparator_static
+      Resolving module ict104_ndeep_srl
+      Resolving module ict104_axic_fifo
+      Resolving module ict104_carry_latch_and
+      Resolving module ict104_carry_and
+      Resolving module ict104_comparator
+      Resolving module ict104_carry_or
+      Resolving module ict104_command_fifo
+      Resolving module ict104_comparator_sel_static
+      Resolving module ict104_comparator_sel
+      Resolving module ict104_nto1_mux
+      Resolving module ict104_carry_latch_or
+Analyzing Verilog file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/axi4_0_wrapper.v" into library work
+      Resolving module axi_interconnect
+      Resolving module ict104_register_slice_bank
+      Resolving module ict104_protocol_conv_bank
+      Resolving module ict104_converter_bank
+      Resolving module ict104_data_fifo_bank
+      Resolving module ict104_crossbar
+      Resolving module ict104_crossbar_sasd
+      Resolving module ict104_axi_register_slice
+      Resolving module ict104_axilite_conv
+      Resolving module ict104_axi3_conv
+      Resolving module ict104_axi_upsizer
+      Resolving module ict104_clock_conv
+      Resolving module ict104_axi_downsizer
+      Resolving module ict104_axi_data_fifo
+      Resolving module ict104_si_transactor
+      Resolving module ict104_splitter
+      Resolving module ict104_wdata_router
+      Resolving module ict104_addr_decoder
+      Resolving module ict104_wdata_mux
+      Resolving module ict104_axic_srl_fifo
+      Resolving module ict104_addr_arbiter
+      Resolving module ict104_decerr_slave
+      Resolving module ict104_addr_arbiter_sasd
+      Resolving module ict104_mux_enc
+      Resolving module ict104_axic_register_slice
+      Resolving module ict104_a_axi3_conv
+      Resolving module ict104_w_axi3_conv
+      Resolving module ict104_b_downsizer
+      Resolving module ict104_r_axi3_conv
+      Resolving module ict104_a_upsizer
+      Resolving module ict104_w_upsizer
+      Resolving module ict104_r_upsizer
+      Resolving module ict104_fifo_gen
+      Resolving module ict104_clock_sync_accel
+      Resolving module ict104_clock_sync_decel
+      Resolving module ict104_a_downsizer
+      Resolving module ict104_w_downsizer
+      Resolving module ict104_r_downsizer
+      Resolving module fifo_generator_v8_3
+      Resolving module ict104_arbiter_resp
+      Resolving module ict104_axic_reg_srl_fifo
+      Resolving module ict104_comparator_static
+      Resolving module ict104_ndeep_srl
+      Resolving module ict104_axic_fifo
+      Resolving module ict104_carry_latch_and
+      Resolving module ict104_carry_and
+      Resolving module ict104_comparator
+      Resolving module ict104_carry_or
+      Resolving module ict104_command_fifo
+      Resolving module ict104_comparator_sel_static
+      Resolving module ict104_comparator_sel
+      Resolving module ict104_nto1_mux
+      Resolving module ict104_carry_latch_or
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/rs232_usb_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/rs232_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/push_buttons_3bits_wrapper.vhd" into library work
+Analyzing Verilog file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mcb_ddr3_wrapper.v" into library work
+      Resolving module axi_s6_ddrx
+      Resolving module mcb_ui_top_synch
+      Resolving module mcb_ui_top
+      Resolving module mcb_raw_wrapper
+      Resolving module axi_mcb
+      Resolving module mcb_soft_calibration_top
+      Resolving module axi_mcb_axi_register_slice
+      Resolving module axi_mcb_axi_upsizer
+      Resolving module axi_mcb_aw_channel
+      Resolving module axi_mcb_w_channel
+      Resolving module axi_mcb_b_channel
+      Resolving module axi_mcb_ar_channel
+      Resolving module axi_mcb_r_channel
+      Resolving module axi_mcb_cmd_arbiter
+      Resolving module axi_mcb_axic_register_slice
+      Resolving module mcb_soft_calibration
+      Resolving module axi_mcb_a_upsizer
+      Resolving module axi_mcb_w_upsizer
+      Resolving module axi_mcb_r_upsizer
+      Resolving module axi_mcb_cmd_translator
+      Resolving module axi_mcb_cmd_fsm
+      Resolving module axi_mcb_simple_fifo
+      Resolving module iodrp_controller
+      Resolving module iodrp_mcb_controller
+      Resolving module axi_mcb_carry_latch_and
+      Resolving module axi_mcb_carry_and
+      Resolving module axi_mcb_comparator
+      Resolving module axi_mcb_carry_or
+      Resolving module axi_mcb_command_fifo
+      Resolving module axi_mcb_comparator_sel_static
+      Resolving module axi_mcb_comparator_sel
+      Resolving module axi_mcb_incr_cmd
+      Resolving module axi_mcb_wrap_cmd
+      Resolving module axi_mcb_carry_latch_or
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/linear_flash_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/leds_8bits_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/ethernet_lite_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/dip_switches_8bits_wrapper.vhd" into library work
+Parsing VHDL file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/axi_bram_ctrl_0_wrapper.vhd" into library work
+Analyzing Verilog file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mb_system.v" into library work
+      Resolving module IOBUF
+Analyzing Verilog file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mb_system_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/ISE/verilog/src/glbl.v" into library work
+Analyzing Verilog file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/pulse_gen.v" into library work
+Analyzing Verilog file "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/top_testbench.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.3/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "C:/Xilinx/13.3/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 134008 KB
+Fuse CPU Usage: 4280 ms
+Compiling module pulse_gen
+Compiling module top_testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+ERROR:Simulator:861 - Failed to link the design

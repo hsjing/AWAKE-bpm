@@ -1,0 +1,1700 @@
+iMPACT Version: 13.3
+
+iMPACT log file Started on Tue Apr 18 15:47:23 2017
+
+Welcome to iMPACT
+iMPACT Version: 13.3
+Project:C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr12_2017/\auto_project.ipf created.
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addConfigDevice  -name "awake_bpm_apr18_2017" -path"C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr18_2017"
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setAttribute -configdevice -attr multibootBpiType -value ""
+// *** BATCH CMD : addDesign -version 0 -name "0"
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr autoSize -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr fileFormat -value "mcs"
+// *** BATCH CMD : setAttribute -configdevice -attr fillValue -value "FF"
+// *** BATCH CMD : setAttribute -configdevice -attr swapBit -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr dir -value "UP"
+// *** BATCH CMD : setAttribute -configdevice -attr multiboot -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr spiSelected -value "FALSE"
+// *** BATCH CMD : addPromDevice -p 1 -size 0 -name xcf08p
+'1': Added Device xcf08p successfully.
+----------------------------------------------------------------------
+// *** BATCH CMD : addPromDevice -p 2 -size 0 -name xcf32p
+'2': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+// *** BATCH CMD : setMode -pff
+------------------------  GUI: Wizard Data Report  ---------------------------
+      Compression : false
+      Fill Value : FF
+      Output Format : mcs
+      Swap Bits : false
+      LoadDirection : UP
+      PROM Basename : awake_bpm_apr18_2017
+      File Location :C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr18_2017/
+      Auto Selcet : false
+      Number of Revision : 1
+      Number of PROMs : 2
+      PROM Name : xcf08p,   PROM Size : 8388608 bits
+      PROM Name : xcf32p,   PROM Size : 33554432 bits
+-------------------------- END of Report ----------------------------
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+Override chain at index 0.
+Overriding chain at index 0.
+// *** BATCH CMD : addDevice -p 1 -file"C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev2_0/PROM/Apr18_2017/download.bit"
+'1': Loading file'C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev2_0/PROM/Apr18_2017/download.bit' ...
+INFO:iMPACT - Elapsed time =      1 sec.
+done.
+INFO:iMPACT:501 - '1': Added Device xc6slx150t successfully.
+----------------------------------------------------------------------
+Add one device.406999INFO:iMPACT - Current time: 2017-04-18 3:50:52 PM
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+Total configuration bit size = 33763936 bits.
+Total configuration byte size = 4220492 bytes.
+// *** BATCH CMD : generate
+0x40664c (4220492) bytes loaded up from 0x0
+Using user-specified prom size of 5120K
+Writing file"C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr18_2017\awake_bpm_apr18_2017_0.mcs".
+Writing file"C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr18_2017\awake_bpm_apr18_2017_0.prm".
+Writing file"C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr18_2017\awake_bpm_apr18_2017_0.sig".
+Writing file"C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr18_2017\awake_bpm_apr18_2017_1.mcs".
+Writing file"C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr18_2017\awake_bpm_apr18_2017_1.prm".
+Writing file"C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr18_2017\awake_bpm_apr18_2017_1.sig".
+Writing file"C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr18_2017\awake_bpm_apr18_2017_0.cfi".
+Writing file"C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr18_2017\awake_bpm_apr18_2017_1.cfi".
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Enumerating cables. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setCable -port usb21 -baud -1
+ Server Name = shengliupc, Port = 50001.
+INFO:iMPACT - Client connected to Server: shengliupc, Port: 50001.
+INFO:iMPACT - Enumerating cables. Please wait.
+INFO:iMPACT - Connecting to cable (Usb Port - USB21).
+INFO:iMPACT - Checking cable driver.
+INFO:iMPACT -  Driver file xusb_xp2.sys found.
+INFO:iMPACT -  Driver version: src=2301, dest=2301.
+INFO:iMPACT -  Driver windrvr6.sys version = 10.2.1.0.INFO:iMPACT -  WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010   x86_64 64bit SYS 14:14:44, version = 1021.
+INFO:iMPACT - =======================================================
+INFO:iMPACT - Found cable - > INFO:iMPACT - ESN = 000014D27CD301.
+INFO:iMPACT - =======================================================
+INFO:iMPACT - Connecting to cable (Usb Port - USB22).
+INFO:iMPACT - Checking cable driver.
+INFO:iMPACT -  Driver file xusb_xp2.sys found.
+INFO:iMPACT -  Driver version: src=2301, dest=2301.
+INFO:iMPACT -  Driver windrvr6.sys version = 10.2.1.0.INFO:iMPACT -  WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010   x86_64 64bit SYS 14:14:44, version = 1021.
+INFO:iMPACT - Connecting to cable (Usb Port - USB21).
+INFO:iMPACT - Checking cable driver.
+INFO:iMPACT -  Driver file xusb_xp2.sys found.
+INFO:iMPACT -  Driver version: src=2301, dest=2301.
+INFO:iMPACT -  Driver windrvr6.sys version = 10.2.1.0.INFO:iMPACT -  WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010   x86_64 64bit SYS 14:14:44, version = 1021.
+INFO:iMPACT -  Cable PID = 0008.
+INFO:iMPACT -  Max current requested during enumeration is 150 mA.
+INFO:iMPACT - Type = 0x0005.
+INFO:iMPACT -  Cable Type = 3, Revision = 0.
+INFO:iMPACT -  Setting cable speed to 6 MHz.
+INFO:iMPACT - Cable connection established.
+INFO:iMPACT - Firmware version = 2401.
+INFO:iMPACT - File version of C:/Xilinx/13.3/ISE_DS/ISE/data/xusb_xp2.hex =   2401.
+INFO:iMPACT - Firmware hex file version = 2401.
+INFO:iMPACT - PLD file version = 200Dh.
+INFO:iMPACT -  PLD version = 200Dh.
+INFO:iMPACT - Type = 0x0005.
+INFO:iMPACT - ESN option: 000014D27CD301.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 2017-04-18 3:53:12 PM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx150t, Version : 4
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/13.3/ISE_DS/ISE/spartan6/data/xc6slx150t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx150t successfully.
+----------------------------------------------------------------------
+'1': : Manufacturer's ID = Xilinx xcf32p, Version : 13
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/13.3/ISE_DS/ISE/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+'2': : Manufacturer's ID = Xilinx xcf08p, Version : 13
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/13.3/ISE_DS/ISE/xcfp/data/xcf08p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf08p successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Enumerating cables. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setCable -port usb21 -baud -1
+ Server Name = shengliupc, Port = 50001.
+INFO:iMPACT - Client connected to Server: shengliupc, Port: 50001.
+INFO:iMPACT - Connecting to cable (Usb Port - USB21).
+INFO:iMPACT - Checking cable driver.
+INFO:iMPACT -  Driver file xusb_xp2.sys found.
+INFO:iMPACT -  Driver version: src=2301, dest=2301.
+INFO:iMPACT -  Driver windrvr6.sys version = 10.2.1.0.INFO:iMPACT -  WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010   x86_64 64bit SYS 14:14:44, version = 1021.
+INFO:iMPACT -  Cable PID = 0008.
+INFO:iMPACT -  Max current requested during enumeration is 300 mA.
+INFO:iMPACT - Type = 0x0005.
+INFO:iMPACT - write (count, cmdBuffer, dataBuffer) failed C0000004.
+INFO:iMPACT -  Cable Type = 3, Revision = 0.
+INFO:iMPACT -  Setting cable speed to 6 MHz.
+INFO:iMPACT - Cable connection established.
+INFO:iMPACT - Firmware version = 2301.
+INFO:iMPACT - File version of C:/Xilinx/13.3/ISE_DS/ISE/data/xusb_xp2.hex =   2401.
+INFO:iMPACT - Firmware hex file version = 2401.
+INFO:iMPACT - Downloading C:/Xilinx/13.3/ISE_DS/ISE/data/xusb_xp2.hex.
+INFO:iMPACT - Downloaded firmware version = 2401.
+INFO:iMPACT - PLD file version = 200Dh.
+INFO:iMPACT -  PLD version = 200Dh.
+INFO:iMPACT - Type = 0x0005.
+INFO:iMPACT - ESN option: 000014D27CD301.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 2017-04-18 3:57:38 PM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+----------------------------------------------------------------------
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx150t, Version : 4
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/13.3/ISE_DS/ISE/spartan6/data/xc6slx150t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx150t successfully.
+----------------------------------------------------------------------
+'1': : Manufacturer's ID = Xilinx xcf32p, Version : 13
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/13.3/ISE_DS/ISE/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+'2': : Manufacturer's ID = Xilinx xcf08p, Version : 13
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/13.3/ISE_DS/ISE/xcfp/data/xcf08p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf08p successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Enumerating cables. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setCable -port usb21 -baud -1
+ Server Name = shengliupc, Port = 50001.
+INFO:iMPACT - Client connected to Server: shengliupc, Port: 50001.
+INFO:iMPACT - Connecting to cable (Usb Port - USB21).
+INFO:iMPACT - Checking cable driver.
+INFO:iMPACT -  Driver file xusb_xp2.sys found.
+INFO:iMPACT -  Driver version: src=2301, dest=2301.
+INFO:iMPACT -  Driver windrvr6.sys version = 10.2.1.0.INFO:iMPACT -  WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010   x86_64 64bit SYS 14:14:44, version = 1021.
+INFO:iMPACT -  Cable PID = 0008.
+INFO:iMPACT -  Max current requested during enumeration is 300 mA.
+INFO:iMPACT - Type = 0x0005.
+INFO:iMPACT - write (count, cmdBuffer, dataBuffer) failed C0000004.
+INFO:iMPACT -  Cable Type = 3, Revision = 0.
+INFO:iMPACT -  Setting cable speed to 6 MHz.
+INFO:iMPACT - Cable connection established.
+INFO:iMPACT - Firmware version = 2301.
+INFO:iMPACT - File version of C:/Xilinx/13.3/ISE_DS/ISE/data/xusb_xp2.hex =   2401.
+INFO:iMPACT - Firmware hex file version = 2401.
+INFO:iMPACT - Downloading C:/Xilinx/13.3/ISE_DS/ISE/data/xusb_xp2.hex.
+INFO:iMPACT - Downloaded firmware version = 2401.
+INFO:iMPACT - PLD file version = 200Dh.
+INFO:iMPACT -  PLD version = 200Dh.
+INFO:iMPACT - Type = 0x0005.
+INFO:iMPACT - ESN option: 000014D27CD301.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 2017-04-18 3:59:31 PM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+----------------------------------------------------------------------
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx150t, Version : 4
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/13.3/ISE_DS/ISE/spartan6/data/xc6slx150t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx150t successfully.
+----------------------------------------------------------------------
+'1': : Manufacturer's ID = Xilinx xcf32p, Version : 13
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/13.3/ISE_DS/ISE/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+'2': : Manufacturer's ID = Xilinx xcf08p, Version : 13
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/13.3/ISE_DS/ISE/xcfp/data/xcf08p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf08p successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+Your driver installation is not complete. Please re-run your application or run
+install_drivers.exe from the ISE installation area as an Administrator tocomplete the driver installation.
+Service using windrvr6.sys : SYSTEM\CurrentControlSet\Services\WinDriver6.
+ ImagePath = \SystemRoot\system32\drivers\windrvr6.sys.
+ Start = 3.
+ ErrorControl = 1.
+ Type=1.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+Cable autodetection failed.
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+Project:'C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr12_2017/\auto_project.ipf' created.
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : saveProjectFile -file"C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr12_2017/\auto_project.ipf"
+// *** BATCH CMD : setMode -pff
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at   C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\PROM\Apr12_2017\we   btalk.log for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : deletePromDevice -position 2
+----------------------------------------------------------------------
+// *** BATCH CMD : deletePromDevice -position 1
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1
+// *** BATCH CMD : deleteDevice -position 1
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1

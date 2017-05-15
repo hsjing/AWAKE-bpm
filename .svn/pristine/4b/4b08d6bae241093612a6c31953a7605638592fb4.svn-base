@@ -1,0 +1,254 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    10:08:16 02/22/2016 
+// Design Name: 
+// Module Name:    energy_rms 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 1 latency = 100ns
+//
+//////////////////////////////////////////////////////////////////////////////////
+module Power_rms(
+	input [15:0] Data_In,
+	input Data_In_Valid,
+	input clk,
+	input rst,
+
+	output [31:0] RMS,
+	output [15:0] Total_N,
+	output reg RDY	
+    );
+
+//////define signal for fix2float/////
+wire fix2float_ND;
+wire fix2float_rfd;
+wire [31:0] fix2floatOut;
+wire fix2float_rdy;
+
+/////////define signal for fixN2float///////
+wire N2float_ND;
+wire N2float_rfd;
+wire [31:0] N2floatOut;
+wire N2float_rdy;
+
+////define signal for square/////////////
+wire square_ND;
+wire square_rfd; 
+wire [31:0] squareOut;
+wire square_underflw;
+wire square_overflw;
+wire square_invalid_op;
+wire square_rdy;
+////////////define signal for sum////////////
+wire sum_rfd;
+wire sum_ND;
+wire [31:0] sumOut;
+wire sum_underflw;
+wire sum_overflw;
+wire sum_invalid_op;
+wire sum_rdy;
+////////////////////define signal for div////////////
+wire div_ND;
+wire div_rfd;
+wire [31:0] divOut;
+wire div_underflw;
+wire div_overflw;
+wire div_invalid_op;
+wire divid_by_zero;
+wire div_rdy;
+///////////////define signal for square root/////////////
+wire sqrt_rfd;
+wire sqrt_invalid_op;
+wire sqrt_rdy;
+wire sqrt_ND;
+
+//////define states//////////
+parameter state_idle = 0, 
+			 state_rd = 4'b0001,
+          state_fix2float = 4'b0010,
+			 state_square = 4'b0011,
+			 state_wait1 = 4'b0100,
+			 state_addInt = 4'b0101,
+			 state_add = 4'b0110,
+			 state_wait2 = 4'b0111,
+			 state_wait3 = 4'b1000,
+			 state_div = 4'b1001,
+			 state_sqrt = 4'b1010,
+			 state_rdy = 4'b1011;
+			 
+			 
+reg [3:0] state;
+//define some registers////////////
+reg [15:0] N;
+reg [31:0] sumOut_prev;
+reg [31:0] total_sum;
+reg [15:0] count;
+reg [15:0] fix2floatIn;
+reg [31:0] squareIn;
+reg [31:0] addIn;
+reg [31:0] divIn;
+reg [31:0] sqrtIn;
+
+assign Total_N = N;
+
+assign fix2float_ND = 1;
+assign N2float_ND = 1;
+assign square_ND = 1;
+assign sum_ND = 1;
+assign div_ND = 1;
+assign sqrt_ND = 1;
+
+
+always@ (posedge clk)begin
+	if (rst)begin
+		count <= 0;
+		N <= 0;
+		RDY <= 0;
+		state <= state_idle;
+	end
+	
+	else begin
+		case(state)
+			state_idle:
+			 begin
+				if(Data_In_Valid == 1)begin
+					fix2floatIn[15] <= Data_In[15];
+					fix2floatIn[14:0] <= Data_In[14:0]; //1st data in
+					state <= state_square;
+				end		
+			 end
+						
+			state_square: //square data
+				begin
+					squareIn <= fix2floatOut; //1st data squared
+					fix2floatIn[15] <= Data_In[15];
+					fix2floatIn[14:0] <= Data_In[14:0];	//capture the 2nd data 
+					state <= state_wait1;
+				end
+				
+			state_wait1: //
+				begin
+					fix2floatIn[15] <= Data_In[15];
+					fix2floatIn[14:0] <= Data_In[14:0];	//capture the 3rd data 
+					squareIn <= fix2floatOut;  //2nd data squred
+					addIn <= squareOut;  //1st data addIn
+					sumOut_prev <= 0; 
+					count <= 0;
+					state <= state_add;
+				end				
+			
+			state_add:
+				begin
+					if(Data_In_Valid == 0)begin
+						total_sum <= sumOut;
+						N <= count;
+						state <= state_div;
+						count <= 0;
+					end
+					else begin
+						fix2floatIn[15] <= Data_In[15];
+						fix2floatIn[14:0] <= Data_In[14:0];  
+						squareIn <= fix2floatOut;
+						addIn <= squareOut;	//putting second data to addin
+						sumOut_prev <= sumOut;	//putting first data to sumOut_prev
+						count <= count + 1;
+					end
+				end		
+	
+			state_div:
+				begin
+					divIn <= total_sum;
+					state <= state_sqrt;
+				end
+				
+			state_sqrt:
+				begin
+					sqrtIn <= divOut;
+					RDY <= 1;
+					state <= state_rdy;
+				end	
+				
+         state_rdy:
+				begin
+					count <= 0;
+					N <= 0;
+					RDY <= 0;
+					state <= state_idle;
+				end	
+				
+				
+	endcase
+	end
+end
+fix2float fix2float (                //converts input integer to a floating number
+  .a(fix2floatIn), // input [31 : 0] a
+  .operation_nd(fix2float_ND), // input operation_nd
+  .operation_rfd(fix2float_rfd), // output operation_rfd
+  .result(fix2floatOut), // output [31 : 0] result
+  .rdy(fix2float_rdy) // output rdy
+);
+
+fixN2float fixN2float (
+  .a(N), // input [15 : 0] a
+  .operation_nd(N2float_ND), // input operation_nd
+  .operation_rfd(N2float_rfd), // output operation_rfd
+  .result(N2floatOut), // output [31 : 0] result
+  .rdy(N2float_rdy) // output rdy
+);
+
+
+float_square float_square (		//square all the floating number
+  .a(squareIn), // input [31 : 0] a
+  .b(squareIn), // input [31 : 0] b
+  .operation_nd(square_ND), // input operation_nd
+  .operation_rfd(square_rfd), // output operation_rfd
+  .result(squareOut), // output [31 : 0] result
+  .underflow(square_underflw), // output underflow
+  .overflow(square_overflw), // output overflow
+  .invalid_op(square_invalid_op), // output invalid_op
+  .rdy(square_rdy) // output rdy
+);
+float_sum float_sum (
+  .a(sumOut_prev), // input [31 : 0] a
+  .b(addIn), // input [31 : 0] b
+  .operation_nd(sum_ND), // input operation_nd
+  .operation_rfd(sum_rfd), // output operation_rfd
+  .result(sumOut), // output [31 : 0] result
+  .underflow(sum_underflw), // output underflow
+  .overflow(sum_overflw), // output overflow
+  .invalid_op(sum_invalid_op), // output invalid_op
+  .rdy(sum_rdy) // output rdy
+);
+
+float_div float_div (
+  .a(divIn), // input [31 : 0] a
+  .b(N2floatOut), // input [31 : 0] b
+  .operation_nd(div_ND), // input operation_nd
+  .operation_rfd(div_rfd), // output operation_rfd
+  .result(divOut), // output [31 : 0] result
+  .underflow(div_underflw), // output underflow
+  .overflow(div_overflw), // output overflow
+  .invalid_op(div_invalid_op), // output invalid_op
+  .divide_by_zero(divide_by_zero), // output divide_by_zero
+  .rdy(div_rdy) // output rdy
+);
+
+float_sqrt float_sqrt (
+  .a(sqrtIn), // input [31 : 0] a
+  .operation_nd(sqrt_ND), // input operation_nd
+  .operation_rfd(sqrt_rfd), // output operation_rfd
+  .result(RMS), // output [31 : 0] result
+  .invalid_op(sqrt_invalid_op), // output invalid_op
+  .rdy(sqrt_rdy) // output rdy
+);
+endmodule

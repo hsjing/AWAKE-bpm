@@ -1,0 +1,65 @@
+
+##########################   LEDs   ##############################
+
+NET LED[0]                 LOC = M18  | IOSTANDARD = LVCMOS25;  # "LED0"
+NET LED[1]                 LOC = L19  | IOSTANDARD = LVCMOS25;  # "LED1"
+NET LED[2]                 LOC = M21  | IOSTANDARD = LVCMOS25;  # "LED2"
+NET LED[3]                 LOC = F22  | IOSTANDARD = LVCMOS25;  # "LED3"
+NET LED[4]                 LOC = H22  | IOSTANDARD = LVCMOS25;  # "LED4"
+NET LED[5]                 LOC = C25  | IOSTANDARD = LVCMOS25;  # "LED5"
+NET LED[6]                 LOC = C26  | IOSTANDARD = LVCMOS25;  # "LED6"
+NET LED[7]                 LOC = F23  | IOSTANDARD = LVCMOS25;  # "LED7"
+
+
+###########################   Clocks   #####################################
+NET CLK_100MHZ           LOC = U23  | IOSTANDARD = LVCMOS25;  # "CLK_100MHZ"
+NET TM_STAMP             LOC = R25  | IOSTANDARD = LVCMOS25;  # "TIME STAMP CLOCK OF 10MHZ"
+
+##########################   FMC1   #####################################
+
+NET DCLK_N          LOC = A14;  # "FMC1-LA17-CC_N"  Bank#0 TR
+NET DCLK_P          LOC = B14;  # "FMC1-LA17-CC_P"  Bank#0 TR
+NET FCLK_N         LOC = A12;  # "FMC1-LA00-CC_N"  Bank#0 TR
+NET FCLK_P         LOC = B12;  # "FMC1-LA00-CC_P"  Bank#0 TR
+NET DA0_N          LOC = B21;  # "FMC1-LA11_N"   Bank#0 TR
+NET DA0_P          LOC = C21;  # "FMC1-LA11_P"   Bank#0 TR
+NET DA1_N          LOC = E16;  # "FMC1-LA16_N"   Bank#0 TR
+NET DA1_P          LOC = F16;  # "FMC1-LA16_P"   Bank#0 TR
+NET DB0_N          LOC = E20;  # "FMC1-LA15_N"  Bank#0 TR
+NET DB0_P          LOC = F20;  # "FMC1-LA15_P"  Bank#0 TR
+NET DB1_N          LOC = J17;  # "FMC1-LA19_N"  Bank#0 TR
+NET DB1_P          LOC = J16;  # "FMC1-LA19_P"  Bank#0 TR
+NET DC0_N          LOC = A22;  # "FMC1-LA20_N"  Bank#0 TR
+NET DC0_P          LOC = B22;  # "FMC1-LA20_P"  Bank#0 TR
+NET DC1_N          LOC = E18;  # "FMC1-LA22_N"  Bank#0 TR
+NET DC1_P          LOC = F18;  # "FMC1-LA22_P"  Bank#0 TR  
+NET DD0_N          LOC = F19;  # "FMC1-LA21_N"  Bank#0 TR
+NET DD0_P          LOC = G19;  # "FMC1-LA21_P"  Bank#0 TR
+NET DD1_N          LOC = H14;  # "FMC1-LA24_N"  Bank#0 TR
+NET DD1_P          LOC = K14;  # "FMC1-LA24_P"  Bank#0 TR
+
+
+
+##########################   FMC2   #####################################
+
+
+NET FPGA_RESET_BT	     LOC = V14 | IOSTANDARD = LVCMOS25;	 
+
+#Created by Constraints Editor (xc6slx150t-fgg676-3) - 2012/02/10
+#NET "CLK_100MHZ" TNM_NET = CLK_100MHZ;
+#TIMESPEC TS_CLK_100MHZ = PERIOD "CLK_100MHZ" 10 ns HIGH 50%;
+#Created by Constraints Editor (xc6slx150t-fgg676-3) - 2012/02/10
+NET "DCLK_N" TNM_NET = DCLK_N;
+TIMESPEC TS_DCLK_N = PERIOD "DCLK_N" 2 ns HIGH 50%;
+NET "DCLK_P" TNM_NET = DCLK_P;
+TIMESPEC TS_DCLK_P = PERIOD "DCLK_P" 2 ns HIGH 50%;
+
+NET "TM_STAMP" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+
+
+
+
+
+

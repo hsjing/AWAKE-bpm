@@ -1,0 +1,15 @@
+Initializing CoreGen with the user repository list from
+'C:\Users\sliu\AppData\Roaming\Xilinx\CoreGen\13.3\indexes\xil_index_map.xml'.
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - 'C:\Xilinx\13.3\ISE_DS\ISE\coregen\' [reloaded]
+INFO:sim - Generating component instance 'float_fix' of
+   'xilinx.com:ip:floating_point:5.0' from
+   'C:\Xilinx\13.3\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\floating_p
+   oint_v5_0\component.xml'.
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Cancelled executing Tcl generator.
+Wrote CGP file for project 'float_fix'.

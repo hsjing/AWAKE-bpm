@@ -1,0 +1,530 @@
+Release 13.3 - xst O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "axi_bram_ctrl_0_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\Xilinx\MyXilinx\150LXT\avg_detector_mb_rev5.0.6\mb_system\pcores\" "C:\Xilinx\13.3\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\13.3\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc6slx150tfgg676-3
+Output File Name                   : "../implementation/axi_bram_ctrl_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : axi_bram_ctrl_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/srl_fifo.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl_funcs.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing package <axi_bram_ctrl_funcs>.
+Parsing package body <axi_bram_ctrl_funcs>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_lite_if.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <axi_lite_if>.
+Parsing architecture <IMP> of entity <axi_lite_if>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/checkbit_handler_64.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <checkbit_handler_64>.
+Parsing architecture <IMP> of entity <checkbit_handler_64>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/checkbit_handler.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <checkbit_handler>.
+Parsing architecture <IMP> of entity <checkbit_handler>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/correct_one_bit_64.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <Correct_One_Bit_64>.
+Parsing architecture <IMP> of entity <correct_one_bit_64>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/correct_one_bit.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <Correct_One_Bit>.
+Parsing architecture <IMP> of entity <correct_one_bit>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/xor18.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <XOR18>.
+Parsing architecture <IMP> of entity <xor18>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/parity.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <Parity>.
+Parsing architecture <IMP> of entity <parity>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/ecc_gen.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <ecc_gen>.
+Parsing architecture <trans> of entity <ecc_gen>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/lite_ecc_reg.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <lite_ecc_reg>.
+Parsing architecture <implementation> of entity <lite_ecc_reg>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_lite.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <axi_lite>.
+Parsing architecture <implementation> of entity <axi_lite>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/sng_port_arb.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <sng_port_arb>.
+Parsing architecture <implementation> of entity <sng_port_arb>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/ua_narrow.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <ua_narrow>.
+Parsing architecture <implementation> of entity <ua_narrow>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wrap_brst.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <wrap_brst>.
+Parsing architecture <implementation> of entity <wrap_brst>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/rd_chnl.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <rd_chnl>.
+Parsing architecture <implementation> of entity <rd_chnl>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wr_chnl.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <wr_chnl>.
+Parsing architecture <implementation> of entity <wr_chnl>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <full_axi>.
+Parsing architecture <implementation> of entity <full_axi>.
+Parsing VHDL file "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <axi_bram_ctrl>.
+Parsing architecture <implementation> of entity <axi_bram_ctrl>.
+Parsing VHDL file "C:\Xilinx\MyXilinx\150LXT\avg_detector_mb_rev5.0.6\mb_system\hdl\axi_bram_ctrl_0_wrapper.vhd" into library work
+Parsing entity <axi_bram_ctrl_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <axi_bram_ctrl_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <axi_bram_ctrl_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <axi_bram_ctrl> (architecture <implementation>) with generics from library <axi_bram_ctrl_v1_03_a>.
+
+Elaborating entity <axi_lite> (architecture <implementation>) with generics from library <axi_bram_ctrl_v1_03_a>.
+INFO:HDLCompiler:679 - "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_lite.vhd" Line 1704. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "C:/Xilinx/13.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl.vhd" Line 472: Net <bram_rddata_b_int[31]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <axi_bram_ctrl_0_wrapper>.
+    Related source file is "c:/xilinx/myxilinx/150lxt/avg_detector_mb_rev5.0.6/mb_system/hdl/axi_bram_ctrl_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <axi_bram_ctrl_0_wrapper> synthesized.
+
+Synthesizing Unit <axi_bram_ctrl>.
+    Related source file is "c:/xilinx/13.3/ise_ds/edk/hw/xilinxprocessoriplib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl.vhd".
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ID_WIDTH = 1
+        C_S_AXI_PROTOCOL = "AXI4LITE"
+        C_S_AXI_SUPPORTS_NARROW_BURST = 0
+        C_SINGLE_PORT_BRAM = 1
+        C_S_AXI_CTRL_ADDR_WIDTH = 32
+        C_S_AXI_CTRL_DATA_WIDTH = 32
+        C_ECC = 0
+        C_FAULT_INJECT = 0
+        C_ECC_ONOFF_RESET_VALUE = 1
+WARNING:Xst:647 - Input <S_AXI_AWLEN<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_AWSIZE<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_AWBURST<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_AWCACHE<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_AWPROT<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARLEN<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARSIZE<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARBURST<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARCACHE<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARPROT<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_RdData_B<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_AWLOCK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_WLAST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARLOCK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "c:/xilinx/13.3/ise_ds/edk/hw/xilinxprocessoriplib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl.vhd" line 810: Output port <BRAM_WE_B> of the instance <GEN_AXI4LITE.I_AXI_LITE> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/xilinx/13.3/ise_ds/edk/hw/xilinxprocessoriplib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl.vhd" line 810: Output port <BRAM_Addr_B> of the instance <GEN_AXI4LITE.I_AXI_LITE> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/xilinx/13.3/ise_ds/edk/hw/xilinxprocessoriplib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl.vhd" line 810: Output port <BRAM_WrData_B> of the instance <GEN_AXI4LITE.I_AXI_LITE> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/xilinx/13.3/ise_ds/edk/hw/xilinxprocessoriplib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl.vhd" line 810: Output port <BRAM_En_B> of the instance <GEN_AXI4LITE.I_AXI_LITE> is unconnected or connected to loadless signal.
+WARNING:Xst:2935 - Signal 'bram_rddata_b_int', unconnected in block 'axi_bram_ctrl', is tied to its initial value (00000000000000000000000000000000).
+    Found 1-bit register for signal <S_AXI_RID_int>.
+    Found 1-bit register for signal <S_AXI_BID_int>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <axi_bram_ctrl> synthesized.
+
+Synthesizing Unit <axi_lite>.
+    Related source file is "c:/xilinx/13.3/ise_ds/edk/hw/xilinxprocessoriplib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_lite.vhd".
+        C_S_AXI_PROTOCOL = "AXI4LITE"
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_DATA_WIDTH = 32
+        C_SINGLE_PORT_BRAM = 1
+        C_S_AXI_CTRL_ADDR_WIDTH = 32
+        C_S_AXI_CTRL_DATA_WIDTH = 32
+        C_ECC = 0
+        C_ECC_TYPE = 1
+        C_ECC_WIDTH = 0
+        C_FAULT_INJECT = 0
+        C_ECC_ONOFF_RESET_VALUE = 1
+        C_ENABLE_AXI_CTRL_REG_IF = 0
+        C_CE_FAILING_REGISTERS = 0
+        C_UE_FAILING_REGISTERS = 0
+        C_ECC_STATUS_REGISTERS = 0
+        C_ECC_ONOFF_REGISTER = 0
+        C_CE_COUNTER_WIDTH = 0
+WARNING:Xst:647 - Input <AXI_AWADDR<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_ARADDR<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_CTRL_AWADDR<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_CTRL_WDATA<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_CTRL_ARADDR<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_RdData_B<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_CTRL_AWVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_CTRL_WVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_CTRL_BREADY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_CTRL_ARVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_CTRL_RREADY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <axi_arready_int>.
+    Found 3-bit register for signal <bvalid_cnt>.
+    Found 1-bit register for signal <axi_bvalid_int>.
+    Found 1-bit register for signal <axi_rvalid_int>.
+    Found 1-bit register for signal <axi_rlast_int>.
+    Found 3-bit register for signal <lite_sm_cs>.
+    Found 1-bit register for signal <axi_wready_int>.
+    Found 1-bit register for signal <axi_aresetn_d1>.
+INFO:Xst:1799 - State rmw_rd_data is never reached in FSM <lite_sm_cs>.
+INFO:Xst:1799 - State rmw_mod_data is never reached in FSM <lite_sm_cs>.
+INFO:Xst:1799 - State rmw_wr_data is never reached in FSM <lite_sm_cs>.
+    Found finite state machine <FSM_0> for signal <lite_sm_cs>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 11                                             |
+    | Clock              | S_AXI_ACLK (rising_edge)                       |
+    | Reset              | S_AXI_ARESETN_INV_6_o (positive)               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <bvalid_cnt[2]_GND_9_o_add_98_OUT> created at line 1241.
+    Found 3-bit subtractor for signal <GND_9_o_GND_9_o_sub_100_OUT<2:0>> created at line 1308.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred  42 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <axi_lite> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 3-bit addsub                                          : 1
+# Registers                                            : 9
+ 1-bit register                                        : 8
+ 3-bit register                                        : 1
+# Multiplexers                                         : 42
+ 1-bit 2-to-1 multiplexer                              : 38
+ 4-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <axi_lite>.
+The following registers are absorbed into counter <bvalid_cnt>: 1 register on signal <bvalid_cnt>.
+Unit <axi_lite> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 3-bit updown counter                                  : 1
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Multiplexers                                         : 42
+ 1-bit 2-to-1 multiplexer                              : 38
+ 4-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/FSM_0> on signal <lite_sm_cs[1:2]> with sequential encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ idle         | 00
+ sng_wr_data  | 01
+ rd_data      | 10
+ rmw_rd_data  | unreached
+ rmw_mod_data | unreached
+ rmw_wr_data  | unreached
+--------------------------
+
+Optimizing unit <axi_bram_ctrl_0_wrapper> ...
+
+Optimizing unit <axi_lite> ...
+INFO:Xst:2261 - The FF/Latch <axi_wready_int> in Unit <axi_lite> is equivalent to the following FF/Latch, which will be removed : <lite_sm_cs_FSM_FFd2> 
+INFO:Xst:2261 - The FF/Latch <axi_wready_int> in Unit <axi_lite> is equivalent to the following FF/Latch, which will be removed : <lite_sm_cs_FSM_FFd2> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/lite_sm_cs_FSM_FFd1> in Unit <axi_bram_ctrl_0_wrapper> is equivalent to the following 2 FFs/Latches, which will be removed : <axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/axi_rvalid_int> <axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/axi_rlast_int> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block axi_bram_ctrl_0_wrapper, actual ratio is 0.
+FlipFlop axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/lite_sm_cs_FSM_FFd1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : axi_bram_ctrl_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 51
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 6
+#      LUT3                        : 4
+#      LUT4                        : 30
+#      LUT5                        : 3
+#      LUT6                        : 6
+# FlipFlops/Latches                : 11
+#      FD                          : 1
+#      FDR                         : 6
+#      FDRE                        : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx150tfgg676-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              11  out of  184304     0%  
+ Number of Slice LUTs:                   50  out of  92152     0%  
+    Number used as Logic:                50  out of  92152     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     53
+   Number with an unused Flip Flop:      42  out of     53    79%  
+   Number with an unused LUT:             3  out of     53     5%  
+   Number of fully used LUT-FF pairs:     8  out of     53    15%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                         546
+ Number of bonded IOBs:                   0  out of    396     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                | Load  |
+-----------------------------------+--------------------------------------+-------+
+BRAM_Clk_A                         | NONE(axi_bram_ctrl_0/S_AXI_BID_int_0)| 11    |
+-----------------------------------+--------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.673ns (Maximum Frequency: 272.290MHz)
+   Minimum input arrival time before clock: 3.554ns
+   Maximum output required time after clock: 2.734ns
+   Maximum combinational path delay: 2.616ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BRAM_Clk_A'
+  Clock period: 3.673ns (frequency: 272.290MHz)
+  Total number of paths / destination ports: 65 / 14
+-------------------------------------------------------------------------
+Delay:               3.673ns (Levels of Logic = 2)
+  Source:            axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_0 (FF)
+  Destination:       axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_2 (FF)
+  Source Clock:      BRAM_Clk_A rising
+  Destination Clock: BRAM_Clk_A rising
+
+  Data Path: axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_0 to axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.447   1.050  axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_0 (axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_0)
+     LUT6:I2->O            9   0.203   0.830  axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/Mmux_BRAM_WE_A111 (axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/Mmux_BRAM_WE_A11)
+     LUT6:I5->O            2   0.205   0.616  axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/_n0251_inv1 (axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/_n0251_inv)
+     FDRE:CE                   0.322          axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_1
+    ----------------------------------------
+    Total                      3.673ns (1.177ns logic, 2.496ns route)
+                                       (32.0% logic, 68.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_A'
+  Total number of paths / destination ports: 46 / 24
+-------------------------------------------------------------------------
+Offset:              3.554ns (Levels of Logic = 3)
+  Source:            S_AXI_WVALID (PAD)
+  Destination:       axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_2 (FF)
+  Destination Clock: BRAM_Clk_A rising
+
+  Data Path: S_AXI_WVALID to axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O            1   0.205   0.944  axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/lite_sm_cs_FSM_FFd2-In21_SW0 (N2)
+     LUT6:I0->O            9   0.203   0.830  axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/Mmux_BRAM_WE_A111 (axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/Mmux_BRAM_WE_A11)
+     LUT6:I5->O            2   0.205   0.616  axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/_n0251_inv1 (axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/_n0251_inv)
+     FDRE:CE                   0.322          axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_1
+    ----------------------------------------
+    Total                      3.554ns (1.164ns logic, 2.390ns route)
+                                       (32.8% logic, 67.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BRAM_Clk_A'
+  Total number of paths / destination ports: 63 / 43
+-------------------------------------------------------------------------
+Offset:              2.734ns (Levels of Logic = 2)
+  Source:            axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_0 (FF)
+  Destination:       BRAM_WE_A<3> (PAD)
+  Source Clock:      BRAM_Clk_A rising
+
+  Data Path: axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_0 to BRAM_WE_A<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.447   1.050  axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_0 (axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/bvalid_cnt_0)
+     LUT6:I2->O            9   0.203   0.830  axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/Mmux_BRAM_WE_A111 (axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/Mmux_BRAM_WE_A11)
+     LUT2:I1->O            0   0.205   0.000  axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/Mmux_BRAM_WE_A11 (BRAM_WE_A<0>)
+    ----------------------------------------
+    Total                      2.734ns (0.855ns logic, 1.879ns route)
+                                       (31.3% logic, 68.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 176 / 101
+-------------------------------------------------------------------------
+Delay:               2.616ns (Levels of Logic = 3)
+  Source:            S_AXI_WVALID (PAD)
+  Destination:       BRAM_WE_A<3> (PAD)
+
+  Data Path: S_AXI_WVALID to BRAM_WE_A<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O            1   0.205   0.944  axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/lite_sm_cs_FSM_FFd2-In21_SW0 (N2)
+     LUT6:I0->O            9   0.203   0.830  axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/Mmux_BRAM_WE_A111 (axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/Mmux_BRAM_WE_A11)
+     LUT2:I1->O            0   0.205   0.000  axi_bram_ctrl_0/GEN_AXI4LITE.I_AXI_LITE/Mmux_BRAM_WE_A11 (BRAM_WE_A<0>)
+    ----------------------------------------
+    Total                      2.616ns (0.842ns logic, 1.774ns route)
+                                       (32.2% logic, 67.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock BRAM_Clk_A
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+BRAM_Clk_A     |    3.673|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.86 secs
+ 
+--> 
+
+Total memory usage is 267492 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

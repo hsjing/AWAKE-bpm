@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.xst" -ofn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.syr" 
+xst -intstyle ise -ifn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.xst" -ofn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.syr" 
+xst -intstyle ise -ifn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.xst" -ofn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.syr" 
+xst -intstyle ise -ifn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.xst" -ofn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.syr" 
+xst -intstyle ise -ifn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.xst" -ofn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.syr" 
+xst -intstyle ise -ifn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.xst" -ofn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.syr" 
+xst -intstyle ise -ifn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.xst" -ofn "C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mbx2_system_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc LX150T_AWAKE_SL_Rev1.ucf -bm edkBmmFile.bmm -p xc6slx150t-fgg676-3 mbx2_system_top.ngc mbx2_system_top.ngd  
+map -intstyle ise -p xc6slx150t-fgg676-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o mbx2_system_top_map.ncd mbx2_system_top.ngd mbx2_system_top.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 mbx2_system_top_map.ncd mbx2_system_top.ncd mbx2_system_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mbx2_system_top.twx mbx2_system_top.ncd -o mbx2_system_top.twr mbx2_system_top.pcf -ucf LX150T_AWAKE_SL_Rev1.ucf 
+bitgen -intstyle ise -f mbx2_system_top.ut mbx2_system_top.ncd 

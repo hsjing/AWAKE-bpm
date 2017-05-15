@@ -1,0 +1,152 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    20:40:14 11/14/2013 
+// Design Name: 
+// Module Name:    sync_and_deser_x4CH 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module deser_data_x4CH_ddr(
+    input [1:0] DFRPN,
+    input [3:0] DCHAPN,
+    input [3:0] DCHBPN,
+    input [3:0] DCHCPN,
+    input [3:0] DCHDPN,
+    input IOCLKP,
+    input IOCLKN,
+    input GCLK,
+	 input IOSTROBE,
+    output [15:0] DCHAOUT,
+    output [15:0] DCHBOUT,
+    output [15:0] DCHCOUT,
+    output [15:0] DCHDOUT,
+    input RESET,
+    output [4:0] DEBUG
+    );
+
+
+parameter integer 	DESERF = 8;
+parameter integer 	TAP_DELAY = 75;
+parameter integer 	DATA_DELAY = 0;
+parameter integer 	FRAME_DELAY = 0;
+
+
+//--------- Frame Synchronization --------------//
+
+wire DESERSYNC;
+wire deser_bitslip;
+wire [7:0] fclk_data;
+assign DESERSYNC = 1'b1;	 /* Always perform sycnroniztion */
+
+deser_fclk_8bit_ddr #(
+    .DESERF  (8),
+	 .SIM_TAP_DELAY	(TAP_DELAY),
+	 .IDELAY_VALUE    (FRAME_DELAY)
+) frame_sync (
+    .DATAP(DFRPN[0]), 
+    .DATAN(DFRPN[1]), 
+    .IOCLKP(IOCLKP), 
+	 .IOCLKN(IOCLKN), 
+    .GCLK(GCLK), 
+    .IOSTROBE(IOSTROBE), 
+    .DATAOUT(fclk_data), 
+    .RESET(RESET), 
+    .DESERSYNC(DESERSYNC), 
+    .BTSLP(deser_bitslip), 
+    .DEBUG(DEBUG[0])
+    );
+
+//--------- Channel A --------------//
+deser_data_16bit_ddr #(
+    .DESERF  (8),
+	 .SIM_TAP_DELAY	(TAP_DELAY),
+	 .IDELAY_VALUE    (DATA_DELAY)
+)data_chA (
+    .DATA0P(DCHAPN[0]), 
+    .DATA0N(DCHAPN[1]), 
+    .DATA1P(DCHAPN[2]), 
+    .DATA1N(DCHAPN[3]), 
+    .IOCLKP(IOCLKP), 
+	 .IOCLKN(IOCLKN),
+    .GCLK(GCLK), 
+    .IOSTROBE(IOSTROBE), 
+    .DATAOUT(DCHAOUT), 
+    .RESET(RESET), 
+    .DESERSYNC(deser_bitslip), 
+    .DEBUG(DEBUG[1])
+    );
+	 
+//--------- Channel B --------------//
+deser_data_16bit_ddr #(
+    .DESERF  (8),
+	 .SIM_TAP_DELAY	(TAP_DELAY),
+	 .IDELAY_VALUE    (DATA_DELAY)
+)data_chB (
+    .DATA0P(DCHBPN[0]), 
+    .DATA0N(DCHBPN[1]), 
+    .DATA1P(DCHBPN[2]), 
+    .DATA1N(DCHBPN[3]), 
+    .IOCLKP(IOCLKP), 
+	 .IOCLKN(IOCLKN),
+    .GCLK(GCLK), 
+    .IOSTROBE(IOSTROBE), 
+    .DATAOUT(DCHBOUT), 
+    .RESET(RESET), 
+    .DESERSYNC(deser_bitslip), 
+    .DEBUG(DEBUG[2])
+    );
+
+	
+//--------- Channel C --------------//
+deser_data_16bit_ddr #(
+    .DESERF  (8),
+	 .SIM_TAP_DELAY	(TAP_DELAY),
+	 .IDELAY_VALUE    (DATA_DELAY)
+)data_chC (
+    .DATA0P(DCHCPN[0]), 
+    .DATA0N(DCHCPN[1]), 
+    .DATA1P(DCHCPN[2]), 
+    .DATA1N(DCHCPN[3]), 
+    .IOCLKP(IOCLKP), 
+	 .IOCLKN(IOCLKN),
+    .GCLK(GCLK), 
+    .IOSTROBE(IOSTROBE), 
+    .DATAOUT(DCHCOUT), 
+    .RESET(RESET), 
+    .DESERSYNC(deser_bitslip), 
+    .DEBUG(DEBUG[3])
+    );
+
+//--------- Channel D --------------//	 
+deser_data_16bit_ddr #(
+    .DESERF  (8),
+	 .SIM_TAP_DELAY	(TAP_DELAY),
+	 .IDELAY_VALUE    (DATA_DELAY)
+)data_chD (
+    .DATA0P(DCHDPN[0]), 
+    .DATA0N(DCHDPN[1]), 
+    .DATA1P(DCHDPN[2]), 
+    .DATA1N(DCHDPN[3]), 
+    .IOCLKP(IOCLKP), 
+	 .IOCLKN(IOCLKN),
+    .GCLK(GCLK), 
+    .IOSTROBE(IOSTROBE), 
+    .DATAOUT(DCHDOUT), 
+    .RESET(RESET), 
+    .DESERSYNC(deser_bitslip), 
+    .DEBUG(DEBUG[4])
+    );	 
+
+endmodule

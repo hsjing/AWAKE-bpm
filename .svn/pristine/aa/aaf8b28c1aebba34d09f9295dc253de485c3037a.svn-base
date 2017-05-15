@@ -1,0 +1,125 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: Angela Zhou
+// 
+// Create Date:    10:01:35 02/19/2016 
+// Design Name: 
+// Module Name:    trigger 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+// this module outputs a trig signal based on internal and external trig. once trig outputs high, circular buffer starts loading the event data 
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module trigger(
+   input EX_TRIG_MODE,
+   input RUN,
+	input [63:0] DATAIN,	//data from deserializer
+	input CLK,
+	input RESET,
+	input EXT_TRIG,
+	input [15:0] THRESHOLD,
+	input [15:0] DEAD_TIME,
+	output TRIG
+);
+
+	
+parameter  state_idle = 2'b0,
+	        state_event = 2'b01,
+			  state_dead = 2'b11;
+			  
+	reg [1:0] state;
+	reg [15:0] count;
+	reg int_trig;
+	
+always @ (posedge CLK)
+begin
+	
+	if(RESET)begin
+		state <= state_idle;			//if reset, state = state_noise, trigA off
+		int_trig <= 0;
+	end
+	
+	else begin
+		case(state)
+		state_idle:
+			if((  (DATAIN[63:48] > THRESHOLD)&& ( DATAIN[63]==0)) 
+			   | ((DATAIN[47:32] > THRESHOLD) && (DATAIN[47] == 0)) 
+				| ((DATAIN[31:16] > THRESHOLD) && (DATAIN[31]==0)) 
+				| ((DATAIN[15:0] > THRESHOLD)&&(DATAIN[15]==0))) 
+			  if (RUN) begin 
+				  state <= state_event;
+				  int_trig <= 1;
+				  count <= DEAD_TIME;
+			  end
+			
+		state_event:
+		begin
+			int_trig <= 0;
+			state <= state_dead;
+		end
+		
+		state_dead:
+		begin
+			if(count <= 1)
+			begin
+				state <= state_idle;
+			end
+			else 
+			begin
+				count <= count - 1;
+			end
+		end
+			
+			
+		default:
+		begin
+		int_trig <= 0;
+		state <= state_idle;
+		end
+		endcase
+	end
+end
+
+//Shaping external trigger pulse
+parameter  trig_state_idle = 2'b0,
+	        trig_state_event = 2'b01;
+
+			  
+reg [1:0] trig_state;
+reg ex_trig_shaped;
+	
+always @ (posedge CLK) begin
+	if(RESET)begin
+		  trig_state <= trig_state_idle;			
+		  ex_trig_shaped <= 0;
+	   end
+   else begin
+	 case(trig_state)
+		trig_state_idle:
+		   if(EXT_TRIG == 1) begin ex_trig_shaped <= 1; trig_state <= trig_state_event; end
+		trig_state_event:
+		   begin
+			  ex_trig_shaped <= 0;
+			  if(EXT_TRIG == 0) begin trig_state <= trig_state_idle; end	
+			end 
+		default:
+				begin ex_trig_shaped <= 0;	trig_state <= trig_state_idle; end
+	 endcase
+	end
+
+end //always
+
+
+assign TRIG = EX_TRIG_MODE? ex_trig_shaped
+              :int_trig
+				  ;				
+
+endmodule

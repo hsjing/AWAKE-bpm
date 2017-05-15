@@ -1,0 +1,9 @@
+elfcheck
+Xilinx EDK 13.3 Build EDK_O.76xd
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mb_system_hw_platform/system.xml -pe
+microblaze_0 ELBPM_server_rev.7.4.3.2.elf 
+
+ELF file	: ELBPM_server_rev.7.4.3.2.elf
+elfcheck passed.

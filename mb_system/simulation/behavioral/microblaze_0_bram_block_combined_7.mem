@@ -1,0 +1,18 @@
+// Mem file initialization records.
+//
+// Release 13.3 - Data2MEM O.76xd, build 2.5 Aug 4, 2011
+// Copyright (c) 1995-2016 Xilinx, Inc.  All rights reserved.
+//
+// Command: data2mem -bm mb_system_sim.bmm -bd C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\bootloops\microblaze_0.elf tag microblaze_0 -bx C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\simulation\behavioral -u -p "xc6slx150tfgg676-3"
+//
+// Created on Monday March 07, 2016 - 04:24:28 pm, from:
+//
+//     Map file     - mb_system_sim.bmm
+//     Data file(s) - C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev1_0\mb_system\bootloops\microblaze_0.elf
+//
+// Address space 'microblaze_0.microblaze_0_bram_block_combined', bit lane [3:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    0

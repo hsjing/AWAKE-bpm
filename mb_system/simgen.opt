@@ -1,0 +1,17 @@
+-p
+xc6slx150tfgg676-3
+-lang
+verilog
+-intstyle
+ise
+-pe
+microblaze_0
+bootloops/microblaze_0.elf
+-msg
+__xps/ise/xmsgprops.lst
+-s
+isim
+-tb
+-m
+behavioral
+mb_system.mhs

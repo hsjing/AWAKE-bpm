@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Linear_Flash (Bank Address: S_AXI_MEM0_BASEADDR)" key="com.xilinx.sdk.tools.internal.ui.ProgramFlashPresenter.FlashController"/>
+	<item value="0x00000000" key="com.xilinx.sdk.tools.internal.ui.ProgramFlashPresenter.ProgOffset"/>
+	<item value="C:\Myprojects\CERN_AWAKE_BPM\FPGA_SPARTAN\AWAKE_BPM_Rev2_0\mb_system\SDK\SW_Design\mb_system_hw_platform\cache\AWAKE_BPM_V1.0.elf.srec" key="com.xilinx.sdk.tools.internal.ui.ProgramFlashPresenter.ImageFile"/>
+	<item value="MCB_DDR3 (Bank Address: S0_AXI_BASEADDR)" key="com.xilinx.sdk.tools.internal.ui.ProgramFlashPresenter.ScratchController"/>
+	<item value="false" key="com.xilinx.sdk.tools.internal.ui.ProgramFlashPresenter.PlatformFlash"/>
+</section>
