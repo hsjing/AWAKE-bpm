@@ -74,9 +74,11 @@ module Buf_SigProcs(
 
 	input [SF_WIDTH-1:0] K_cal,
 	input [4:0] DIGI_att,
-	input [4:0] VGA_gain,
-	input [4:0] AFE_Control_Reg,
-	output [4:0] auto_gain_reg,
+	
+	input [4:0] existing_gain_reg,	///< if auto_mode is not selected, the pre-existing gain setting used
+	output [4:0] auto_gain_reg,		///< If auto_mode is selected, takes over VGA gain output as this value instead
+	
+	input [4:0] VGA_gain,	///< Actual VGA gain used for signal recovery
 
 	output [DATA_WIDTH-1:0]status_net,
 	input  [DATA_WIDTH-1:0]control_reg,
@@ -484,7 +486,7 @@ module Buf_SigProcs(
 	auto_range auto_range_inst(
 		.clk(clk),
 		.ready(position_rdy),
-		.vga_in(VGA_gain),
+		.vga_in(existing_gain_reg),
 		.signal_max_a(ChA_Max_Reg),
 		.signal_max_b(ChB_Max_Reg),
 		.signal_max_c(ChC_Max_Reg),

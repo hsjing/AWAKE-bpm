@@ -324,10 +324,13 @@ Buf_SigProcs Buf_SigProcs_inst (
 	
 
 	.K_cal(K_CAL),
-	.DIGI_att(AFE_Control_Reg[13:9]),	
-	.VGA_gain(AFE_VGA_GAIN),
-	.AFE_Control_Reg(AFE_Control_Reg[4:0]),
+	.DIGI_att(AFE_Control_Reg[13:9]),
+
+	
+	/* VGA gain controls */
+	.existing_gain_reg(AFE_Control_Reg[4:0]),
 	.auto_gain_reg(auto_gain_reg),
+	.VGA_gain(AFE_VGA_GAIN),
 	
 	.control_reg(control_reg),
 	.status_net(status_net),
@@ -880,7 +883,8 @@ assign AFE_CAL = ~AFE_PICKUP; //the "AFE_CAL" default to be 1 to turn off cal si
 // auto_run enable
 wire AUTO_MODE = control_reg[6]; // Ranging mode select (1 = auto, 0 = manual)
 
-assign AFE_VGA_GAIN = AUTO_MODE? auto_gain_reg : AFE_Control_Reg[4:0];
+assign AFE_VGA_GAIN = AUTO_MODE? auto_gain_reg : AFE_Control_Reg[4:0];	///< Assigns AFE_VGA_GAIN output with either auto_gain or 
+																								///< existing gain value in AFE_Control_Reg
  
    
 endmodule
