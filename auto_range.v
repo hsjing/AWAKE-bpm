@@ -28,20 +28,22 @@
   Inputs:
   		
   		clk - process to be clocked from PLL, as determined by PLL
-  		ready - ready status bit for channel data: 1 -> ready to be read
+		rst - reset flag
+  		ready - ready status bit for channel data: 1 -> ready to be read		
   		[4:0] 	vga_in - 5 bit vga attenuation initial  
   		[15:0] 	signal_max_(a~d) - 16 bit signal amplitude calculated from <Max.v>
   	
   Outputs:
   		
-  		[4:0] vga_out - 5 bit vga attenuation final
+  		[4:0] auto_att_reg - 5 bit vga attenuation final
   
   Parameters:
    
    		upper_threshold - upper amplitude threshold beyond which signals must be re-ranged
    		lower_threshold - lower amplitude threshold that justifies increasing VGA attenuation
    		data_width - bit size of incoming amplitude data
-   		step - attenuation shift in dB   		
+   		step - attenuation shift in dB 
+			max - maximum attenuation in dB
    
   Registers:
 
@@ -55,6 +57,7 @@
  
 module auto_range(
 	input clk,
+	input rst,
 	input ready,
 	input [4:0] vga_in,
 	input [15:0] signal_max_a,
@@ -62,28 +65,41 @@ module auto_range(
 	input [15:0] signal_max_c,
 	input [15:0] signal_max_d,
 
-	output reg [4:0] auto_gain_reg
+	output reg [4:0] auto_att_reg
     );    
     
     parameter upper_threshold = 20000;	// Full range of amplitude is 32768
     parameter lower_threshold = 14000;	// Lower threshold roughly 3 dB less than upper threshold     
     parameter data_width = 16;
-    parameter step = 3;
+    parameter step = 2;
+	 parameter max = 31;
     
     reg [data_width-1:0] signal_max_all;
     
     always @ (posedge clk) begin
-    	if(ready) begin        	
+	 
+		/* Reset parameters by maxing out attenuation */
+		if(rst) begin
+			auto_att_reg <= max;
+			end
+			
+		/* Otherwise check for position ready flag and begin processing */
+    	else if(ready) begin
+					
+			signal_max_all <= 0;	///< Initialize signal_max_all as empty
+		
 			/* Comparatively loads the maximum signal from all channels */
 			if (signal_max_a[15:0] > signal_max_all)	signal_max_all <= signal_max_a;
 			if (signal_max_b[15:0] > signal_max_all)	signal_max_all <= signal_max_b;
 			if (signal_max_c[15:0] > signal_max_all)	signal_max_all <= signal_max_c;
 			if (signal_max_d[15:0] > signal_max_all)	signal_max_all <= signal_max_d;
 				
-			/* Lower or increase VGA attenuation depending on signal_max_all relative to the corresponding thresholds */
-			if (vga_in >= step) begin 
-				if (signal_max_all > upper_threshold)	auto_gain_reg <= vga_in + step;
-				if (signal_max_all < lower_threshold)	auto_gain_reg <= vga_in - step;
+			/* Lower or increase VGA attenuation depending on signal_max_all relative to the corresponding thresholds */			
+			if (signal_max_all > upper_threshold) begin
+				if (vga_in <= max)	auto_att_reg <= vga_in + step;
+				end
+			else if (signal_max_all < lower_threshold) begin
+				if (vga_in >= step)	auto_att_reg <= vga_in - step;
 				end					    	    
     		end
     	end    	

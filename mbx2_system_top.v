@@ -125,7 +125,7 @@ module mbx2_system_top (
 ///////////////////////////////////////////////////////////////
 //==================== Constant Parameters =================== 
 /////////////////////////////////////////////////////////////// 
-parameter FPGA_VERSION_NO = 32'd20170508; //May 08, 2017
+parameter FPGA_VERSION_NO = 32'd20170516; //May 16, 2017
 
 parameter  	ADC_BIT_WIDTH = 16;
 parameter  	DATA_WIDTH = 16;
@@ -208,7 +208,7 @@ wire [SFIFO_WIDTH-1:0] slow_fifo_dout;
 wire [DATA_WIDTH-1:0]status_net;
 
 // auto_range
-wire [4:0]auto_gain_reg;
+wire [4:0]auto_att_reg;
 
 reg [DATA_WIDTH-1:0]control_reg;
 reg [DATA_WIDTH-1:0]AFE_Control_Reg; 
@@ -328,8 +328,8 @@ Buf_SigProcs Buf_SigProcs_inst (
 
 	
 	/* VGA gain controls */
-	.existing_gain_reg(AFE_Control_Reg[4:0]),
-	.auto_gain_reg(auto_gain_reg),
+	.existing_gain_reg(AFE_VGA_GAIN),
+	.auto_att_reg(auto_att_reg),
 	.VGA_gain(AFE_VGA_GAIN),
 	
 	.control_reg(control_reg),
@@ -412,6 +412,9 @@ parameter integer 	CHD_CAL_GAIN_ADDR = 4*16'h068;
 parameter integer 	K_CAL_ADDR = 4*16'h06A;
 parameter integer 	CAL_NFX_ADDR = 4*16'h06B;
 parameter integer 	CAL_NFY_ADDR = 4*16'h06C;
+
+// Actual vga_gain address
+parameter integer		ACTUAL_VGA_GAIN_ADDR = 4*16'h06D;
 
 
 
@@ -750,7 +753,15 @@ begin
 	if ((MB2FPGA_bus_Addr == (BASE_ADDR + CAL_NFY_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) begin
 			dout <= 	CAL_NFY; 
 			
-	end	
+	end
+
+// read actual vga_gain from register
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ACTUAL_VGA_GAIN_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) begin
+			dout <= 	AFE_VGA_GAIN; 
+			
+	end
+	
+	
 end //always
  
 assign MB2FPGA_bus_RdData = dout;
@@ -883,7 +894,7 @@ assign AFE_CAL = ~AFE_PICKUP; //the "AFE_CAL" default to be 1 to turn off cal si
 // auto_run enable
 wire AUTO_MODE = control_reg[6]; // Ranging mode select (1 = auto, 0 = manual)
 
-assign AFE_VGA_GAIN = AUTO_MODE? auto_gain_reg : AFE_Control_Reg[4:0];	///< Assigns AFE_VGA_GAIN output with either auto_gain or 
+assign AFE_VGA_GAIN = AUTO_MODE? auto_att_reg : AFE_Control_Reg[4:0];	///< Assigns AFE_VGA_GAIN output with either auto_gain or 
 																								///< existing gain value in AFE_Control_Reg
  
    
