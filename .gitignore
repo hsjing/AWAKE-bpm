@@ -2635,3 +2635,7 @@ xilinxsim_edk.ini
 cst.xbcd
 work.sdbl
 work.sdbx
+*.lso
+*.prj
+*.stx
+*.xst
