@@ -257,6 +257,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="mbx2_system_top.pcf"/>
       <outfile xil_pn:name="mbx2_system_top_map.map"/>
@@ -295,7 +297,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1494886815" xil_pn:in_ck="7471504244741421031" xil_pn:name="TRAN_exportToSDK" xil_pn:prop_ck="124571339" xil_pn:start_ts="1494886809">
+    <transform xil_pn:end_ts="1494895356" xil_pn:in_ck="7471504244741421031" xil_pn:name="TRAN_exportToSDK" xil_pn:prop_ck="124571339" xil_pn:start_ts="1494895347">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
