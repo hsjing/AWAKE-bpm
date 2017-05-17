@@ -68,11 +68,11 @@ module auto_range(
 	output reg [4:0] auto_att_reg
     );    
     
-    parameter upper_threshold = 20000;	// Full range of amplitude is 32768
-    parameter lower_threshold = 14000;	// Lower threshold roughly 3 dB less than upper threshold     
+    parameter upper_threshold = 25000;	// Full range of amplitude is 32768
+    parameter lower_threshold = 15000;	// Lower threshold roughly 3 dB less than upper threshold     
     parameter data_width = 16;
     parameter step = 2;
-	 parameter max = 31;
+	 parameter max = 30;
     
     reg [data_width-1:0] signal_max_all;
     
@@ -96,10 +96,10 @@ module auto_range(
 				
 			/* Lower or increase VGA attenuation depending on signal_max_all relative to the corresponding thresholds */			
 			if (signal_max_all > upper_threshold) begin
-				if (vga_in <= max)	auto_att_reg <= vga_in + step;
+				if (vga_in < max)	auto_att_reg <= vga_in + step;
 				end
 			else if (signal_max_all < lower_threshold) begin
-				if (vga_in >= step)	auto_att_reg <= vga_in - step;
+				if (vga_in > step)	auto_att_reg <= vga_in - step;
 				end					    	    
     		end
     	end    	
