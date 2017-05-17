@@ -220,6 +220,8 @@ module Buf_SigProcs(
 	wire [DATA_WIDTH-1:0] ChB_Max_Reg;
 	wire [DATA_WIDTH-1:0] ChC_Max_Reg;
 	wire [DATA_WIDTH-1:0] ChD_Max_Reg;
+	
+	wire max_result_valid;
 
 	Max Max_inst(
 		.Input_valid(BLG_data_valid),
@@ -231,6 +233,8 @@ module Buf_SigProcs(
 		.Max_B(ChB_Max_Reg),
 		.Max_C(ChC_Max_Reg),
 		.Max_D(ChD_Max_Reg),
+		
+		.result_valid(max_result_valid),
 
 		.over_flow_A(Overflow_ChA),
 		.over_flow_B(Overflow_ChB),
@@ -483,16 +487,19 @@ module Buf_SigProcs(
 	// auto_range.v
 	//////////////////////////////////////////////////
 	
-	auto_range auto_range_inst(
+	auto_range auto_range_inst(	
+		/* Inputs */
 		.clk(clk),
 		.rst(rst),
 		.ready(position_rdy),
+		.max_result_valid(max_result_valid),
 		.vga_in(existing_gain_reg),
 		.signal_max_a(ChA_Max_Reg),
 		.signal_max_b(ChB_Max_Reg),
 		.signal_max_c(ChC_Max_Reg),
 		.signal_max_d(ChD_Max_Reg),
-
+		
+		/* Outputs */
 		.auto_att_reg(auto_att_reg)
 	);
 	

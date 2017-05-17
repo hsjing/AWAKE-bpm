@@ -125,7 +125,7 @@ module mbx2_system_top (
 ///////////////////////////////////////////////////////////////
 //==================== Constant Parameters =================== 
 /////////////////////////////////////////////////////////////// 
-parameter FPGA_VERSION_NO = 32'd20170516; //May 16, 2017
+parameter FPGA_VERSION_NO = 32'd20170517; //May 16, 2017
 
 parameter  	ADC_BIT_WIDTH = 16;
 parameter  	DATA_WIDTH = 16;

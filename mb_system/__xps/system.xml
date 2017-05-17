@@ -1,7 +1,7 @@
 
-<EDKSYSTEM EDKVERSION="13.3" EDWVERSION="1.2" TIMESTAMP="Mon Mar 21 15:10:35 2016">
+<EDKSYSTEM EDKVERSION="13.3" EDWVERSION="1.2" TIMESTAMP="Wed May 17 13:00:37 2017">
 
-  <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx150t" PACKAGE="fgg676" PART="xc6slx150tfgg676-3" SOURCE="C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mb_system/mb_system.xmp" SPEEDGRADE="-3"/>
+  <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx150t" PACKAGE="fgg676" PART="xc6slx150tfgg676-3" SOURCE="C:/Users/student/Desktop/Jing/awake.bpm.firmware/mb_system/mb_system.xmp" SPEEDGRADE="-3"/>
 
   <EXTERNALPORTS>
     <PORT DIR="IO" MHS_INDEX="0" NAME="zio" SIGNAME="zio">

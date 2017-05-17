@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-03-21T15:10:36</DateModified>
+  <DateModified>2017-05-17T13:00:35</DateModified>
   <ModuleName>mb_system</ModuleName>
-  <SummaryTimeStamp>2016-03-21T15:10:36</SummaryTimeStamp>
-  <SavedFilePath>C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mb_system/__xps/ise/mb_system.xreport</SavedFilePath>
+  <SummaryTimeStamp>2017-05-17T13:00:34</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/student/Desktop/Jing/awake.bpm.firmware/mb_system/__xps/ise/mb_system.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
-  <SavedFilterFilePath>C:/Myprojects/CERN_AWAKE_BPM/FPGA_SPARTAN/AWAKE_BPM_Rev1_0/mb_system/__xps/ise</SavedFilterFilePath>
+  <SavedFilterFilePath>C:/Users/student/Desktop/Jing/awake.bpm.firmware/mb_system/__xps/ise</SavedFilterFilePath>
   <DateInitialized>2012-06-05T16:28:27</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

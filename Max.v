@@ -34,7 +34,9 @@ module Max(
 	output reg over_flow_A,
 	output reg over_flow_B,
 	output reg over_flow_C,
-	output reg over_flow_D
+	output reg over_flow_D,
+	
+	output reg result_valid
 	
     );
 
@@ -52,7 +54,6 @@ parameter idle = 0, compare_1 = 1, done = 2;
 
 reg [1:0] state;
 reg [DATA_WIDTH-1:0] Old_Max_A,Old_Max_B,Old_Max_C,Old_Max_D;
-reg result_valid;
 
 //wire Abs_a[14:0] = din_a[15]? ~din_a[14:0] + 1
 //					  : din_a[14:0];				  
