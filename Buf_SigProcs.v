@@ -70,8 +70,12 @@ module Buf_SigProcs(
 	input [SF_WIDTH-1:0] ChB_Cal_Gain,
 	input [SF_WIDTH-1:0] ChC_Cal_Gain,
 	input [SF_WIDTH-1:0] ChD_Cal_Gain,
-
-
+	
+	input [SF_WIDTH-1:0] ChA_9dB,
+	input [SF_WIDTH-1:0] ChB_9dB,
+	input [SF_WIDTH-1:0] ChC_9dB,
+	input [SF_WIDTH-1:0] ChD_9dB,
+	
 	input [SF_WIDTH-1:0] K_cal,
 	input [4:0] DIGI_att,
 	

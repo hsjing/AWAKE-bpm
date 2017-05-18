@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;OFFSET = IN 6 ns BEFORE COMP &quot;Ethernet_Lite_RX_CLK&quot;;&gt; [mbx2_system_top.pcf(34299)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;OFFSET = IN 6 ns BEFORE COMP &quot;Ethernet_Lite_RX_CLK&quot;;&gt; [mbx2_system_top.pcf(34303)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
 </msg>
 
 <msg type="warning" file="Timing" num="3223" delta="old" >Timing constraint <arg fmt="%s" index="1">PATH &quot;TS_TIG_MCB_DDR3_CALIB_DONE_SYNCH_path&quot; TIG;</arg> ignored during timing analysis.</msg>

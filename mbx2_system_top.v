@@ -240,7 +240,6 @@ reg [SF_WIDTH-1:0] CHB_CAL_GAIN;
 reg [SF_WIDTH-1:0] CHC_CAL_GAIN;
 reg [SF_WIDTH-1:0] CHD_CAL_GAIN;
 
-
 reg [SF_WIDTH-1:0] ChA_9dB;
 reg [SF_WIDTH-1:0] ChB_9dB;
 reg [SF_WIDTH-1:0] ChC_9dB;
