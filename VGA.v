@@ -24,10 +24,10 @@ module VGA(
 	input rst,
 	input datain_valid,
 	input [4:0] DIGI_att,
-   	input [4:0] VGA_gain,
+	input [4:0] VGA_gain,
    	
-   	/* Digital attenuation coefficients input here */
-   	input [SF_WIDTH-1:0] ChA_9dB,
+	/* Digital attenuation coefficients input here */
+	input [SF_WIDTH-1:0] ChA_9dB,
 	input [SF_WIDTH-1:0] ChB_9dB,
 	input [SF_WIDTH-1:0] ChC_9dB,
 	input [SF_WIDTH-1:0] ChD_9dB,
@@ -137,8 +137,8 @@ module VGA(
 
 				/* Begin of VGA gain compensaton */
 				A_GAIN:
-				   	if(mul_rfd) begin
-				   		MulB <= VGA;
+					if(mul_rfd) begin
+						MulB <= VGA;
 						MulA <= ChA_Power;
 						nd <= 1;
 						state <= A_GAIN_WAIT;
@@ -161,7 +161,7 @@ module VGA(
 						end
 
 				B_GAIN_WAIT:
-			   		begin
+					begin
 				  	nd <= 0;
 					if(mul_rdy) begin
 						ChB_Power_Adj <= MulOut;
@@ -170,14 +170,14 @@ module VGA(
 					end
 
 				C_GAIN:
-				   	if(mul_rfd) begin
-				   		MulA <= ChC_Power;
+					if(mul_rfd) begin
+						MulA <= ChC_Power;
 						nd <= 1;
 						state <= C_GAIN_WAIT;
 						end
 
 				C_GAIN_WAIT:
-			   		begin
+					begin
 				  	nd <= 0;
 			     	if(mul_rdy) begin
 						ChC_Power_Adj <= MulOut;
@@ -186,11 +186,11 @@ module VGA(
 					end
 
 				D_GAIN:
-				   	if (mul_rfd) begin 
-				   		MulA <= ChD_Power;
+					if (mul_rfd) begin 
+						MulA <= ChD_Power;
 						nd <= 1;
 						state <= D_GAIN_WAIT;
-					  end
+						end
 	
 				D_GAIN_WAIT:
 					begin
@@ -208,10 +208,10 @@ module VGA(
 						MulB <= DIGI_A;
 						nd <= 1; 
 						state <= A_DIGI_WAIT; 
-					  end
+						end
 
 				A_DIGI_WAIT:
-			   		begin
+					begin
 				  	nd <= 0;
 			     	if(mul_rdy) begin
 						ChA_Power_Out <= MulOut;
@@ -228,7 +228,7 @@ module VGA(
 						end
 					
 				B_DIGI_WAIT:
-			   		begin
+					begin
 				  	nd <= 0;
 			     	if(mul_rdy) begin
 						ChB_Power_Out <= MulOut;
@@ -237,15 +237,15 @@ module VGA(
 					end
 
 				C_DIGI:				
-				   	if(mul_rfd) begin
-				   		MulA <= ChC_Power_Adj;
-				   		MulB <= DIGI_C; 
+					if(mul_rfd) begin
+						MulA <= ChC_Power_Adj;
+						MulB <= DIGI_C; 
 						nd <= 1; 
 						state <= C_DIGI_WAIT;
 						end
 
 				C_DIGI_WAIT:
-			   		begin
+					begin
 					nd <= 0;
 			     	if(mul_rdy) begin
 						ChC_Power_Out <= MulOut;
@@ -254,15 +254,15 @@ module VGA(
 					end
 
 				D_DIGI:				
-				   	if(mul_rfd) begin
-				   		MulA <= ChD_Power_Adj;
-				   		MulB <= DIGI_D;
+					if(mul_rfd) begin
+						MulA <= ChD_Power_Adj;
+						MulB <= DIGI_D;
 						nd <= 1;
 						state <= D_DIGI_WAIT;
 						end
 
 				D_DIGI_WAIT:
-			   		begin
+					begin
 				  	nd <= 0;
 			     	if(mul_rdy) begin
 			     		ChD_Power_Out <= MulOut;

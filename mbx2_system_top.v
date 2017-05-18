@@ -317,6 +317,11 @@ Buf_SigProcs Buf_SigProcs_inst (
 	.ChC_Gain(CHC_GAIN),
 	.ChD_Gain(CHD_GAIN),
 	
+	.ChA_9dB(ChA_9dB),
+	.ChB_9dB(ChB_9dB),
+	.ChC_9dB(ChC_9dB),
+	.ChD_9dB(ChD_9dB),
+	
 	.ChA_Cal_Gain(CHA_CAL_GAIN),
 	.ChB_Cal_Gain(CHB_CAL_GAIN),
 	.ChC_Cal_Gain(CHC_CAL_GAIN),
@@ -391,6 +396,7 @@ parameter integer SPI_ADDR_ADDR = 4*16'h0030;
 parameter integer SPI_DATA_TX_ADDR = 4*16'h0031;
 parameter integer SPI_DATA_RX_ADDR = 4*16'h0032;
 
+// Digital attenuation coefficient addresses
 parameter integer ChA_9dB_ADDR = 4*16'h0042;
 parameter integer ChB_9dB_ADDR = 4*16'h0046;
 parameter integer ChC_9dB_ADDR = 4*16'h004A;

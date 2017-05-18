@@ -40,12 +40,12 @@
   
   Parameters:
    
-   		upper_threshold - upper amplitude threshold beyond which signals must be re-ranged
-   		lower_threshold - lower amplitude threshold that justifies increasing VGA attenuation
-   		data_width - bit size of incoming amplitude data
-   		step - attenuation shift in dB 
+		upper_threshold - upper amplitude threshold beyond which signals must be re-ranged
+		lower_threshold - lower amplitude threshold that justifies increasing VGA attenuation
+		data_width - bit size of incoming amplitude data
+		step - attenuation shift in dB
 		max - maximum attenuation in dB
-   
+
   Registers:
 
    		[2:0]	step - shifted steps for range adjustment in binary, intreperted as decimal in dB

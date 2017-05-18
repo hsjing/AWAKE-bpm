@@ -283,6 +283,11 @@ module Buf_SigProcs(
 	wire [SF_WIDTH-1:0] ChB_Power;
 	wire [SF_WIDTH-1:0] ChC_Power;
 	wire [SF_WIDTH-1:0] ChD_Power;
+	
+	wire [SF_WIDTH-1:0] ChA_9dB;
+	wire [SF_WIDTH-1:0] ChB_9dB;
+	wire [SF_WIDTH-1:0] ChC_9dB;
+	wire [SF_WIDTH-1:0] ChD_9dB;
 
 	reg [SF_WIDTH-1:0] ChA_Power_reg;
 	reg [SF_WIDTH-1:0] ChB_Power_reg;
@@ -357,6 +362,11 @@ module Buf_SigProcs(
 	VGA VGA_inst(
 		.DIGI_att(DIGI_att),
 		.VGA_gain(VGA_gain),
+		
+		.ChA_9dB(ChA_9dB),
+		.ChB_9dB(ChB_9dB),
+		.ChC_9dB(ChC_9dB),
+		.ChD_9dB(ChD_9dB),
 
 		.ChA_Power(ChA_Power),
 		.ChB_Power(ChB_Power),
