@@ -62,6 +62,10 @@ module Buf_SigProcs(
 	input [DATA_WIDTH-1:0] Evt_Tail_Len_Reg, // Event tail length in samples reg
 	input [DATA_WIDTH-1:0] BL_Len_Reg, // Event tail length in samples reg
 	
+	/* Skew compenstion factors */
+	input [SF_WIDTH-1:0] ChA_Skew,
+	input [SF_WIDTH-1:0] ChC_Skew,
+	
 	input [SF_WIDTH-1:0] ChA_Gain,
 	input [SF_WIDTH-1:0] ChB_Gain,
 	input [SF_WIDTH-1:0] ChC_Gain,
@@ -345,6 +349,17 @@ module Buf_SigProcs(
 	);	
 
 ///////////// apply Gain adjustment ////////////////////////////
+
+	/* This block contains inputs/outputs used in skew adjust */
+	wire [SF_WIDTH-1:0] ChA_Skew;
+	wire [SF_WIDTH-1:0] ChC_Skew;
+	
+	wire [SF_WIDTH-1:0] ChC_Skew_Adj;
+	wire [SF_WIDTH-1:0] ChA_Skew_Adj;
+	
+	wire skew_rdy;
+
+	/* This block contains inputs/outputs used in VGA/Digital attenuator adjust */
 	wire [SF_WIDTH-1:0] ChA_Drift_Gain;
 	wire [SF_WIDTH-1:0] ChB_Drift_Gain;
 	wire [SF_WIDTH-1:0] ChC_Drift_Gain;
@@ -356,13 +371,39 @@ module Buf_SigProcs(
 	wire [SF_WIDTH-1:0] ChD_Power_VGA;
 	wire VGA_rdy;
 
+	/* This block contains inputs/outputs used in Gain/Drift adjust */
 	wire [SF_WIDTH-1:0] ChA_Power_Adj;
 	wire [SF_WIDTH-1:0] ChB_Power_Adj;
 	wire [SF_WIDTH-1:0] ChC_Power_Adj;
 	wire [SF_WIDTH-1:0] ChD_Power_Adj;
 	wire Adj_rdy; // one clk wide
+	
+	/* skew_adjust module adjusts for the skew caused by electrode placement and cable wiring */
+	skew_adjust skew_adjust_inst(
+	
+		/* Inputs */
+		.Cal_ST(Cal_ST_Mode),
+		.Cal_OL(Cal_OL_Mode),
+		.Cal_FLAG(cal_flag),
+		
+		.clk(clk),
+		.rst(rst),
+		.data_valid(Power_rdy),
 
-//VGA module adjusts both Digi_attenuator and VGA gain setting
+		.chA_skew(ChA_Skew),
+		.chC_skew(ChC_Skew),
+		
+		.chA_power(ChA_Power),
+		.chC_power(ChC_Power),
+		
+		/* Outputs */
+		.chA_skew_adj(ChA_Skew_Adj),
+		.chC_skew_adj(ChC_Skew_Adj),
+		
+		.skew_rdy(Skew_rdy)
+	);
+
+	/* VGA module adjusts both Digi_attenuator and VGA gain setting */
 	VGA VGA_inst(
 		.DIGI_att(DIGI_att),
 		.VGA_gain(VGA_gain),
@@ -372,14 +413,14 @@ module Buf_SigProcs(
 		.ChC_9dB(ChC_9dB),
 		.ChD_9dB(ChD_9dB),
 
-		.ChA_Power(ChA_Power),
+		.ChA_Power(ChA_Skew_Adj),
 		.ChB_Power(ChB_Power),
-		.ChC_Power(ChC_Power),
+		.ChC_Power(ChC_Skew_Adj),
 		.ChD_Power(ChD_Power),
 
 		.clk(clk),
 		.rst(rst),
-		.datain_valid(Power_rdy),
+		.datain_valid(Skew_rdy),
 
 		.ChA_Power_Out(ChA_Power_VGA),
 		.ChB_Power_Out(ChB_Power_VGA),
@@ -389,6 +430,7 @@ module Buf_SigProcs(
 
 	);
 
+	/* Gain_Adjust module adjusts both for gain and drift compensations */
 	Gain_Adjust Gain_Adjust_inst(
 		.Cal_ST(Cal_ST_Mode),
 		.Cal_OL(Cal_OL_Mode),

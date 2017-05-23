@@ -210,6 +210,10 @@ wire [DATA_WIDTH-1:0]status_net;
 // auto_range
 wire [4:0]auto_att_reg;
 
+// skew factors
+reg [SF_WIDTH-1:0] ChA_Skew;
+reg [SF_WIDTH-1:0] ChC_Skew;
+
 reg [DATA_WIDTH-1:0]control_reg;
 reg [DATA_WIDTH-1:0]AFE_Control_Reg; 
 reg [DATA_WIDTH-1:0]SPI_Addr_Reg;
@@ -310,6 +314,8 @@ Buf_SigProcs Buf_SigProcs_inst (
    .Evt_Tail_Len_Reg(Evt_Tail_Len_Reg),  //Event tail length in samples reg
 	.BL_Len_Reg(BL_Len_Reg),   //Baseline Length: to be used to cal the BL
 	
+	.ChA_Skew(ChA_Skew),
+	.ChC_Skew(ChC_Skew),
 	
 	.ChA_Gain(CHA_GAIN),
 	.ChB_Gain(CHB_GAIN),
@@ -396,10 +402,14 @@ parameter integer SPI_DATA_TX_ADDR = 4*16'h0031;
 parameter integer SPI_DATA_RX_ADDR = 4*16'h0032;
 
 // Digital attenuation coefficient addresses
-parameter integer ChA_9dB_ADDR = 4*16'h0042;
-parameter integer ChB_9dB_ADDR = 4*16'h0046;
-parameter integer ChC_9dB_ADDR = 4*16'h004A;
-parameter integer ChD_9dB_ADDR = 4*16'h004E;
+parameter integer 	ChA_9dB_ADDR = 4*16'h0042;
+parameter integer 	ChB_9dB_ADDR = 4*16'h0046;
+parameter integer 	ChC_9dB_ADDR = 4*16'h004A;
+parameter integer 	ChD_9dB_ADDR = 4*16'h004E;
+
+// Skew compensation coefficient addresses 
+parameter integer		ChA_Skew_ADDR = 4*16'h0070;
+parameter integer 	ChC_Skew_ADDR = 4*16'h0071;
 
 parameter integer 	AFE_CTRL_ADDR = 4*16'h0058;
 parameter integer 	ERR_REG_ADDR = 4*16'h005A;
@@ -702,7 +712,15 @@ begin
 	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChA_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChA_9dB; 	
 	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChB_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChB_9dB; 	
 	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChC_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChC_9dB; 	
-	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChD_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChD_9dB; 	
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChD_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChD_9dB;
+
+////////////////////////////////////////////////////////////	
+// write to ChX_Skew
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChA_Skew_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChA_Skew <= MB2FPGA_bus_WrData;
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChC_Skew_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChC_Skew <= MB2FPGA_bus_WrData;
+// read from ChX_Skew	
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChA_Skew_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChA_Skew;
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChC_Skew_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChC_Skew;
 
 ///////////////////////////////////////////////////////////////
 //write to constant K_cal//
