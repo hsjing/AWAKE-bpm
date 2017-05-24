@@ -3,15 +3,15 @@
 // Company: 		TRIUMF
 // Engineer:		Jing Huang
 // 
-// Create Date:		15:24:22 05/11/2017 
+// Create Date:		14:05:22 05/24/2017 
 // Design Name:		
 // Module Name:		skew_adjust 
-// Project Name:	awake.bpm.firmware
-// Target Devices: 	SPARTAN 6 LX150T
-// Tool versions: 
-// Description: 
+// Project Name:		awake.bpm.firmware
+// Target Devices:	SPARTAN 6 LX150T
+// Tool versions:
+// Description:
 //
-// Dependencies: 	
+// Dependencies:
 //
 // Revision: 
 // Revision 0.01 - File Created
@@ -21,9 +21,9 @@
 
 /*
 	Module: skew_adjust
-  
-	Automatically compensates for the skew in input signal due to electrode installation and wiring
-	As of now, only two channels are compensated: A and C. This is picked arbitrarily. 
+
+		Automatically compensates for the skew in input signal due to electrode installation and wiring
+		As of now, only two channels are compensated: A and C. 
   
 	Inputs:
   		
@@ -34,8 +34,8 @@
   		rst - reset flag
   		data_valid - ready status bit of valid data, 1 -> valid data
   		
-  		ChA_skew - input skew adjust gain for channel A
-		ChC_skew - input skew adjust gain for Channel C
+  		ChA_skew - input skew adjust factor for channel A
+		ChC_skew - input skew adjust factor for Channel C
 
 		chA_power - input power from A for adjustment
 		chC_power - input power from C for adjustment 
@@ -55,12 +55,12 @@
 
 	Registers:
 
-		chA_skew_temp
-		chC_skew_temp
-		nd
-		MulA
-		MulB
-		state
+		chA_skew_temp - temporary storage for skew-compensated channel A power
+		chC_skew_temp - temporary storage for skew-compensated channel C power
+		nd - new data ready flag
+		MulA - first multiple for multiplier
+		MulB - second multiple for multiplier
+		state - current state of the state machine
 	
 	Wires:
 	
@@ -71,13 +71,18 @@
 	See Also:
   
   		<Gain_Adjust.v>
+		
+	TODO:
+
+		- Add register access from UI using method from notes.txt
+		- Test the module
  */
  
 module skew_adjust(
 	
-	input Cal_ST, 
-   	input Cal_OL, 	
-	input Cal_FLAG, 	
+	input Cal_ST,
+	input Cal_OL,
+	input Cal_FLAG,
 	input clk,
 	input rst,
 	input data_valid,
@@ -98,6 +103,7 @@ module skew_adjust(
 	parameter	DATA_WIDTH 	= 16;
 	parameter 	SF_WIDTH	= 32;
 	
+	/* State machine states */
 	parameter idle = 0,
 			A_GAIN = 1, A_GAIN_WAIT = 2,			
 			C_GAIN = 3, C_GAIN_WAIT = 4,			
@@ -115,8 +121,10 @@ module skew_adjust(
 	wire mul_rdy;
 	wire mul_rfd;
 	
+	/* Beginning of state machine */
 	always @(posedge clk) begin
 	
+		/* If reset, zero stored power values and set state to idle */
 		if (rst) begin
 			state <= idle;
 			chA_skew_adj <= 0;
@@ -125,6 +133,7 @@ module skew_adjust(
 			nd <= 0;
 			end
 		
+		/* Else begin state machine */
 		else begin
 			case (state)
 				idle:
@@ -137,8 +146,8 @@ module skew_adjust(
 				A_GAIN:
 				if(mul_rfd) begin
 					MulA <= chA_power;
-					if (Cal_ST || Cal_OL || Cal_FLAG) MulB <= 1;							
-					else MulB <= chA_skew;
+					if (Cal_ST || Cal_OL || Cal_FLAG) MulB <= 1; // If any calibration flags are on, set skew factor to 1
+					else MulB <= chA_skew; // Else use user defined skew factor
 					state <= A_GAIN_WAIT;
 					nd <= 1;
 					end
@@ -147,7 +156,7 @@ module skew_adjust(
 				begin
 					nd <= 0;
 					if(mul_rdy) begin
-						chA_skew_adj <= MulOut;
+						chA_skew_adj <= MulOut; // Store product as adjusted power value
 						state <= C_GAIN;
 						end
 					end
@@ -155,8 +164,8 @@ module skew_adjust(
 				C_GAIN:
 				if(mul_rfd) begin
 					MulA <= chC_power;
-					if (Cal_ST || Cal_OL || Cal_FLAG) MulB <= 1;							
-					else MulB <= chC_skew;
+					if (Cal_ST || Cal_OL || Cal_FLAG) MulB <= 1; // If any calibration flags are on, set skew factor to 1
+					else MulB <= chC_skew; // Else use user defined skew factor
 					state <= C_GAIN_WAIT;
 					nd <= 1;
 					end
@@ -165,11 +174,12 @@ module skew_adjust(
 				begin
 					nd <= 0;
 					if(mul_rdy) begin
-						chC_skew_adj <= MulOut;
-						state <= C_GAIN;
+						chC_skew_adj <= MulOut; // Store product as adjusted power value
+						state <= done;
 						end
 					end
 				
+				/* State machine completes */
 				done:
 				begin
 					skew_rdy <= 1;
@@ -191,6 +201,5 @@ float_square float_mul (		//square all the floating number
   .invalid_op(), // output invalid_op
   .rdy(mul_rdy) // output rdy
 );
-		
 
 endmodule    		

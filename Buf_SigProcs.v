@@ -216,7 +216,7 @@ module Buf_SigProcs(
 		.rd(rd_C_buffer), // output, read Circular channel buffer 
 		.wr(wr_fast_fifo), // output, write Fast fifo
 	
-	.data_BL_valid(data_BL_valid), // mark the data for Base line calculation
+		.data_BL_valid(data_BL_valid), // mark the data for Base line calculation
 		.data_valid(BLG_data_valid), // mark the data after BLR and Gain adj. is present on bus
 		.busy(BLR_busy), // to prevent the Fast fifo to be readout by MB
 		.clr_fast_fifo(clr_fast_fifo), // clr the fast fifo so it keeps fresh if not been read out
@@ -355,8 +355,7 @@ module Buf_SigProcs(
 	wire [SF_WIDTH-1:0] ChC_Skew;
 	
 	wire [SF_WIDTH-1:0] ChC_Skew_Adj;
-	wire [SF_WIDTH-1:0] ChA_Skew_Adj;
-	
+	wire [SF_WIDTH-1:0] ChA_Skew_Adj;	
 	wire skew_rdy;
 
 	/* This block contains inputs/outputs used in VGA/Digital attenuator adjust */

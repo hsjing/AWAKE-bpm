@@ -20,12 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 /*
-  Module: auto_range
+	Module: auto_range
   
-  Automatically determines the VGA attenuation for the next measurement
-  depending on the received and processed signals from the four channels
+		Automatically determines the VGA attenuation for the next measurement
+		depending on the received and processed signals from the four channels
   
-  Inputs:
+	Inputs:
   		
   		clk - process to be clocked from PLL, as determined by PLL
 		rst - reset flag
@@ -34,11 +34,11 @@
   		[4:0] 	vga_in - 5 bit vga attenuation initial  
   		[15:0] 	signal_max_(a~d) - 16 bit signal amplitude calculated from <Max.v>
   	
-  Outputs:
+	Outputs:
   		
   		[4:0] auto_att_reg - 5 bit vga attenuation final
   
-  Parameters:
+	Parameters:
    
 		upper_threshold - upper amplitude threshold beyond which signals must be re-ranged
 		lower_threshold - lower amplitude threshold that justifies increasing VGA attenuation
@@ -46,16 +46,16 @@
 		step - attenuation shift in dB
 		max - maximum attenuation in dB
 
-  Registers:
+	Registers:
 
-   		[2:0]	step - shifted steps for range adjustment in binary, intreperted as decimal in dB
-   		[data_width-1:0]	signal_max_all - storage register for overall maximum amplitude after program iteration
+		[2:0]	step - shifted steps for range adjustment in binary, intreperted as decimal in dB
+		[data_width-1:0]	signal_max_all - storage register for overall maximum amplitude after program iteration
   
-  See Also:
+	See Also:
   
   		<Max.v>
 		
-  TODO:
+	TODO:
 		
 		- Cosmetic changes (improve range finding logic, lessen range)
 		- Think of ways to improve speed with better algorithm
