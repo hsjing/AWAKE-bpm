@@ -431,8 +431,6 @@ parameter integer 	CAL_NFY_ADDR = 4*16'h06C;
 // Actual vga_gain address
 parameter integer		ACTUAL_VGA_GAIN_ADDR = 4*16'h06D;
 
-
-
 reg [31:0] dout;
 
 wire MB2FPGA_bus_Rst;

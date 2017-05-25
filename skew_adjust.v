@@ -100,8 +100,8 @@ module skew_adjust(
 		
 	);
 	
-	parameter	DATA_WIDTH 	= 16;
-	parameter 	SF_WIDTH	= 32;
+	parameter DATA_WIDTH = 16;
+	parameter SF_WIDTH = 32;
 	
 	/* State machine states */
 	parameter idle = 0,
@@ -113,8 +113,8 @@ module skew_adjust(
 	reg [SF_WIDTH-1:0] chC_skew_temp;
 
 	reg nd;	
-	reg [31:0] MulA;
-	reg [31:0] MulB;	
+	reg [SF_WIDTH-1:0] MulA;
+	reg [SF_WIDTH-1:0] MulB;	
 	reg [4:0] state;
 
 	wire [31:0] MulOut;
@@ -122,10 +122,10 @@ module skew_adjust(
 	wire mul_rfd;
 	
 	/* Beginning of state machine */
-	always @(posedge clk) begin
+	always @ (posedge clk) begin
 	
 		/* If reset, zero stored power values and set state to idle */
-		if (rst) begin
+		if(rst) begin
 			state <= idle;
 			chA_skew_adj <= 0;
 			chC_skew_adj <= 0;
@@ -146,8 +146,8 @@ module skew_adjust(
 				A_GAIN:
 				if(mul_rfd) begin
 					MulA <= chA_power;
-					if (Cal_ST || Cal_OL || Cal_FLAG) MulB <= 1; // If any calibration flags are on, set skew factor to 1
-					else MulB <= chA_skew; // Else use user defined skew factor
+					if (Cal_ST || Cal_OL || Cal_FLAG) MulB <= 1; ///< If any calibration flags are on, set skew factor to 1
+					else MulB <= chA_skew; ///< Else use user defined skew factor
 					state <= A_GAIN_WAIT;
 					nd <= 1;
 					end
@@ -156,7 +156,7 @@ module skew_adjust(
 				begin
 					nd <= 0;
 					if(mul_rdy) begin
-						chA_skew_adj <= MulOut; // Store product as adjusted power value
+						chA_skew_adj <= MulOut; ///< Store product as adjusted power value
 						state <= C_GAIN;
 						end
 					end
@@ -164,8 +164,8 @@ module skew_adjust(
 				C_GAIN:
 				if(mul_rfd) begin
 					MulA <= chC_power;
-					if (Cal_ST || Cal_OL || Cal_FLAG) MulB <= 1; // If any calibration flags are on, set skew factor to 1
-					else MulB <= chC_skew; // Else use user defined skew factor
+					if (Cal_ST || Cal_OL || Cal_FLAG) MulB <= 1; ///< If any calibration flags are on, set skew factor to 1
+					else MulB <= chC_skew; ///< Else use user defined skew factor
 					state <= C_GAIN_WAIT;
 					nd <= 1;
 					end
@@ -190,16 +190,17 @@ module skew_adjust(
 			end
 		end
 
-float_square float_mul (		//square all the floating number
-  .a(MulA), // input [31 : 0] a
-  .b(MulB), // input [31 : 0] b
-  .operation_nd(nd), // input operation_nd
-  .operation_rfd(mul_rfd), // output operation_rfd
-  .result(MulOut), // output [31 : 0] result
-  .underflow(), // output underflow
-  .overflow(), // output overflow
-  .invalid_op(), // output invalid_op
-  .rdy(mul_rdy) // output rdy
-);
+	/* Load in multiplier */
+	float_square float_mul (
+		.a(MulA),
+		.b(MulB),
+		.operation_nd(nd),
+		.operation_rfd(mul_rfd),
+		.result(MulOut),
+		.underflow(),
+		.overflow(),
+		.invalid_op(),
+		.rdy(mul_rdy)
+	);
 
 endmodule    		

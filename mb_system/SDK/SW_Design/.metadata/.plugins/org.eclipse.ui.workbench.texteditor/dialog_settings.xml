@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="257" key="DIALOG_WIDTH"/>
-		<item value="294" key="DIALOG_Y_ORIGIN"/>
-		<item value="840" key="DIALOG_X_ORIGIN"/>
-		<item value="381" key="DIALOG_HEIGHT"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="241" key="DIALOG_WIDTH"/>
+		<item value="371" key="DIALOG_Y_ORIGIN"/>
+		<item value="362" key="DIALOG_HEIGHT"/>
+		<item value="1168" key="DIALOG_X_ORIGIN"/>
+		<item value="1|MS Shell Dlg|7.4018693|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|MS Shell Dlg" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="FPGA" key="selection"/>
+		<item value="CH_GAIN" key="selection"/>
 		<list key="findhistory">
-			<item value="fpga"/>
-			<item value="idn"/>
+			<item value="ch_digi_gain"/>
+			<item value="ch_gain"/>
+			<item value="ch_digi"/>
+			<item value="ffifo"/>
+			<item value="skew"/>
+			<item value="bl:len"/>
+			<item value="evt:len"/>
+			<item value="trig_dt"/>
 		</list>
 		<list key="replacehistory">
 		</list>
