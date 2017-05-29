@@ -8,7 +8,91 @@
 <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/ADC_des.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/ADS1015.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/BLR_GAIN.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/Buf_SigProcs.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/DAT31.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/Drift.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/Gain_Adjust.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/I2C_Master.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/LED.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/Max.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/SPI.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/VGA.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/auto_range.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/base_line.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/cal_schedule.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/deser_data_16bit_ddr.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/deser_data_8bit_ddr.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/deser_ddr_clk.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/deser_fclk_8bit_ddr.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/mbx2_system_top.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/position.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/power_rms.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/pulse_gen.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/pulse_strecher.v&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/skew_adjust.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/sync_and_deser_x4CH.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/top_testbench.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/trigger.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1835" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/student/Desktop/Jing/awake.bpm.firmware/x4_Channel_buffer.v&quot; into library work</arg>
 </msg>
 
 </messages>
