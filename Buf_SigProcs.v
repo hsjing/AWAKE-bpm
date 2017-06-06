@@ -66,6 +66,10 @@ module Buf_SigProcs(
 	input [SF_WIDTH-1:0] ChA_Skew,
 	input [SF_WIDTH-1:0] ChC_Skew,
 	
+	/* Autorange thresholds */
+	input [SF_WIDTH-1:0] auto_upper,
+	input [SF_WIDTH-1:0] auto_lower,
+	
 	input [SF_WIDTH-1:0] ChA_Gain,
 	input [SF_WIDTH-1:0] ChB_Gain,
 	input [SF_WIDTH-1:0] ChC_Gain,
@@ -549,6 +553,8 @@ module Buf_SigProcs(
 		.ready(position_rdy),
 		.max_result_valid(max_result_valid),
 		.vga_in(existing_gain_reg),
+		.auto_upper(auto_upper),
+		.auto_lower(auto_lower),
 		.signal_max_a(ChA_Max_Reg),
 		.signal_max_b(ChB_Max_Reg),
 		.signal_max_c(ChC_Max_Reg),

@@ -209,6 +209,8 @@ wire [DATA_WIDTH-1:0]status_net;
 
 // auto_range
 wire [4:0]auto_att_reg;
+reg [SF_WIDTH-1:0] auto_upper;
+reg [SF_WIDTH-1:0] auto_lower;
 
 // skew factors
 reg [SF_WIDTH-1:0] ChA_Skew;
@@ -317,6 +319,9 @@ Buf_SigProcs Buf_SigProcs_inst (
 	.ChA_Skew(ChA_Skew),
 	.ChC_Skew(ChC_Skew),
 	
+	.auto_upper(auto_upper),
+	.auto_lower(auto_lower),
+	
 	.ChA_Gain(CHA_GAIN),
 	.ChB_Gain(CHB_GAIN),
 	.ChC_Gain(CHC_GAIN),
@@ -410,6 +415,10 @@ parameter integer 	ChD_9dB_ADDR = 4*16'h004E;
 // Skew compensation coefficient addresses 
 parameter integer		ChA_Skew_ADDR = 4*16'h0070;
 parameter integer 	ChC_Skew_ADDR = 4*16'h0071;
+
+// Autorange threshold addresses
+parameter integer		auto_upper_addr = 4*16'h0051;
+parameter integer		auto_lower_addr = 4*16'h0052;
 
 parameter integer 	AFE_CTRL_ADDR = 4*16'h0058;
 parameter integer 	ERR_REG_ADDR = 4*16'h005A;
@@ -719,6 +728,11 @@ begin
 // read from ChX_Skew	
 	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChA_Skew_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChA_Skew;
 	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChC_Skew_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChC_Skew;
+	
+// write to autorange thresholds
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + auto_upper_addr)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) auto_upper <= MB2FPGA_bus_WrData;
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + auto_lower_addr)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) auto_lower <= MB2FPGA_bus_WrData;
+
 
 ///////////////////////////////////////////////////////////////
 //write to constant K_cal//
