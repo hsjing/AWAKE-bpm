@@ -26,11 +26,16 @@ module VGA(
 	input [4:0] DIGI_att,
 	input [4:0] VGA_gain,
    	
-	/* Digital attenuation coefficients input here */
-	input [SF_WIDTH-1:0] ChA_9dB,
-	input [SF_WIDTH-1:0] ChB_9dB,
-	input [SF_WIDTH-1:0] ChC_9dB,
-	input [SF_WIDTH-1:0] ChD_9dB,
+	/* Digital attenuation coefficients input here */	
+	input [SF_WIDTH-1:0] ChA_10dB,
+	input [SF_WIDTH-1:0] ChB_10dB,
+	input [SF_WIDTH-1:0] ChC_10dB,
+	input [SF_WIDTH-1:0] ChD_10dB,
+	
+	input [SF_WIDTH-1:0] ChA_20dB,
+	input [SF_WIDTH-1:0] ChB_20dB,
+	input [SF_WIDTH-1:0] ChC_20dB,
+	input [SF_WIDTH-1:0] ChD_20dB,
 	
 	/* VGA attenuation input here */	
 	input [SF_WIDTH-1:0] ChA_Power,
@@ -285,19 +290,23 @@ module VGA(
 
 	/* Switches between compensation coefficients depending on attenuation setting */
 	wire [SF_WIDTH-1:0] DIGI_A = DIGI_att == 0? dB0
-				:DIGI_att == 9? ChA_9dB
+				:DIGI_att == 10? ChA_10dB
+				:DIGI_att == 20? ChA_20dB
 				:dB0;
 
 	wire [SF_WIDTH-1:0] DIGI_B = DIGI_att == 0? dB0
-				:DIGI_att == 9? ChB_9dB
+				:DIGI_att == 10? ChB_10dB
+				:DIGI_att == 20? ChB_20dB
 				:dB0;
 				 
 	wire [SF_WIDTH-1:0] DIGI_C = DIGI_att == 0? dB0
-				:DIGI_att == 9? ChC_9dB
+				:DIGI_att == 10? ChC_10dB
+				:DIGI_att == 20? ChC_20dB
 				:dB0;
 				 
 	wire [SF_WIDTH-1:0] DIGI_D = DIGI_att == 0? dB0
-				:DIGI_att == 9? ChD_9dB
+				:DIGI_att == 10? ChD_10dB
+				:DIGI_att == 20? ChD_20dB
 				:dB0;
 
 	/* Switches between compensation coefficients depending on attenuation setting */

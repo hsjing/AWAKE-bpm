@@ -70,6 +70,7 @@ module Buf_SigProcs(
 	input [SF_WIDTH-1:0] auto_upper,
 	input [SF_WIDTH-1:0] auto_lower,
 	
+	/* 0 dB adjustment factors */
 	input [SF_WIDTH-1:0] ChA_Gain,
 	input [SF_WIDTH-1:0] ChB_Gain,
 	input [SF_WIDTH-1:0] ChC_Gain,
@@ -79,10 +80,16 @@ module Buf_SigProcs(
 	input [SF_WIDTH-1:0] ChC_Cal_Gain,
 	input [SF_WIDTH-1:0] ChD_Cal_Gain,
 	
-	input [SF_WIDTH-1:0] ChA_9dB,
-	input [SF_WIDTH-1:0] ChB_9dB,
-	input [SF_WIDTH-1:0] ChC_9dB,
-	input [SF_WIDTH-1:0] ChD_9dB,
+	/* digital adjustment factors for 10 and 20 dB attenuation */
+	input [SF_WIDTH-1:0] ChA_10dB,
+	input [SF_WIDTH-1:0] ChB_10dB,
+	input [SF_WIDTH-1:0] ChC_10dB,
+	input [SF_WIDTH-1:0] ChD_10dB,
+	
+	input [SF_WIDTH-1:0] ChA_20dB,
+	input [SF_WIDTH-1:0] ChB_20dB,
+	input [SF_WIDTH-1:0] ChC_20dB,
+	input [SF_WIDTH-1:0] ChD_20dB,	
 	
 	input [SF_WIDTH-1:0] K_cal,
 	input [4:0] DIGI_att,
@@ -296,11 +303,16 @@ module Buf_SigProcs(
 	wire [SF_WIDTH-1:0] ChC_Power;
 	wire [SF_WIDTH-1:0] ChD_Power;
 	
-	wire [SF_WIDTH-1:0] ChA_9dB;
-	wire [SF_WIDTH-1:0] ChB_9dB;
-	wire [SF_WIDTH-1:0] ChC_9dB;
-	wire [SF_WIDTH-1:0] ChD_9dB;
+	wire [SF_WIDTH-1:0] ChA_10dB;
+	wire [SF_WIDTH-1:0] ChB_10dB;
+	wire [SF_WIDTH-1:0] ChC_10dB;
+	wire [SF_WIDTH-1:0] ChD_10dB;
 
+	wire [SF_WIDTH-1:0] ChA_20dB;
+	wire [SF_WIDTH-1:0] ChB_20dB;
+	wire [SF_WIDTH-1:0] ChC_20dB;
+	wire [SF_WIDTH-1:0] ChD_20dB;
+	
 	reg [SF_WIDTH-1:0] ChA_Power_reg;
 	reg [SF_WIDTH-1:0] ChB_Power_reg;
 	reg [SF_WIDTH-1:0] ChC_Power_reg;
@@ -411,10 +423,15 @@ module Buf_SigProcs(
 		.DIGI_att(DIGI_att),
 		.VGA_gain(VGA_gain),
 		
-		.ChA_9dB(ChA_9dB),
-		.ChB_9dB(ChB_9dB),
-		.ChC_9dB(ChC_9dB),
-		.ChD_9dB(ChD_9dB),
+		.ChA_10dB(ChA_10dB),
+		.ChB_10dB(ChB_10dB),
+		.ChC_10dB(ChC_10dB),
+		.ChD_10dB(ChD_10dB),
+		
+		.ChA_20dB(ChA_20dB),
+		.ChB_20dB(ChB_20dB),
+		.ChC_20dB(ChC_20dB),
+		.ChD_20dB(ChD_20dB),
 
 		.ChA_Power(ChA_Skew_Adj),
 		.ChB_Power(ChB_Power),

@@ -246,11 +246,16 @@ reg [SF_WIDTH-1:0] CHB_CAL_GAIN;
 reg [SF_WIDTH-1:0] CHC_CAL_GAIN;
 reg [SF_WIDTH-1:0] CHD_CAL_GAIN;
 
-reg [SF_WIDTH-1:0] ChA_9dB;
-reg [SF_WIDTH-1:0] ChB_9dB;
-reg [SF_WIDTH-1:0] ChC_9dB;
-reg [SF_WIDTH-1:0] ChD_9dB;
+/* Digital attenuation adj registers */
+reg [SF_WIDTH-1:0] ChA_10dB;
+reg [SF_WIDTH-1:0] ChB_10dB;
+reg [SF_WIDTH-1:0] ChC_10dB;
+reg [SF_WIDTH-1:0] ChD_10dB;
 
+reg [SF_WIDTH-1:0] ChA_20dB;
+reg [SF_WIDTH-1:0] ChB_20dB;
+reg [SF_WIDTH-1:0] ChC_20dB;
+reg [SF_WIDTH-1:0] ChD_20dB;
 
 reg [SF_WIDTH-1:0] K_CAL;
 reg [SF_WIDTH-1:0] CAL_NFX;
@@ -327,10 +332,15 @@ Buf_SigProcs Buf_SigProcs_inst (
 	.ChC_Gain(CHC_GAIN),
 	.ChD_Gain(CHD_GAIN),
 	
-	.ChA_9dB(ChA_9dB),
-	.ChB_9dB(ChB_9dB),
-	.ChC_9dB(ChC_9dB),
-	.ChD_9dB(ChD_9dB),
+	.ChA_10dB(ChA_10dB),
+	.ChB_10dB(ChB_10dB),
+	.ChC_10dB(ChC_10dB),
+	.ChD_10dB(ChD_10dB),
+	
+	.ChA_20dB(ChA_20dB),
+	.ChB_20dB(ChB_20dB),
+	.ChC_20dB(ChC_20dB),
+	.ChD_20dB(ChD_20dB),
 	
 	.ChA_Cal_Gain(CHA_CAL_GAIN),
 	.ChB_Cal_Gain(CHB_CAL_GAIN),
@@ -407,10 +417,15 @@ parameter integer SPI_DATA_TX_ADDR = 4*16'h0031;
 parameter integer SPI_DATA_RX_ADDR = 4*16'h0032;
 
 // Digital attenuation coefficient addresses
-parameter integer 	ChA_9dB_ADDR = 4*16'h0042;
-parameter integer 	ChB_9dB_ADDR = 4*16'h0046;
-parameter integer 	ChC_9dB_ADDR = 4*16'h004A;
-parameter integer 	ChD_9dB_ADDR = 4*16'h004E;
+parameter integer 	ChA_10dB_ADDR = 4*16'h0040;
+parameter integer 	ChB_10dB_ADDR = 4*16'h0041;
+parameter integer 	ChC_10dB_ADDR = 4*16'h0042;
+parameter integer 	ChD_10dB_ADDR = 4*16'h0043;
+
+parameter integer 	ChA_20dB_ADDR = 4*16'h0044;
+parameter integer 	ChB_20dB_ADDR = 4*16'h0045;
+parameter integer 	ChC_20dB_ADDR = 4*16'h0046;
+parameter integer 	ChD_20dB_ADDR = 4*16'h0047;
 
 // Skew compensation coefficient addresses 
 parameter integer		ChA_Skew_ADDR = 4*16'h0070;
@@ -711,15 +726,23 @@ begin
 	
 ////////////////////////////////////////////////////////////	
 // write to ChA_XdB
-	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChA_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChA_9dB <= MB2FPGA_bus_WrData; 		
-	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChB_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChB_9dB <= MB2FPGA_bus_WrData; 		
-	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChC_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChC_9dB <= MB2FPGA_bus_WrData; 		
-	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChD_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChD_9dB <= MB2FPGA_bus_WrData; 		
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChA_10dB_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChA_10dB <= MB2FPGA_bus_WrData; 		
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChB_10dB_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChB_10dB <= MB2FPGA_bus_WrData; 		
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChC_10dB_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChC_10dB <= MB2FPGA_bus_WrData; 		
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChD_10dB_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChD_10dB <= MB2FPGA_bus_WrData; 		
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChA_20dB_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChA_20dB <= MB2FPGA_bus_WrData; 		
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChB_20dB_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChB_20dB <= MB2FPGA_bus_WrData; 		
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChC_20dB_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChC_20dB <= MB2FPGA_bus_WrData; 		
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChD_20dB_ADDR)) & (MB2FPGA_bus_WE == 4'hF)  & (MB2FPGA_bus_En == 1) ) ChD_20dB <= MB2FPGA_bus_WrData; 
 // read from ChA_XdB	
-	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChA_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChA_9dB; 	
-	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChB_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChB_9dB; 	
-	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChC_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChC_9dB; 	
-	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChD_9dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChD_9dB;
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChA_10dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChA_10dB; 	
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChB_10dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChB_10dB; 	
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChC_10dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChC_10dB; 	
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChD_10dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChD_10dB;
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChA_20dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChA_20dB; 	
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChB_20dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChB_20dB; 	
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChC_20dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChC_20dB; 	
+	if ((MB2FPGA_bus_Addr == (BASE_ADDR + ChD_20dB_ADDR)) & (MB2FPGA_bus_WE == 4'h0)  & (MB2FPGA_bus_En == 1) ) dout <= 	ChD_20dB;
 
 ////////////////////////////////////////////////////////////	
 // write to ChX_Skew
